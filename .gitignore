@@ -1,0 +1,19 @@
+﻿__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# large model files
+models/
+legacy_snapshot/RAG/bge-large-zh-v1.5/
+
+# temporary test dirs
+artifacts/stage1/test_tmp*/
+artifacts/stage1/faiss_index_smoke.index
+artifacts/stage1/faiss_build_report_smoke.json
+
+# generated FAISS index can be rebuilt
+artifacts/stage1/faiss_index.index
+artifacts/stage1/faiss_build_report.json

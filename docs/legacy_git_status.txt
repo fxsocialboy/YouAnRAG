@@ -1,0 +1,1 @@
+NOT_A_GIT_REPOSITORY_OR_STATUS_FAILED: fatal: not a git repository (or any of the parent directories): .git

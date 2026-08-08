@@ -1,0 +1,26 @@
+{
+  "total_chunks": 6266,
+  "indexable_chunks": 6266,
+  "unique_source_files": 51,
+  "max_tokens": 448,
+  "avg_tokens": 258.95,
+  "max_chars": 2066,
+  "avg_chars": 276.66,
+  "over_hard_max_chunks": 0,
+  "missing_section_path_chunks": 0,
+  "missing_section_path_ratio": 0.0,
+  "duplicate_chunks": 69,
+  "duplicate_ratio": 0.011,
+  "hard_max_tokens": 448,
+  "source_markdown_dir": "G:\\tiaozhanbei\\newrag\\legacy_snapshot\\RAG\\final_mds",
+  "markdown_files": 51,
+  "input_blocks": 13287,
+  "indexable_blocks": 9697,
+  "chunk_params": {
+    "target_tokens": 280,
+    "soft_max_tokens": 360,
+    "hard_max_tokens": 448,
+    "overlap_tokens": 50,
+    "min_tokens": 40
+  }
+}
