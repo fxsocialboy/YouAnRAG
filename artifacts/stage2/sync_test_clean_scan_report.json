@@ -1,0 +1,15 @@
+{
+  "mode": "scan-only",
+  "source_file_filter": "test_sync.md",
+  "changes": {
+    "added": 0,
+    "modified": 0,
+    "deleted": 0,
+    "unchanged": 0,
+    "total_changed": 0
+  },
+  "added": [],
+  "modified": [],
+  "deleted": [],
+  "unchanged": []
+}

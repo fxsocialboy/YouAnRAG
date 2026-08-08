@@ -1,0 +1,27 @@
+{
+  "index_path": "G:\\tiaozhanbei\\newrag\\artifacts\\stage1\\faiss_index.index",
+  "metadata_path": "G:\\tiaozhanbei\\newrag\\artifacts\\stage1\\chunk_metadata.json",
+  "report_path": "G:\\tiaozhanbei\\newrag\\artifacts\\stage2\\qdrant_import_report.json",
+  "qdrant_mode": "local",
+  "qdrant_path": "G:\\tiaozhanbei\\newrag\\artifacts\\qdrant_local",
+  "qdrant_url": null,
+  "collection": "youan_rag_stage2",
+  "vector_size": 1024,
+  "faiss_ntotal": 6269,
+  "metadata_count": 6269,
+  "import_limit": null,
+  "imported_points": 6269,
+  "qdrant_count": 6269,
+  "recreate": true,
+  "batch_size": 128,
+  "health": {
+    "backend": "qdrant",
+    "mode": "local",
+    "collection": "youan_rag_stage2",
+    "collection_exists": true,
+    "vector_size": 1024,
+    "count": 6269,
+    "status": "ok"
+  },
+  "elapsed_seconds": 67.66
+}

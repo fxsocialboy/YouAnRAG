@@ -11,6 +11,12 @@ def test_default_config_resolves_from_file_location_not_cwd():
     assert cfg.legacy_rag_dir == cfg.project_root / "legacy_snapshot" / "RAG"
     assert cfg.source_markdown_dir == cfg.legacy_rag_dir / "final_mds"
     assert cfg.stage1_artifacts_dir == cfg.project_root / "artifacts" / "stage1"
+    assert cfg.stage2_artifacts_dir == cfg.project_root / "artifacts" / "stage2"
+    assert cfg.qdrant_path == cfg.project_root / "artifacts" / "qdrant_local"
+    assert cfg.registry_db_path == cfg.stage2_artifacts_dir / "document_registry.sqlite3"
+    assert cfg.qdrant_mode == "local"
+    assert cfg.qdrant_url is None
+    assert cfg.qdrant_collection == "youan_rag_stage2"
     assert cfg.experiments_dir == cfg.project_root / "experiments"
 
 
@@ -23,10 +29,14 @@ def test_default_config_existing_required_paths():
     assert (cfg.legacy_rag_dir / "faiss_index.index").exists()
 
 
-def test_get_config_creates_stage1_artifacts_dir():
+def test_get_config_creates_artifacts_dirs():
     cfg = get_config()
     assert cfg.stage1_artifacts_dir.exists()
     assert cfg.stage1_artifacts_dir.is_dir()
+    assert cfg.stage2_artifacts_dir.exists()
+    assert cfg.stage2_artifacts_dir.is_dir()
+    assert cfg.qdrant_path.exists()
+    assert cfg.qdrant_path.is_dir()
 
 
 def test_chunk_params_are_convergent_defaults():

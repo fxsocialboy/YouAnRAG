@@ -41,7 +41,13 @@ class RagV2Config:
     model_path: Path
     artifacts_dir: Path
     stage1_artifacts_dir: Path
+    stage2_artifacts_dir: Path
+    qdrant_path: Path
+    registry_db_path: Path
     experiments_dir: Path
+    qdrant_mode: str = "local"
+    qdrant_url: str | None = None
+    qdrant_collection: str = "youan_rag_stage2"
     chunk_params: Stage1ChunkParams = Stage1ChunkParams()
     use_query_instruction: bool = True
     query_instruction: str = "为这个句子生成表示以用于检索相关文章："
@@ -56,6 +62,7 @@ class RagV2Config:
             r"G:\tiaozhanbei\Youan-AI-main\youan-multiagent\multi_agent_server\app\RAG\bge-large-zh-v1.5"
         )
         artifacts_dir = project_root / "artifacts"
+        stage2_artifacts_dir = artifacts_dir / "stage2"
         return cls(
             project_root=project_root,
             legacy_rag_dir=legacy_rag_dir,
@@ -63,6 +70,9 @@ class RagV2Config:
             model_path=model_path,
             artifacts_dir=artifacts_dir,
             stage1_artifacts_dir=artifacts_dir / "stage1",
+            stage2_artifacts_dir=stage2_artifacts_dir,
+            qdrant_path=artifacts_dir / "qdrant_local",
+            registry_db_path=stage2_artifacts_dir / "document_registry.sqlite3",
             experiments_dir=project_root / "experiments",
         )
 
@@ -78,6 +88,8 @@ class RagV2Config:
     def ensure_output_dirs(self) -> None:
         self.artifacts_dir.mkdir(parents=True, exist_ok=True)
         self.stage1_artifacts_dir.mkdir(parents=True, exist_ok=True)
+        self.stage2_artifacts_dir.mkdir(parents=True, exist_ok=True)
+        self.qdrant_path.mkdir(parents=True, exist_ok=True)
 
 
 def get_config() -> RagV2Config:

@@ -1,4 +1,4 @@
-﻿__pycache__/
+__pycache__/
 *.pyc
 .pytest_cache/
 .venv/
@@ -17,3 +17,12 @@ artifacts/stage1/faiss_build_report_smoke.json
 # generated FAISS index can be rebuilt
 artifacts/stage1/faiss_index.index
 artifacts/stage1/faiss_build_report.json
+
+# Qdrant local database
+artifacts/qdrant_local/
+
+# pytest temp
+artifacts/pytest_tmp/
+
+# archive
+stage1_artifacts.tar.gz

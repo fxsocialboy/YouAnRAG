@@ -1,0 +1,322 @@
+{
+  "mode": "scan-only",
+  "source_file_filter": null,
+  "changes": {
+    "added": 51,
+    "modified": 0,
+    "deleted": 0,
+    "unchanged": 0,
+    "total_changed": 51
+  },
+  "added": [
+    {
+      "source_file": "2015年中国大陆地震灾害损失述评.md",
+      "relative_path": "2015年中国大陆地震灾害损失述评.md",
+      "content_hash": "ce46fcb2a577812a2a9aa98a8e6f7969882d4d1411aad7ef25b73adfba9e6258",
+      "size_bytes": 27778
+    },
+    {
+      "source_file": "2016年中国大陆地震灾害损失述评.md",
+      "relative_path": "2016年中国大陆地震灾害损失述评.md",
+      "content_hash": "5a8e88426b5765cf6c6a94ffd027f179380a53974e8f1c038d8c0918f09900e4",
+      "size_bytes": 17913
+    },
+    {
+      "source_file": "2022 年四川省地质灾害成功避险典型案例.md",
+      "relative_path": "2022 年四川省地质灾害成功避险典型案例.md",
+      "content_hash": "a32312ed6f090e23374babc7052d53ee5176dfc2742f64dca0f7a631a8cc958b",
+      "size_bytes": 23012
+    },
+    {
+      "source_file": "China’s PoliciesandActionsAddressingClimateChange2024Annual Report.md",
+      "relative_path": "China’s PoliciesandActionsAddressingClimateChange2024Annual Report.md",
+      "content_hash": "a73f851dd5cbb4d67fe27e8e4d85a1344738dfbdee931a4cdaa2e6945e9069f1",
+      "size_bytes": 79952
+    },
+    {
+      "source_file": "中国地震局公开决算书.md",
+      "relative_path": "中国地震局公开决算书.md",
+      "content_hash": "31bc518cd657467b711fd11455f6f62cfb1207cfe4eb3ef0f3acd8605aa32ee2",
+      "size_bytes": 69706
+    },
+    {
+      "source_file": "中国应对气候变化的政策与行动2024年度报告.md",
+      "relative_path": "中国应对气候变化的政策与行动2024年度报告.md",
+      "content_hash": "794abaff18b008ce22540288a57930c5fc10db06a7ea7fde3966fb6d5e83b431",
+      "size_bytes": 51257
+    },
+    {
+      "source_file": "中国气候风险.md",
+      "relative_path": "中国气候风险.md",
+      "content_hash": "dafc0b6538e273d0a42dd95a87be672d633df9b5e007eb8f3e351e8bb90e46b5",
+      "size_bytes": 76955
+    },
+    {
+      "source_file": "中国适应气候变化进展报告（2023）.md",
+      "relative_path": "中国适应气候变化进展报告（2023）.md",
+      "content_hash": "2caee8675819ccd0f7e5e360a6b7739dd1239f17b756d28afdc7fe78d53bd03b",
+      "size_bytes": 68215
+    },
+    {
+      "source_file": "云南省农村乡镇地震灾害房屋损失评估.md",
+      "relative_path": "云南省农村乡镇地震灾害房屋损失评估.md",
+      "content_hash": "718777392ef1cd04580740d74cc0bd7bb93fe3bfe2912aba412fe89c007075b0",
+      "size_bytes": 39909
+    },
+    {
+      "source_file": "云南省第一次全国自然灾害综合风险普查实施方案.md",
+      "relative_path": "云南省第一次全国自然灾害综合风险普查实施方案.md",
+      "content_hash": "7e091d8ff947927b07f1a0ad7b65b04c53d8548dba28470ff4c083f392766516",
+      "size_bytes": 445879
+    },
+    {
+      "source_file": "全国山洪灾害防治规划简要报告.md",
+      "relative_path": "全国山洪灾害防治规划简要报告.md",
+      "content_hash": "d577994f5e9d764d63fced3b32b57bee2c20847d091c6c8860f5392f49997bbd",
+      "size_bytes": 151096
+    },
+    {
+      "source_file": "北京市应急管理局.md",
+      "relative_path": "北京市应急管理局.md",
+      "content_hash": "fc1d15210cb8d3bdd2801a9e330c414cb6fd0e32e075b2336e90397119778b13",
+      "size_bytes": 34810
+    },
+    {
+      "source_file": "北京自然灾害调查评估规范.md",
+      "relative_path": "北京自然灾害调查评估规范.md",
+      "content_hash": "6697252c7565e92adb1c7899a25ca96b2eb7129aeb03d8b638d17154d295b3b1",
+      "size_bytes": 39043
+    },
+    {
+      "source_file": "吉林省自然灾害救助应急预案.md",
+      "relative_path": "吉林省自然灾害救助应急预案.md",
+      "content_hash": "2fdd7cc42d6ec75947217055d0938a7ffea31756ed6a780a4a42198ed3406bcb",
+      "size_bytes": 48869
+    },
+    {
+      "source_file": "四川地震灾害风险评估与区划技术规范.md",
+      "relative_path": "四川地震灾害风险评估与区划技术规范.md",
+      "content_hash": "c6f3f1aab02292918368a6edaf69b4db29bb3aa6119b6849fa75a18c867ab492",
+      "size_bytes": 61142
+    },
+    {
+      "source_file": "国务院办公厅关于我国对国外发⽣ 破坏性⼤地震作出快速反应问题的通知.md",
+      "relative_path": "国务院办公厅关于我国对国外发⽣ 破坏性⼤地震作出快速反应问题的通知.md",
+      "content_hash": "3b159648f8da753f912258f875426c42d7017bc0a3f691335dc048e965a2651d",
+      "size_bytes": 2981
+    },
+    {
+      "source_file": "国务院办公厅印发关于地震灾区 恢复⽣产指导意⻅的通知.md",
+      "relative_path": "国务院办公厅印发关于地震灾区 恢复⽣产指导意⻅的通知.md",
+      "content_hash": "63ecb734c47ecb7368dcd58fe041d426061049fdc0056b86f9e5dd6e466fe6d4",
+      "size_bytes": 12761
+    },
+    {
+      "source_file": "国务院办公厅转发国家地震局 关于⼀九九⼆年及未来⼏年地震趋势 和防震减灾⼯作意⻅报告的通知.md",
+      "relative_path": "国务院办公厅转发国家地震局 关于⼀九九⼆年及未来⼏年地震趋势 和防震减灾⼯作意⻅报告的通知.md",
+      "content_hash": "0ab14a988dd5ee5c8f7f81707d96c1462dc4ba0d0369c204037110706285d4a7",
+      "size_bytes": 9631
+    },
+    {
+      "source_file": "国家地震科学数据.md",
+      "relative_path": "国家地震科学数据.md",
+      "content_hash": "19c3ec399494e6c93ca105a2efdf4dfcf75a861394d3a4d88c955419a557cfa1",
+      "size_bytes": 55166
+    },
+    {
+      "source_file": "国家气象灾害应急预案-2.md",
+      "relative_path": "国家气象灾害应急预案-2.md",
+      "content_hash": "c648bb212801a2c0e654d8883ca044fe3cf718b554e88339decd21fea5e73843",
+      "size_bytes": 42953
+    },
+    {
+      "source_file": "国家气象灾害应急预案.md",
+      "relative_path": "国家气象灾害应急预案.md",
+      "content_hash": "42fdb37c6298a4153d3a8cf963b60584eb8b1094db4faabfcfb6002775b5ecc2",
+      "size_bytes": 35405
+    },
+    {
+      "source_file": "国家综合防灾减灾.md",
+      "relative_path": "国家综合防灾减灾.md",
+      "content_hash": "7903dbff1eb1cd8642e1138a19944af17b91b3b6836096b8aeaee576fc0347a6",
+      "size_bytes": 158307
+    },
+    {
+      "source_file": "地震灾害损失评估与遥感技术现状和展望_NormalPdf.md",
+      "relative_path": "地震灾害损失评估与遥感技术现状和展望_NormalPdf.md",
+      "content_hash": "0e816e9f67390c061982ba8b54c2f3f8a20bf48c04310e2d8e4302f50b452a94",
+      "size_bytes": 124916
+    },
+    {
+      "source_file": "基于历史案例的自然灾害灾情评估方法研.md",
+      "relative_path": "基于历史案例的自然灾害灾情评估方法研.md",
+      "content_hash": "64307c7333b6e61dca33756867707fa2bb8b6334d09e1680a64255a5e290cb64",
+      "size_bytes": 38076
+    },
+    {
+      "source_file": "天津市第一次全国自然灾害综合风险普查公报汇编.md",
+      "relative_path": "天津市第一次全国自然灾害综合风险普查公报汇编.md",
+      "content_hash": "92fc00853da30b5ab41266905cc47ccb5a9cf9a186885e558a0cdbf8bbb305a8",
+      "size_bytes": 50517
+    },
+    {
+      "source_file": "山地城市内涝与山洪灾害综合防御探讨.md",
+      "relative_path": "山地城市内涝与山洪灾害综合防御探讨.md",
+      "content_hash": "4c57bb647aff2e488adfce3b566d3fbd03e43bed2a07c588337317ff2d021aaf",
+      "size_bytes": 29464
+    },
+    {
+      "source_file": "干线公路灾害防治工程典型案例.md",
+      "relative_path": "干线公路灾害防治工程典型案例.md",
+      "content_hash": "ff656f0f324849a7f43aad60e3868a8b000fb5c122035fc6c6a235253c1a4039",
+      "size_bytes": 24238
+    },
+    {
+      "source_file": "广东省深圳市宝安区航城九围片区区域 地质灾害危险性评估报告.md",
+      "relative_path": "广东省深圳市宝安区航城九围片区区域 地质灾害危险性评估报告.md",
+      "content_hash": "f9d029df10a4385ab1e689cee6e574076e95063028eb95545d83fa4e57952a24",
+      "size_bytes": 216749
+    },
+    {
+      "source_file": "广东省自然灾害救助应急预案.md",
+      "relative_path": "广东省自然灾害救助应急预案.md",
+      "content_hash": "bbba779ae69b8b982236188e2f79374cefeceabdcb9ab04683c21f6cf3c6c8c3",
+      "size_bytes": 60668
+    },
+    {
+      "source_file": "河南郑州“7·20”特大暴雨灾害调查报告.md",
+      "relative_path": "河南郑州“7·20”特大暴雨灾害调查报告.md",
+      "content_hash": "dd8edfc4d710861ba1daa0cfb50ff217ecf014e3e61e1da0c7515bb1698473e2",
+      "size_bytes": 67396
+    },
+    {
+      "source_file": "河南郑州等地特大暴雨洪涝灾害灾后恢复重建总体规划.md",
+      "relative_path": "河南郑州等地特大暴雨洪涝灾害灾后恢复重建总体规划.md",
+      "content_hash": "19f382f319d5835d14456c2f8654c7b98e0a19648a4a1e7e8371a90408e8044a",
+      "size_bytes": 40096
+    },
+    {
+      "source_file": "洪涝突发险情灾情报告暂行规定.md",
+      "relative_path": "洪涝突发险情灾情报告暂行规定.md",
+      "content_hash": "8b76b0e5afec6a38e6719741c12afc8d74ca3b67fd9a2976db0ef54c44fea4ab",
+      "size_bytes": 8910
+    },
+    {
+      "source_file": "深圳市气象灾害应急预案.md",
+      "relative_path": "深圳市气象灾害应急预案.md",
+      "content_hash": "d9ae1018be1a67670e1c11a3071c0121e25af269a5b44448faf914d7f54a128a",
+      "size_bytes": 159520
+    },
+    {
+      "source_file": "湖北省自然灾害救助应急预案的通知.md",
+      "relative_path": "湖北省自然灾害救助应急预案的通知.md",
+      "content_hash": "ad1e85858b47719bd7e31d254bba6930c3f9ea257a1899abe53ee4cea91e20dd",
+      "size_bytes": 156979
+    },
+    {
+      "source_file": "湖北省重大事故隐患专项排查整治 2023 行动工作简报.md",
+      "relative_path": "湖北省重大事故隐患专项排查整治 2023 行动工作简报.md",
+      "content_hash": "0a50ffaa83a634b795b32bddf6df5932171be774e091544e53f4fc66e9e4949e",
+      "size_bytes": 16554
+    },
+    {
+      "source_file": "湖北省重大事故隐患专项排查整治.md",
+      "relative_path": "湖北省重大事故隐患专项排查整治.md",
+      "content_hash": "0a50ffaa83a634b795b32bddf6df5932171be774e091544e53f4fc66e9e4949e",
+      "size_bytes": 16554
+    },
+    {
+      "source_file": "灾害风险管理的中国经验.md",
+      "relative_path": "灾害风险管理的中国经验.md",
+      "content_hash": "58e275791879d4d761e1303e1aa7050ec6db65406f42de449f95e14cb3826ee0",
+      "size_bytes": 88281
+    },
+    {
+      "source_file": "甘肃省第一次全国自然灾害综合风险普查公报汇编.md",
+      "relative_path": "甘肃省第一次全国自然灾害综合风险普查公报汇编.md",
+      "content_hash": "4f633ca49161613fc92e17f814330ffb101a6cee7cb9ce3926a5a2a341a91475",
+      "size_bytes": 50810
+    },
+    {
+      "source_file": "第一次全国自然灾害综合风险普查公报.md",
+      "relative_path": "第一次全国自然灾害综合风险普查公报.md",
+      "content_hash": "a6954feea0c6ec25b405b2999a2bc0cd58d47518305f16a3ac0a5c32910a0e3c",
+      "size_bytes": 47243
+    },
+    {
+      "source_file": "自然灾害情况统计调查制度.md",
+      "relative_path": "自然灾害情况统计调查制度.md",
+      "content_hash": "7004028bfe331113bc63c5a8aff9913d816aa2d8f69847511aa76cd41d126fd4",
+      "size_bytes": 114755
+    },
+    {
+      "source_file": "自然灾害灾情信息化编码和整合规则.md",
+      "relative_path": "自然灾害灾情信息化编码和整合规则.md",
+      "content_hash": "0e3eb4b48c1ffbf8b3d7294702af15705c9b9d6dbb9e9a8254233f974e20a758",
+      "size_bytes": 43803
+    },
+    {
+      "source_file": "自然灾害灾情统计 第 4 部分：统计报表.md",
+      "relative_path": "自然灾害灾情统计 第 4 部分：统计报表.md",
+      "content_hash": "9e5740d566a2ec063e60282e5a072f67a59b888f5529ff5a4aa12a79daef80ec",
+      "size_bytes": 30468
+    },
+    {
+      "source_file": "苏州市自然灾害救助应急预案.md",
+      "relative_path": "苏州市自然灾害救助应急预案.md",
+      "content_hash": "f4f2217eb523446edd3ff4cb79ef9a62e0a415405cb20ff21fe8eec0285ffa16",
+      "size_bytes": 41769
+    },
+    {
+      "source_file": "蓝山县“十四五”地质灾害防治规划.md",
+      "relative_path": "蓝山县“十四五”地质灾害防治规划.md",
+      "content_hash": "729d38f01d07e84d00cceb050835bbb5e59f6aba4422e591980cce01f4f9a941",
+      "size_bytes": 93859
+    },
+    {
+      "source_file": "衡阳市人民政府办公室关于印发《衡阳市防汛抗旱应急预案》的通知.md",
+      "relative_path": "衡阳市人民政府办公室关于印发《衡阳市防汛抗旱应急预案》的通知.md",
+      "content_hash": "e4c0dacf7e820da1d0f002769ddd0ed8fb0044ba840ceab1790083ce569bf10a",
+      "size_bytes": 131430
+    },
+    {
+      "source_file": "西藏自治区1949—2020年历史地震灾害调查概要.md",
+      "relative_path": "西藏自治区1949—2020年历史地震灾害调查概要.md",
+      "content_hash": "25e38e6c8e42310e3eb942e8aa19da17521d1b711a1b3d003d721c5f894ddf0f",
+      "size_bytes": 42776
+    },
+    {
+      "source_file": "近年城市洪涝致灾的水动力学机理分析与减灾对策研究.md",
+      "relative_path": "近年城市洪涝致灾的水动力学机理分析与减灾对策研究.md",
+      "content_hash": "d37503d2e23c88a7f9b4cf5e152b6c82322a7937d9d6a9fa72a78db73cc2247a",
+      "size_bytes": 28002
+    },
+    {
+      "source_file": "重大地质灾害事件与成功避险.md",
+      "relative_path": "重大地质灾害事件与成功避险.md",
+      "content_hash": "0c1124e18503c015620262d93109b492ae629eb418df0a2273c2bddc44138126",
+      "size_bytes": 64960
+    },
+    {
+      "source_file": "镇坪县地震灾害风险评估报告.md",
+      "relative_path": "镇坪县地震灾害风险评估报告.md",
+      "content_hash": "4dbfc95b8d6c2d73c119f1667227e1042e38cf6cd180d660937780ec7e21ad7a",
+      "size_bytes": 46350
+    },
+    {
+      "source_file": "陕西省.md",
+      "relative_path": "陕西省.md",
+      "content_hash": "d9a844fcf50094f7ca477ae0c714a9d5423d268709394ea57a449f9ccdf71723",
+      "size_bytes": 48170
+    },
+    {
+      "source_file": "陕西省地震灾害.md",
+      "relative_path": "陕西省地震灾害.md",
+      "content_hash": "2de4ac42b3f0d2937dbc4b7182274331e472ef0f3b3709a99ee7b8572865e052",
+      "size_bytes": 52543
+    }
+  ],
+  "modified": [],
+  "deleted": [],
+  "unchanged": []
+}

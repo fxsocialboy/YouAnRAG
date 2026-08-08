@@ -36,7 +36,8 @@ class BGEEmbedder:
         model_path = str(config.model_path)
         self.tokenizer = AutoTokenizer.from_pretrained(model_path)
         dtype = _torch_dtype(config.dtype)
-        self.model = AutoModel.from_pretrained(model_path, device_map=config.device, dtype=dtype)
+        self.model = AutoModel.from_pretrained(model_path, torch_dtype=dtype)
+        self.model.to(config.device)
         self.model.eval()
 
     @property

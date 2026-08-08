@@ -1,0 +1,22 @@
+{
+  "mode": "sync",
+  "source_file_filter": "test_sync.md",
+  "changes": {
+    "added": 0,
+    "modified": 1,
+    "deleted": 0,
+    "unchanged": 0,
+    "total_changed": 1
+  },
+  "added": [],
+  "modified": [
+    {
+      "source_file": "test_sync.md",
+      "chunks": 1,
+      "replace_existing": true
+    }
+  ],
+  "deleted": [],
+  "qdrant_count": 6270,
+  "elapsed_seconds": 0.42
+}
