@@ -12,12 +12,23 @@ def test_default_config_resolves_from_file_location_not_cwd():
     assert cfg.source_markdown_dir == cfg.legacy_rag_dir / "final_mds"
     assert cfg.stage1_artifacts_dir == cfg.project_root / "artifacts" / "stage1"
     assert cfg.stage2_artifacts_dir == cfg.project_root / "artifacts" / "stage2"
+    assert cfg.stage4_artifacts_dir == cfg.project_root / "artifacts" / "stage4"
     assert cfg.qdrant_path == cfg.project_root / "artifacts" / "qdrant_local"
     assert cfg.registry_db_path == cfg.stage2_artifacts_dir / "document_registry.sqlite3"
     assert cfg.qdrant_mode == "local"
     assert cfg.qdrant_url is None
     assert cfg.qdrant_collection == "youan_rag_stage2"
     assert cfg.experiments_dir == cfg.project_root / "experiments"
+    assert cfg.reranker_model_name == "BAAI/bge-reranker-base"
+    assert cfg.reranker_model_path is None
+    assert cfg.reranker_device == "cpu"
+    assert cfg.reranker_batch_size == 16
+    assert cfg.reranker_max_length == 512
+    assert cfg.enable_reranker is False
+    assert cfg.enable_mmr is False
+    assert cfg.mmr_lambda == 0.7
+    assert cfg.mmr_pre_candidates == 20
+    assert cfg.mmr_top_k == 10
 
 
 def test_default_config_existing_required_paths():
@@ -35,6 +46,8 @@ def test_get_config_creates_artifacts_dirs():
     assert cfg.stage1_artifacts_dir.is_dir()
     assert cfg.stage2_artifacts_dir.exists()
     assert cfg.stage2_artifacts_dir.is_dir()
+    assert cfg.stage4_artifacts_dir.exists()
+    assert cfg.stage4_artifacts_dir.is_dir()
     assert cfg.qdrant_path.exists()
     assert cfg.qdrant_path.is_dir()
 

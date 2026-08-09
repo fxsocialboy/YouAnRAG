@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from rag_v2.retrieval.bm25_index import BM25SearchHit
-from rag_v2.retrieval.hybrid_searcher import HybridSearcher, reciprocal_rank_score
+from rag_v2.retrieval.hybrid_searcher import HybridSearcher, HybridSearchResult, reciprocal_rank_score
 from rag_v2.retrieval.qdrant_searcher import Stage2SearchResult
 
 
@@ -104,3 +104,40 @@ def test_hybrid_invoke_returns_text_list():
     contents = searcher.invoke("query", top_k=2)
     assert len(contents) == 2
     assert any("dense content" in text or "sparse content" in text for text in contents)
+
+
+
+def test_hybrid_result_stage4_fields_are_optional_and_serialized():
+    result = HybridSearchResult(
+        chunk_id="stage4.md::0",
+        content="content",
+        source_file="stage4.md",
+        chunk_index=0,
+        section_path_text="Section",
+        dense_score=0.8,
+        sparse_score=None,
+        fusion_score=0.016,
+        rank=1,
+        metadata={},
+    )
+
+    payload = result.to_dict()
+    assert result.rerank_score is None
+    assert result.mmr_score is None
+    assert result.stage4_rank is None
+    assert payload["rerank_score"] is None
+    assert payload["mmr_score"] is None
+    assert payload["stage4_rank"] is None
+
+
+def test_hybrid_search_outputs_stage4_fields_without_changing_rrf_order():
+    dense = FakeDenseSearcher([dense_hit("a", 1, 0.9), dense_hit("b", 2, 0.8)])
+    sparse = FakeSparseIndex([])
+    searcher = HybridSearcher(dense_searcher=dense, sparse_index=sparse, rrf_k=60)
+
+    results = searcher.search("query", top_k=2)
+    assert [item.chunk_id for item in results] == ["a", "b"]
+    assert all(item.rerank_score is None for item in results)
+    assert all(item.mmr_score is None for item in results)
+    assert all(item.stage4_rank is None for item in results)
+    assert "rerank_score" in results[0].to_dict()

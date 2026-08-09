@@ -78,7 +78,7 @@ class ContextPacker:
             raise ValueError("token_budget must be positive")
         expanded = self._expand_candidates(candidates, same_section_extra=same_section_extra)
         merged = self._merge_adjacent(expanded)
-        ranked = sorted(merged, key=lambda item: (-float(item["fusion_score"]), item["source_file"], item["chunk_indexes"][0]))
+        ranked = sorted(merged, key=lambda item: (-float(item["sort_score"]), item["source_file"], item["chunk_indexes"][0]))
 
         selected: list[ContextChunk] = []
         total_tokens = 0
@@ -129,33 +129,57 @@ class ContextPacker:
     ) -> list[dict[str, Any]]:
         expanded: dict[str, dict[str, Any]] = {}
         for candidate in candidates:
-            self._add_row(expanded, candidate.chunk_id, candidate.fusion_score)
+            self._add_row(expanded, candidate.chunk_id, candidate.fusion_score, candidate.rerank_score, candidate.mmr_score)
             self._add_row(
                 expanded,
                 self._neighbor_chunk_id(candidate.source_file, candidate.chunk_index - 1, candidate.section_path_text),
                 candidate.fusion_score * 0.97,
+                _decay_optional_score(candidate.rerank_score, 0.97),
+                _decay_optional_score(candidate.mmr_score, 0.97),
             )
             self._add_row(
                 expanded,
                 self._neighbor_chunk_id(candidate.source_file, candidate.chunk_index + 1, candidate.section_path_text),
                 candidate.fusion_score * 0.97,
+                _decay_optional_score(candidate.rerank_score, 0.97),
+                _decay_optional_score(candidate.mmr_score, 0.97),
             )
 
             if same_section_extra > 0:
                 same_section_rows = self._same_section_neighbors(candidate.source_file, candidate.chunk_id, candidate.section_path_text)
                 for row in same_section_rows[:same_section_extra]:
-                    self._add_row(expanded, str(row.get("chunk_id")), candidate.fusion_score * 0.94)
+                    self._add_row(
+                        expanded,
+                        str(row.get("chunk_id")),
+                        candidate.fusion_score * 0.94,
+                        _decay_optional_score(candidate.rerank_score, 0.94),
+                        _decay_optional_score(candidate.mmr_score, 0.94),
+                    )
         return list(expanded.values())
 
-    def _add_row(self, expanded: dict[str, dict[str, Any]], chunk_id: str | None, fusion_score: float) -> None:
+    def _add_row(
+        self,
+        expanded: dict[str, dict[str, Any]],
+        chunk_id: str | None,
+        fusion_score: float,
+        rerank_score: float | None = None,
+        mmr_score: float | None = None,
+    ) -> None:
         if not chunk_id:
             return
         row = self.by_chunk_id.get(chunk_id)
         if not row:
             return
+        sort_score = _stage4_sort_score(fusion_score, rerank_score, mmr_score)
         existing = expanded.get(chunk_id)
         if existing:
             existing["fusion_score"] = max(float(existing["fusion_score"]), float(fusion_score))
+            existing["sort_score"] = max(float(existing["sort_score"]), float(sort_score))
+            existing["rerank_score"] = _max_optional_score(existing.get("rerank_score"), rerank_score)
+            existing["mmr_score"] = _max_optional_score(existing.get("mmr_score"), mmr_score)
+            existing["metadata"]["rerank_score"] = existing["rerank_score"]
+            existing["metadata"]["mmr_score"] = existing["mmr_score"]
+            existing["metadata"]["sort_score"] = existing["sort_score"]
             return
         expanded[chunk_id] = {
             "chunk_id": chunk_id,
@@ -166,9 +190,15 @@ class ContextPacker:
             "content": str(row.get("content", "")),
             "token_count": int(row.get("token_count", 0)),
             "fusion_score": float(fusion_score),
+            "rerank_score": rerank_score,
+            "mmr_score": mmr_score,
+            "sort_score": sort_score,
             "metadata": {
                 "content_hashes": [str(row.get("content_hash", ""))],
                 "content_preview": str(row.get("content", ""))[:160],
+                "rerank_score": rerank_score,
+                "mmr_score": mmr_score,
+                "sort_score": sort_score,
             },
         }
 
@@ -212,5 +242,30 @@ class ContextPacker:
             prev["content"] = f"{prev['content']}\n{row['content']}".strip()
             prev["token_count"] = int(prev["token_count"]) + int(row["token_count"])
             prev["fusion_score"] = max(float(prev["fusion_score"]), float(row["fusion_score"]))
+            prev["sort_score"] = max(float(prev["sort_score"]), float(row["sort_score"]))
+            prev["rerank_score"] = _max_optional_score(prev.get("rerank_score"), row.get("rerank_score"))
+            prev["mmr_score"] = _max_optional_score(prev.get("mmr_score"), row.get("mmr_score"))
             prev["metadata"]["content_hashes"].extend(row["metadata"].get("content_hashes", []))
+            prev["metadata"]["rerank_score"] = prev["rerank_score"]
+            prev["metadata"]["mmr_score"] = prev["mmr_score"]
+            prev["metadata"]["sort_score"] = prev["sort_score"]
         return merged
+
+
+def _stage4_sort_score(fusion_score: float, rerank_score: float | None = None, mmr_score: float | None = None) -> float:
+    if mmr_score is not None:
+        return float(mmr_score)
+    if rerank_score is not None:
+        return float(rerank_score)
+    return float(fusion_score)
+
+
+def _decay_optional_score(score: float | None, decay: float) -> float | None:
+    if score is None:
+        return None
+    return float(score) * decay
+
+
+def _max_optional_score(left: Any, right: Any) -> float | None:
+    values = [float(value) for value in (left, right) if value is not None]
+    return max(values) if values else None

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from rag_v2.retrieval.context_packer import ContextPacker
+from rag_v2.retrieval.context_packer import ContextPacker, _stage4_sort_score
 from rag_v2.retrieval.hybrid_searcher import HybridSearchResult
 
 
@@ -17,7 +17,16 @@ def row(source_file: str, chunk_index: int, section: str, content: str, token_co
     }
 
 
-def candidate(source_file: str, chunk_index: int, section: str, content: str, fusion_score: float) -> HybridSearchResult:
+def candidate(
+    source_file: str,
+    chunk_index: int,
+    section: str,
+    content: str,
+    fusion_score: float,
+    *,
+    rerank_score: float | None = None,
+    mmr_score: float | None = None,
+) -> HybridSearchResult:
     return HybridSearchResult(
         chunk_id=f"{source_file}::{chunk_index}",
         content=content,
@@ -29,6 +38,8 @@ def candidate(source_file: str, chunk_index: int, section: str, content: str, fu
         fusion_score=fusion_score,
         rank=1,
         metadata={},
+        rerank_score=rerank_score,
+        mmr_score=mmr_score,
     )
 
 
@@ -112,3 +123,88 @@ def test_context_packer_citation_ids_are_stable():
         token_budget=30,
     )
     assert [item.citation_id for item in result.evidence_chunks] == ["[S1]", "[S2]"]
+
+
+
+def test_stage4_sort_score_priority_is_mmr_then_rerank_then_fusion():
+    assert _stage4_sort_score(0.1, rerank_score=0.8, mmr_score=0.3) == 0.3
+    assert _stage4_sort_score(0.1, rerank_score=0.8, mmr_score=None) == 0.8
+    assert _stage4_sort_score(0.1, rerank_score=None, mmr_score=None) == 0.1
+
+
+def test_context_packer_keeps_stage3_fusion_order_when_stage4_scores_absent():
+    metadata = [
+        row("doc1.md", 0, "A", "alpha", 10),
+        row("doc2.md", 0, "B", "beta", 10),
+    ]
+    packer = ContextPacker(metadata)
+    result = packer.pack(
+        [
+            candidate("doc1.md", 0, "A", "alpha", 0.1),
+            candidate("doc2.md", 0, "B", "beta", 0.2),
+        ],
+        token_budget=30,
+        same_section_extra=0,
+    )
+    assert [item.source_file for item in result.evidence_chunks] == ["doc2.md", "doc1.md"]
+    assert result.evidence_chunks[0].metadata["sort_score"] == 0.2
+
+
+def test_context_packer_uses_rerank_score_for_stage4_order():
+    metadata = [
+        row("doc1.md", 0, "A", "alpha", 10),
+        row("doc2.md", 0, "B", "beta", 10),
+    ]
+    packer = ContextPacker(metadata)
+    result = packer.pack(
+        [
+            candidate("doc1.md", 0, "A", "alpha", 0.1, rerank_score=0.9),
+            candidate("doc2.md", 0, "B", "beta", 0.2, rerank_score=0.3),
+        ],
+        token_budget=30,
+        same_section_extra=0,
+    )
+    assert [item.source_file for item in result.evidence_chunks] == ["doc1.md", "doc2.md"]
+    assert result.evidence_chunks[0].metadata["rerank_score"] == 0.9
+    assert result.evidence_chunks[0].metadata["sort_score"] == 0.9
+
+
+def test_context_packer_uses_mmr_score_before_rerank_score_for_stage4_order():
+    metadata = [
+        row("doc1.md", 0, "A", "alpha", 10),
+        row("doc2.md", 0, "B", "beta", 10),
+    ]
+    packer = ContextPacker(metadata)
+    result = packer.pack(
+        [
+            candidate("doc1.md", 0, "A", "alpha", 0.1, rerank_score=0.9, mmr_score=0.2),
+            candidate("doc2.md", 0, "B", "beta", 0.2, rerank_score=0.3, mmr_score=0.8),
+        ],
+        token_budget=30,
+        same_section_extra=0,
+    )
+    assert [item.source_file for item in result.evidence_chunks] == ["doc2.md", "doc1.md"]
+    assert result.evidence_chunks[0].metadata["mmr_score"] == 0.8
+    assert result.evidence_chunks[0].metadata["sort_score"] == 0.8
+
+
+def test_context_packer_preserves_stage4_scores_when_merging_adjacent_chunks():
+    metadata = [
+        row("doc.md", 0, "A", "first", 8),
+        row("doc.md", 1, "A", "second", 9),
+    ]
+    packer = ContextPacker(metadata)
+    result = packer.pack(
+        [
+            candidate("doc.md", 0, "A", "first", 0.1, rerank_score=0.7, mmr_score=0.6),
+            candidate("doc.md", 1, "A", "second", 0.2, rerank_score=0.5, mmr_score=0.4),
+        ],
+        token_budget=50,
+        same_section_extra=0,
+    )
+    assert len(result.evidence_chunks) == 1
+    chunk = result.evidence_chunks[0]
+    assert chunk.chunk_indexes == [0, 1]
+    assert chunk.metadata["rerank_score"] == 0.7
+    assert chunk.metadata["mmr_score"] == 0.6
+    assert chunk.metadata["sort_score"] == 0.6

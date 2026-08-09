@@ -29,6 +29,9 @@ class HybridSearchResult:
     fusion_score: float
     rank: int
     metadata: dict[str, Any]
+    rerank_score: float | None = None
+    mmr_score: float | None = None
+    stage4_rank: int | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -41,6 +44,9 @@ class HybridSearchResult:
             "sparse_score": self.sparse_score,
             "fusion_score": self.fusion_score,
             "rank": self.rank,
+            "rerank_score": self.rerank_score,
+            "mmr_score": self.mmr_score,
+            "stage4_rank": self.stage4_rank,
             "metadata": self.metadata,
         }
 
