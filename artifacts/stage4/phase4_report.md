@@ -39,10 +39,10 @@ G:\tiaozhanbei\newrag\experiments\stage4_rerank_eval.json
   "rerank_top_k": 30,
   "mmr_pre_candidates": 20,
   "mmr_top_k": 10,
-  "fake_reranker": true,
-  "fake_mmr": true,
+  "fake_reranker": false,
+  "fake_mmr": false,
   "mmr_lambda": 0.7,
-  "reranker_model_ref": "BAAI/bge-reranker-base"
+  "reranker_model_ref": "models/bge-reranker-base"
 }
 ```
 
@@ -59,19 +59,19 @@ hybrid + rerank + MMR
 
 | Variant | doc_recall@10 | chunk_recall@10 | doc_MRR@10 | chunk_MRR@10 | doc_MRR_delta | avg_doc_rank_shift | avg_latency_ms |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| hybrid | 1.0 | 0.0 | 0.375 | 0.0 | 0.0 | 0.0 | 471.01 |
-| hybrid + rerank | 1.0 | 0.0 | 0.375 | 0.0 | 0.0 | 0.0 | 422.18 |
-| hybrid + MMR | 1.0 | 0.0 | 0.375 | 0.0 | 0.0 | 0.0 | 459.19 |
-| hybrid + rerank + MMR | 1.0 | 0.0 | 0.375 | 0.0 | 0.0 | 0.0 | 373.49 |
+| hybrid | 1.0 | 0.7429 | 0.9238 | 0.5662 | 0.0 | 0.0 | 196.52 |
+| hybrid + rerank | 1.0 | 0.6857 | 0.9629 | 0.4398 | 0.0391 | -0.1429 | 303.68 |
+| hybrid + MMR | 1.0 | 0.7429 | 0.931 | 0.5638 | 0.0072 | -0.0857 | 321.38 |
+| hybrid + rerank + MMR | 1.0 | 0.6857 | 0.9629 | 0.4448 | 0.0391 | -0.1429 | 399.21 |
 
 ## 5. 关键词 / 条款 query 结果
 
 | Variant | doc_recall@10 | chunk_recall@10 | doc_MRR@10 | chunk_MRR@10 | doc_MRR_delta | avg_doc_rank_shift | avg_latency_ms |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| hybrid | 1.0 | 1.0 | 1.0 | 0.5833 | 0.0 | 0.0 | 530.12 |
-| hybrid + rerank | 1.0 | 1.0 | 1.0 | 0.5833 | 0.0 | 0.0 | 472.1 |
-| hybrid + MMR | 1.0 | 1.0 | 1.0 | 0.5833 | 0.0 | 0.0 | 503.87 |
-| hybrid + rerank + MMR | 1.0 | 1.0 | 1.0 | 0.5833 | 0.0 | 0.0 | 305.56 |
+| hybrid | 1.0 | 0.9333 | 1.0 | 0.7583 | 0.0 | 0.0 | 154.68 |
+| hybrid + rerank | 1.0 | 0.7333 | 0.9222 | 0.39 | -0.0778 | 0.2 | 243.23 |
+| hybrid + MMR | 1.0 | 0.9333 | 1.0 | 0.7583 | 0.0 | 0.0 | 324.36 |
+| hybrid + rerank + MMR | 1.0 | 0.7333 | 0.9222 | 0.4206 | -0.0778 | 0.2 | 387.96 |
 
 ## 6. 结果解读
 
@@ -84,7 +84,9 @@ hybrid + rerank + MMR
 
 ## 7. 代表性 rank 前移样例
 
-- 当前结果中没有出现明显 rank 前移样例；如果是 fake reranker，这是正常现象。
+- `r003` / `四川山区群众发现滑坡迹象后如何实现提前避险？`：doc_rank_shift=-2，chunk_rank_shift=None
+- `r001` / `如果想了解某年大陆地震造成的总体损失，应该查哪类资料？`：doc_rank_shift=-1，chunk_rank_shift=None
+- `r002` / `2016年大陆5级以上地震和灾害损失情况在哪里能看到？`：doc_rank_shift=-1，chunk_rank_shift=-1
 
 
 ## 8. 阶段四产物
