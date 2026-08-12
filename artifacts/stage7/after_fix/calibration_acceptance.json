@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "metrics": {
+    "row_count": 51,
+    "run_success_rate": 0.9804,
+    "ood_fallback_accuracy": 1.0,
+    "in_domain_answer_rate": 0.9677,
+    "labeled_false_fallback_recovered": 4,
+    "unknown_citation_count": 0
+  },
+  "checks": {
+    "row_count_is_51": true,
+    "run_success_rate_ge_095": true,
+    "ood_fallback_accuracy_ge_080": true,
+    "in_domain_answer_rate_ge_085": true,
+    "four_labeled_false_fallbacks_recovered": true,
+    "unknown_citation_count_is_zero": true
+  }
+}

@@ -1,0 +1,898 @@
+{
+  "stage": "7.3",
+  "rag_backend": "v2",
+  "real_retrieval": true,
+  "real_llm": true,
+  "case_count": 3,
+  "cases": [
+    {
+      "scenario": "深圳市气象灾害Ⅳ级响应由哪个机构决定启动？请给出简要响应方案。",
+      "plan": "# 深圳市气象灾害Ⅳ级应急响应启动方案（优化版）\n\n\n## 一、启动决定机构\n\n根据[S1]，Ⅳ级应急响应（一般）的启动决定机构为**市气象灾害指挥部**，由市气象灾害指挥部决定是否启动Ⅳ级应急响应，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发启动文件。\n\n\n## 二、启动条件\n\n根据[S1]，当气象灾害程度达到或可能达到以下情形之一时，启动会商机制并考虑启动Ⅳ级响应：\n\n1. 市气象局（台）在全市范围内发布气象灾害Ⅳ级预警信息，或气象灾害影响程度达到市级Ⅳ级应急响应启动标准时；\n2. 经对气象灾害的影响及趋势会商研判，确定有必要启动Ⅳ级响应。\n\n\n## 三、启动流程\n\n### 第一步：监测预警与信息汇集（前置环节）\n\n市气象局（台）负责提供实时气象监测数据和预报预警信息，通过气象灾害预警信息发布平台向市气象灾害指挥部办公室报送。信息汇集渠道包括：气象灾害预警信息发布平台、应急值守电话、政务值班系统等。\n\n### 第二步：启动会商机制（限时完成）\n\n市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，由**市气象灾害指挥部办公室主任**主持会商[S1]。\n\n**时限要求：** 气象灾害预警发布后**2小时内**必须完成首次会商并形成评估意见；对特别紧急情况（如台风、暴雨红色预警），应在**1小时内**完成首次会商。会商结束后**1小时内**须形成是否启动响应的明确结论。\n\n### 第三步：综合评估研判\n\n会商内容包括但不限于：灾害影响范围、持续时间、可能造成的损失、需调动的应急资源、可能引发的次生灾害风险等。\n\n### 第四步：决定是否启动\n\n市气象灾害指挥部根据会商评估结果，决定是否启动Ⅳ级应急响应[S1]。\n\n### 第五步：签发与发布（限时完成）\n\n决定启动后，由市减灾委办公室和市气象灾害指挥部办公室联合签发启动文件，并对外发布[S1]。\n\n**时限要求：** 决定启动后**30分钟内**完成联合签发，**1小时内**完成对外发布，确保预警信息快速触达相关部门和公众。\n\n\n## 四、响应措施要点（按优先级分层）\n\n### 第一优先级（即时执行）\n\n**首要行动：** 响应启动后，市气象局（台）须在**30分钟内**更新并发布最新预警信息；市减灾委办公室须在**1小时内**向各区、各成员单位发出响应通知，明确值守要求和信息报送要求。\n\n**预警信息发布：** 市气象局（台）按职责发布相应等级预警信号，确保第一时间发出预警，保障公众知情权。\n\n### 第二优先级（同步启动）\n\n**应急值守：** 相关部门进入应急值守状态，加强信息收集与报告，确保信息渠道畅通。\n\n### 第三优先级（视情开展）\n\n**会商研判：** 视灾情发展适时组织续报会商，动态评估灾害趋势。\n\n**信息报送：** 按规定时限向市气象灾害指挥部报送灾情信息。报送应遵循统一格式，明确报送频率和渠道，避免信息过载和拥堵。\n\n\n## 五、次生灾害风险防范\n\n### （一）次生灾害风险防范\n\nⅣ级响应启动后，应同步提醒自然资源、水务、住建、交通等部门关注因气象灾害可能引发的地质灾害、城市内涝、道路中断、建筑损毁等次生风险。要求相关部门在响应期间加强巡查监测，发现险情及时报告并先期处置。\n\n### （二）舆情监测与引导\n\n响应启动期间，市气象灾害指挥部办公室应同步开展舆情监测，密切关注社会舆论动态。信息发布内容应包含科学的避险指引，避免引发公众恐慌或不当避险行为。发现重大舆情及时上报并协调回应。\n\n\n## 六、应急保障\n\n### （一）资金保障\n\nⅣ级响应启动后，应急工作经费按现行财政管理体制保障，由相关部门按规定程序申请和拨付。\n\n### （二）物资保障\n\n相关部门应核查应急物资储备情况，明确物资调配渠道和程序，确保响应期间物资供应充足。\n\n### （三）通信保障\n\n应急响应期间，相关部门应确保通信畅通，落实备用通信手段（如卫星电话、对讲机等）和值守电话，防止因灾害导致通信中断。\n\n\n## 七、信息发布与公众告知\n\n响应启动后，通过广播、电视、政务新媒体、手机短信等多渠道向公众发布响应启动信息和防灾避险指引，确保公众知情和配合。发布内容应包括：灾害类型、影响范围、预计持续时间、公众应采取的措施等。\n\n\n## 八、监督检查与总结评估\n\n### （一）监督检查\n\n市气象灾害指挥部办公室对各单位响应执行情况进行跟踪督办，确保各项响应措施落实到位。\n\n### （二）总结评估\n\n响应终止后**7个工作日内**，组织相关部门开展复盘评估，总结经验教训，形成总结报告，为完善应急预案提供依据。\n\n\n## 九、响应升级与终止\n\n- **升级情形**：若灾情持续发展、影响程度加重，达到Ⅲ级及以上响应启动标准时，按[S5][S4][S2]规定的权限和程序升级响应。\n- **响应终止**：经会商确认气象灾害影响明显减弱或结束后，由市气象灾害指挥部按程序宣布终止Ⅳ级应急响应。\n\n\n> **说明**：本方案依据[S1]编制，聚焦Ⅳ级响应的启动机构与流程。关于Ⅳ级响应的具体处置措施和部门分工，参考知识中未提供详细内容，如需完整的Ⅳ级响应行动方案，建议补充查阅预案中Ⅳ级响应的具体措施章节。",
+      "rag_backend": "v2",
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_file": "深圳市气象灾害应急预案.md",
+          "chunk_id": "深圳市气象灾害应急预案.md::48",
+          "section_path": [
+            "3.3.3.2 Ⅳ级应急响应（一般）"
+          ],
+          "rank": 1,
+          "score": 0.7467553677770145,
+          "metadata": {
+            "content_preview": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部办公室主任主持会商。\n由市气象灾害指挥部决定是否启动Ⅳ级应急响应，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发：\n（1）市气象局（台）在全市范围内发布气象灾害Ⅳ级预警信息，或气象灾害影响",
+            "chunk_ids": [
+              "深圳市气象灾害应急预案.md::48"
+            ],
+            "chunk_indexes": [
+              48
+            ],
+            "token_count": 248,
+            "fusion_score": 0.031148,
+            "content_hashes": [
+              "3366dd79f8535e70bd5c0d9cb43fecd8d5074fcf4afd2efc35823c4a6e70676c"
+            ],
+            "rerank_score": null,
+            "mmr_score": null,
+            "sort_score": 0.031148,
+            "dense_score": 0.7467553677770145,
+            "retrieval_confidence": 0.7467553677770145,
+            "confidence_type": "dense",
+            "confidence_state": "retrieval_confident"
+          },
+          "marker": "[S1]",
+          "section_path_text": "3.3.3.2 Ⅳ级应急响应（一般）"
+        },
+        {
+          "citation_id": "S2",
+          "source_file": "深圳市气象灾害应急预案.md",
+          "chunk_id": "深圳市气象灾害应急预案.md::51",
+          "section_path": [
+            "3.3.3.5 Ⅰ级应急响应（特别重大）"
+          ],
+          "rank": 2,
+          "score": 0.6954757373247423,
+          "metadata": {
+            "content_preview": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部总指挥主持会商。\n并报请市人民政府决定是否启动I 级应急响应，由市人民政府向各有关单位发布启动相关应急程序的命令，并报告省人民政府：\n（1）市气象局（台）发布气象灾害 I 级预警信息；\n（2）经",
+            "chunk_ids": [
+              "深圳市气象灾害应急预案.md::51"
+            ],
+            "chunk_indexes": [
+              51
+            ],
+            "token_count": 224,
+            "fusion_score": 0.030645,
+            "content_hashes": [
+              "eea31c39788860cb54257cba9d32906f3dfc6d1454c45b4ff2a57b8d76f53faa"
+            ],
+            "rerank_score": null,
+            "mmr_score": null,
+            "sort_score": 0.030645,
+            "dense_score": 0.6954757373247423,
+            "retrieval_confidence": 0.6954757373247423,
+            "confidence_type": "dense",
+            "confidence_state": "retrieval_confident"
+          },
+          "marker": "[S2]",
+          "section_path_text": "3.3.3.5 Ⅰ级应急响应（特别重大）"
+        },
+        {
+          "citation_id": "S3",
+          "source_file": "深圳市气象灾害应急预案.md",
+          "chunk_id": "深圳市气象灾害应急预案.md::222",
+          "section_path": [
+            "5.4 大雾灾害应急响应"
+          ],
+          "rank": 3,
+          "score": 0.7061830432026923,
+          "metadata": {
+            "content_preview": "受大雾灾害天气影响，市气象局（台）发布关注级预警 信号时，相关区域自动启动关注级响应；\n市气象局（台）发 布Ⅳ级预警信号时，市气象灾害指挥部启动会商机制，及时 对灾害影响及趋势进行综合评估，启动Ⅳ级应急响应。\n启动条件：",
+            "chunk_ids": [
+              "深圳市气象灾害应急预案.md::222"
+            ],
+            "chunk_indexes": [
+              222
+            ],
+            "token_count": 139,
+            "fusion_score": 0.029306,
+            "content_hashes": [
+              "960fdae3b536e61a72127ab517f96228de2090bc9e77f50d6853d1e435e94664"
+            ],
+            "rerank_score": null,
+            "mmr_score": null,
+            "sort_score": 0.029306,
+            "dense_score": 0.7061830432026923,
+            "retrieval_confidence": 0.7061830432026923,
+            "confidence_type": "dense",
+            "confidence_state": "retrieval_confident"
+          },
+          "marker": "[S3]",
+          "section_path_text": "5.4 大雾灾害应急响应"
+        },
+        {
+          "citation_id": "S4",
+          "source_file": "深圳市气象灾害应急预案.md",
+          "chunk_id": "深圳市气象灾害应急预案.md::50",
+          "section_path": [
+            "3.3.3.4 Ⅱ级应急响应（重大）"
+          ],
+          "rank": 4,
+          "score": 0.6834271910168781,
+          "metadata": {
+            "content_preview": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部总指挥或副总指挥主持会商。\n由市气象灾害指挥部总指挥决定是否启动Ⅱ级应急响应，由市气象灾害指挥部签发：\n（1）市气象局（台）发布气象灾害Ⅱ级预警信息；\n（2）经对气象灾害的影响及趋势会商研判，确",
+            "chunk_ids": [
+              "深圳市气象灾害应急预案.md::50"
+            ],
+            "chunk_indexes": [
+              50
+            ],
+            "token_count": 208,
+            "fusion_score": 0.028998,
+            "content_hashes": [
+              "4ef47c85d596eab960a01ade46543344d28be48e7c9458807286452ac9238f2b"
+            ],
+            "rerank_score": null,
+            "mmr_score": null,
+            "sort_score": 0.028998,
+            "dense_score": 0.6834271910168781,
+            "retrieval_confidence": 0.6834271910168781,
+            "confidence_type": "dense",
+            "confidence_state": "retrieval_confident"
+          },
+          "marker": "[S4]",
+          "section_path_text": "3.3.3.4 Ⅱ级应急响应（重大）"
+        },
+        {
+          "citation_id": "S5",
+          "source_file": "深圳市气象灾害应急预案.md",
+          "chunk_id": "深圳市气象灾害应急预案.md::49",
+          "section_path": [
+            "3.3.3.3 Ⅲ级应急响应（较大）"
+          ],
+          "rank": 5,
+          "score": 0.687502406292678,
+          "metadata": {
+            "content_preview": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部副总指挥或办公室主任主持会商。\n由市气象灾害指挥部决定是否启动Ⅲ级应急响应，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发：\n（1）市气象局（台）在全市范围内发布气象灾害Ⅲ级 预警信息，或",
+            "chunk_ids": [
+              "深圳市气象灾害应急预案.md::49"
+            ],
+            "chunk_indexes": [
+              49
+            ],
+            "token_count": 253,
+            "fusion_score": 0.028988,
+            "content_hashes": [
+              "422f31521c89cbf88c4da5877ce60a4d700551d66aafc8b154d5e9ffdbdf99b7"
+            ],
+            "rerank_score": null,
+            "mmr_score": null,
+            "sort_score": 0.028988,
+            "dense_score": 0.687502406292678,
+            "retrieval_confidence": 0.687502406292678,
+            "confidence_type": "dense",
+            "confidence_state": "retrieval_confident"
+          },
+          "marker": "[S5]",
+          "section_path_text": "3.3.3.3 Ⅲ级应急响应（较大）"
+        }
+      ],
+      "retrieval_trace": {
+        "query_plan": {
+          "original_query": "深圳市气象灾害Ⅳ级响应由哪个机构决定启动？请给出简要响应方案。",
+          "normalized_query": "深圳市气象灾害IV级响应由哪个机构决定启动?请给出简要响应方案。",
+          "query_type": "exact_fact",
+          "region_hint": "深圳",
+          "hazard_hint": "气象灾害",
+          "document_type_hint": null,
+          "time_hint": null,
+          "extracted_terms": [
+            "深圳",
+            "气象灾害",
+            "IV级",
+            "启动"
+          ],
+          "rewrite_confidence": 0.96,
+          "retrieval_policy": {
+            "use_rewrite": false,
+            "use_multi_query": false,
+            "use_hyde": false,
+            "use_reranker": false,
+            "use_mmr": false,
+            "dense_top_k": 30,
+            "sparse_top_k": 40,
+            "rerank_top_k": 20,
+            "max_branches": 2,
+            "branch_weights": {
+              "raw": 1.0,
+              "normalized": 0.9,
+              "expanded": 0.7,
+              "hyde": 0.6
+            }
+          },
+          "reasons": [
+            "exact_fact_constraint"
+          ]
+        },
+        "branches": [
+          {
+            "branch": "raw",
+            "query": "深圳市气象灾害Ⅳ级响应由哪个机构决定启动？请给出简要响应方案。",
+            "weight": 1.0,
+            "reason": "original_query_always_preserved"
+          },
+          {
+            "branch": "normalized",
+            "query": "深圳市气象灾害IV级响应由哪个机构决定启动?请给出简要响应方案。",
+            "weight": 0.9,
+            "reason": "text_normalization"
+          }
+        ],
+        "matched_branches": [
+          "raw",
+          "normalized"
+        ],
+        "retrieval_latency_ms": 1154.5452624559402,
+        "composer_mode": "template",
+        "verification": {
+          "passed": true,
+          "reasons": [],
+          "citation_verification": {
+            "passed": true,
+            "reasons": [],
+            "used_citations": [
+              "S1",
+              "S2",
+              "S3",
+              "S4"
+            ],
+            "missing_citations": [],
+            "unused_citations": [
+              "S5"
+            ],
+            "has_key_fact_without_citation": false,
+            "warnings": [],
+            "diagnostics": []
+          },
+          "guardrail": {
+            "passed": true,
+            "reasons": [],
+            "fallback_answer": null,
+            "metrics": {
+              "evidence_count": 5,
+              "max_score": 0.7467553677770145,
+              "confidence_value": 0.7467553677770145,
+              "confidence_type": "dense",
+              "confidence_state": "retrieval_confident",
+              "min_score": 0.3,
+              "min_evidence_count": 1
+            }
+          }
+        },
+        "extra": {
+          "service_options": {
+            "top_k": 5,
+            "dense_top_k": 30,
+            "sparse_top_k": 30,
+            "branch_candidate_top_k": 10,
+            "max_branches": null,
+            "token_budget": 1200,
+            "enable_reranker": null,
+            "enable_mmr": null,
+            "rerank_top_k": 30,
+            "mmr_pre_candidates": 20,
+            "mmr_top_k": null,
+            "fallback_answer": "当前知识库没有足够依据回答该问题。",
+            "min_evidence_count": 1,
+            "min_evidence_score": 0.3,
+            "composer_mode": "template"
+          },
+          "result_count": 5,
+          "raw_retrieval_results": [
+            {
+              "rank": 1,
+              "source_file": "深圳市气象灾害应急预案.md",
+              "chunk_id": "深圳市气象灾害应急预案.md::48",
+              "score": 0.7467553677770145,
+              "rerank_score": null,
+              "dense_score": 0.7467553677770145,
+              "fusion_score": 0.031148,
+              "mmr_score": null
+            },
+            {
+              "rank": 2,
+              "source_file": "深圳市气象灾害应急预案.md",
+              "chunk_id": "深圳市气象灾害应急预案.md::51",
+              "score": 0.6954757373247423,
+              "rerank_score": null,
+              "dense_score": 0.6954757373247423,
+              "fusion_score": 0.030645,
+              "mmr_score": null
+            },
+            {
+              "rank": 3,
+              "source_file": "深圳市气象灾害应急预案.md",
+              "chunk_id": "深圳市气象灾害应急预案.md::222",
+              "score": 0.7061830432026923,
+              "rerank_score": null,
+              "dense_score": 0.7061830432026923,
+              "fusion_score": 0.029306,
+              "mmr_score": null
+            },
+            {
+              "rank": 4,
+              "source_file": "深圳市气象灾害应急预案.md",
+              "chunk_id": "深圳市气象灾害应急预案.md::50",
+              "score": 0.6834271910168781,
+              "rerank_score": null,
+              "dense_score": 0.6834271910168781,
+              "fusion_score": 0.028998,
+              "mmr_score": null
+            },
+            {
+              "rank": 5,
+              "source_file": "深圳市气象灾害应急预案.md",
+              "chunk_id": "深圳市气象灾害应急预案.md::49",
+              "score": 0.687502406292678,
+              "rerank_score": null,
+              "dense_score": 0.687502406292678,
+              "fusion_score": 0.028988,
+              "mmr_score": null
+            }
+          ],
+          "evidence_count": 5,
+          "composer": {
+            "answer": "根据知识库检索结果，可以这样处理：\n\n1. 启动条件或责任主体：由市气象灾害指挥部决定是否启动Ⅳ级应急响应，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发： （1）市气象局（台）在全市范围内发布气象灾害Ⅳ级预警信息，或气象灾害影响程度达到市级Ⅳ级应急响应启动标准时；[S1]\n2. 处置建议：并报请市人民政府决定是否启动I 级应急响应，由市人民政府向各有关单位发布启动相关应急程序的命令，并报告省人民政府： （1）市气象局（台）发布气象灾害 I 级预警信息；[S2]\n3. 注意事项：市气象局（台）发 布Ⅳ级预警信号时，市气象灾害指挥部启动会商机制，及时 对灾害影响及趋势进行综合评估，启动Ⅳ级应急响应。[S3]\n4. 补充依据：由市气象灾害指挥部总指挥决定是否启动Ⅱ级应急响应，由市气象灾害指挥部签发： （1）市气象局（台）发布气象灾害Ⅱ级预警信息；[S4]\n\n来源：\n[S1] 深圳市气象灾害应急预案.md / 3.3.3.2 Ⅳ级应急响应（一般）\n[S2] 深圳市气象灾害应急预案.md / 3.3.3.5 Ⅰ级应急响应（特别重大）\n[S3] 深圳市气象灾害应急预案.md / 5.4 大雾灾害应急响应\n[S4] 深圳市气象灾害应急预案.md / 3.3.3.4 Ⅱ级应急响应（重大）",
+            "requested_mode": "template",
+            "actual_mode": "template",
+            "latency_ms": 0.0,
+            "fallback_reason": null,
+            "decision": "answered",
+            "used_citation_ids": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5"
+            ],
+            "decision_source": "template"
+          },
+          "hyde_document": {
+            "query": "深圳市气象灾害Ⅳ级响应由哪个机构决定启动？请给出简要响应方案。",
+            "content": "",
+            "used": false,
+            "reason": "hyde_disabled",
+            "latency_ms": 0.0,
+            "mode": "disabled"
+          },
+          "domain_gate": {
+            "decision": "in_domain",
+            "decision_source": "rule",
+            "signals": [
+              "domain_term:灾害",
+              "domain_term:Ⅳ级响应"
+            ],
+            "confidence": 0.7467553677770145,
+            "reason": "transparent_domain_signal"
+          },
+          "answer_decision": {
+            "decision": "answered",
+            "decision_source": "template",
+            "fallback_reason": null,
+            "used_citation_ids": [
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5"
+            ]
+          }
+        }
+      },
+      "fallback_reason": null,
+      "documents": [
+        "[S1]\n来源：深圳市气象灾害应急预案.md\n章节：3.3.3.2 Ⅳ级应急响应（一般）\n内容：气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部办公室主任主持会商。\n由市气象灾害指挥部决定是否启动Ⅳ级应急响应，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发：\n（1）市气象局（台）在全市范围内发布气象灾害Ⅳ级预警信息，或气象灾害影响程度达到市级Ⅳ级应急响应启动标准时；\n（2）经对气象灾害的影响及趋势会商研判，确定有必要启动Ⅳ级响应。",
+        "[S2]\n来源：深圳市气象灾害应急预案.md\n章节：3.3.3.5 Ⅰ级应急响应（特别重大）\n内容：气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部总指挥主持会商。\n并报请市人民政府决定是否启动I 级应急响应，由市人民政府向各有关单位发布启动相关应急程序的命令，并报告省人民政府：\n（1）市气象局（台）发布气象灾害 I 级预警信息；\n（2）经对气象灾害的影响及趋势会商研判，确定有必要启动I 级响应。",
+        "[S3]\n来源：深圳市气象灾害应急预案.md\n章节：5.4 大雾灾害应急响应\n内容：受大雾灾害天气影响，市气象局（台）发布关注级预警 信号时，相关区域自动启动关注级响应；\n市气象局（台）发 布Ⅳ级预警信号时，市气象灾害指挥部启动会商机制，及时 对灾害影响及趋势进行综合评估，启动Ⅳ级应急响应。\n启动条件：",
+        "[S4]\n来源：深圳市气象灾害应急预案.md\n章节：3.3.3.4 Ⅱ级应急响应（重大）\n内容：气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部总指挥或副总指挥主持会商。\n由市气象灾害指挥部总指挥决定是否启动Ⅱ级应急响应，由市气象灾害指挥部签发：\n（1）市气象局（台）发布气象灾害Ⅱ级预警信息；\n（2）经对气象灾害的影响及趋势会商研判，确定有必要启动Ⅱ级响应。",
+        "[S5]\n来源：深圳市气象灾害应急预案.md\n章节：3.3.3.3 Ⅲ级应急响应（较大）\n内容：气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部副总指挥或办公室主任主持会商。\n由市气象灾害指挥部决定是否启动Ⅲ级应急响应，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发：\n（1）市气象局（台）在全市范围内发布气象灾害Ⅲ级 预警信息，或气象灾害影响程度达到市级Ⅲ级应急响应启动 标准时；\n（2）经对气象灾害的影响及趋势会商研判，确定有必 要启动Ⅲ级响应。"
+      ],
+      "iterations_count": 1
+    },
+    {
+      "scenario": "山区村庄发现滑坡和落石迹象后，应如何组织群众提前避险？",
+      "plan": "# 山区村庄滑坡和落石迹象应急避险预案（优化版）\n\n\n## 一、总则\n\n### 1.1 编制目的\n\n为规范山区村庄在发现滑坡和落石迹象后的应急避险工作，明确各环节责任分工和操作流程，确保受威胁群众能够及时、有序撤离，最大限度避免人员伤亡和财产损失，特制定本预案。\n\n### 1.2 适用范围\n\n本预案适用于山区村庄在巡查排查、日常监测或群众报告中发现滑坡、落石等地质灾害迹象后的应急避险处置工作。\n\n### 1.3 工作原则\n\n- **预防为主、避险为先**：发现险情征兆后，坚持把提前转移群众作为第一要务。\n- **专群结合、群测群防**：专业排查与群众巡查相结合，确保隐患早发现、早预警、早处置[S1]。\n- **快速响应、果断处置**：险情出现时基层政府和村组干部须响应迅速、处置果断，及时转移受威胁群众并加强现场管控[S1]。\n- **统一领导、分级负责**：在乡镇政府统一领导下，村组、自然资源、应急等部门协调联动。\n- **生命至上、特殊优先**：老弱病残孕等特殊群体优先转移，确保不漏一户、不落一人。\n\n\n## 二、组织机构与职责分工\n\n### 2.1 应急避险指挥组\n\n**组长**：乡镇政府主要负责人\n**副组长**：乡镇分管自然资源/应急工作的负责人\n**成员**：自然资源所、应急管理办、派出所、卫生院、村“两委”负责人\n\n**职责**：\n- 统一组织协调避险转移工作，下达避险转移指令；\n- 调度各方力量，汇总上报信息；\n- 当险情超出乡镇处置能力时，按程序向上级请求支援；\n- 负责对外信息发布的审核与批准。\n\n### 2.2 巡查监测组\n\n**组成**：乡镇自然资源所工作人员、技术专家、村级监测员、村组干部\n\n**职责**：\n- 常态化开展有人居住地隐患巡查，确保风险隐患早发现、早预警、早处置[S1]；\n- 对已发现的地裂缝、异常响动等险情迹象进行加密监测；\n- 发现险情加剧征兆时第一时间报告；\n- 负责转移路线的安全评估和转移过程中的观察哨设置。\n\n### 2.3 转移安置组\n\n**组成**：乡镇民政办、村组干部、党员志愿者\n\n**职责**：\n- 负责受威胁群众的入户通知、组织转移；\n- 落实预分组包干责任制，确保每户群众都有明确责任人；\n- 负责安置点管理（实行“点长负责制”）、生活保障及情绪安抚；\n- 建立特殊群体“一对一帮扶”台账并落实帮扶责任人。\n\n### 2.4 现场管控组\n\n**组成**：乡镇派出所民警、综合执法队员、村组干部\n\n**职责**：\n- 负责设置警戒线、实施临时交通管制、24小时值守，防止群众擅自返回[S1]；\n- 制定值守交接班制度，确保警戒不间断；\n- 负责对擅自返回群众的劝阻和处置；\n- 负责预警信号的发布（铜锣、手摇报警器、广播等）。\n\n### 2.5 医疗救护组\n\n**组成**：乡镇卫生院医护人员\n\n**职责**：\n- 负责转移安置过程中的医疗保障和突发伤情的紧急处置；\n- 负责安置点定期医疗巡诊；\n- 负责转移群众中慢性病患者的用药保障。\n\n### 2.6 后勤保障组\n\n**组成**：乡镇财政所、民政办工作人员\n\n**职责**：\n- 负责应急物资的储备、管理和紧急调配；\n- 负责安置点食品、饮水、御寒物资等生活物资的供应和补给；\n- 建立物资台账，定期检查更新。\n\n\n## 三、险情识别与分级\n\n### 3.1 滑坡和落石迹象识别要点\n\n| 类别 | 主要迹象 |\n|------|----------|\n| **宏观迹象** | 地面出现裂缝、山体出现异常响动、树木倾斜或“醉汉林”现象、坡脚出现隆起或渗水、局部小规模崩塌或落石频发 |\n| **微观迹象** | 监测桩位移、裂缝持续扩展、地下水异常变化 |\n\n### 3.2 险情分级与响应措施\n\n| 险情等级 | 判定标准 | 响应要求 |\n|----------|----------|----------|\n| **Ⅲ级（蓝色预警）** | 发现地面裂缝等初期迹象，经专家确认为潜在隐患点 | 列入预案点，纳入日常监测[S1]；开展风险告知和预案宣传；发放“避险明白卡” |\n| **Ⅱ级（黄色预警）** | 裂缝扩展加快、局部落石增多，经现场复勘确认影响范围 | **24小时内**完成影响范围确认和受威胁群众核定，立即提前避险转移受威胁群众，安排专人24小时值守[S1] |\n| **Ⅰ级（红色预警）** | 山体出现异常响动、变形加剧、滑坡前兆明显 | 立即启动应急避险，实施临时交通管制，强制转移全部受威胁人员[S1] |\n\n\n## 四、预警信息发布与传播\n\n### 4.1 预警信号规定\n\n| 险情等级 | 预警信号 | 发布方式 |\n|----------|----------|----------|\n| **Ⅲ级（蓝色预警）** | 口头通知/微信群通知 | 村组干部入户告知、微信群发布 |\n| **Ⅱ级（黄色预警）** | 连续敲锣（慢速）+ 广播通知 | 铜锣、村村通广播、微信群同步发布 |\n| **Ⅰ级（红色预警）** | 连续急促敲锣 + 手摇报警器 + 广播 | 铜锣、手摇报警器、广播、电话逐户通知 |\n\n### 4.2 信息传递机制\n\n1. **“最后通知人”机制**：每个村民小组明确1名“最后通知人”，负责确认本组每户人家均已收到预警信息，对未能确认的住户立即上门通知。\n2. **极端情况备用手段**：停电、断网等情况下，使用手摇报警器、铜锣、哨子等非电力设备，并安排摩托车或徒步逐户通知。\n3. **信息确认反馈**：各村民小组负责人收到预警后须在15分钟内反馈确认信息，确保预警传达到位。\n\n\n## 五、应急避险路线与安置点规划\n\n### 5.1 避险路线\n\n1. **预设路线**：",
+      "rag_backend": "v2",
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_file": "2022 年四川省地质灾害成功避险典型案例.md",
+          "chunk_id": "2022 年四川省地质灾害成功避险典型案例.md::7",
+          "section_path": [
+            "三、乐山市峨眉山市九里镇兴阳村4组滑坡成功避险案例"
+          ],
+          "rank": 1,
+          "score": 0.998035,
+          "metadata": {
+            "content_preview": "地点：乐山市峨眉山市九里镇兴阳村 4 组时间：2022 年 5 月 4 日 10 时 40 分事件：成功避让滑坡地质灾害结果：避免了5 户 17 人可能因灾伤亡\n灾害概况：受降雨影响，5 月 4 日 10 时 40 分，峨眉山市九里镇兴阳村 4 组发生滑坡灾害，规模约20 万方，造成 5户农房受损，约 40 亩茶地和农",
+            "chunk_ids": [
+              "2022 年四川省地质灾害成功避险典型案例.md::7",
+              "2022 年四川省地质灾害成功避险典型案例.md::8",
+              "2022 年四川省地质灾害成功避险典型案例.md::9"
+            ],
+            "chunk_indexes": [
+              7,
+              8,
+              9
+            ],
+            "token_count": 1028,
+            "fusion_score": 0.027331,
+            "content_hashes": [
+              "845912db19d90a4e2cf7120e3502c26bf48bb80fac4bdf43a109fc2e68a7f094",
+              "bb6ef6ab707f065715d7dbc0094839144874f41dfa19db17d4c6242ac9f1239c",
+              "97a05463ebf1fd9133f0e51f56c2653079dd3e9ad8213e1c6d777ae797147c65"
+            ],
+            "rerank_score": 0.998035,
+            "mmr_score": 1.0,
+            "sort_score": 1.0,
+            "dense_score": 0.7203259198118696,
+            "retrieval_confidence": 0.998035,
+            "confidence_type": "rerank",
+            "confidence_state": "retrieval_confident"
+          },
+          "marker": "[S1]",
+          "section_path_text": "三、乐山市峨眉山市九里镇兴阳村4组滑坡成功避险案例"
+        }
+      ],
+      "retrieval_trace": {
+        "query_plan": {
+          "original_query": "山区村庄发现滑坡和落石迹象后，应如何组织群众提前避险？",
+          "normalized_query": "山区村庄发现滑坡和落石迹象后,应如何组织群众提前避险?",
+          "query_type": "scenario",
+          "region_hint": null,
+          "hazard_hint": "地质灾害",
+          "document_type_hint": null,
+          "time_hint": null,
+          "extracted_terms": [
+            "地质灾害",
+            "避险"
+          ],
+          "rewrite_confidence": 0.82,
+          "retrieval_policy": {
+            "use_rewrite": true,
+            "use_multi_query": true,
+            "use_hyde": false,
+            "use_reranker": true,
+            "use_mmr": true,
+            "dense_top_k": 35,
+            "sparse_top_k": 30,
+            "rerank_top_k": 30,
+            "max_branches": 3,
+            "branch_weights": {
+              "raw": 1.0,
+              "normalized": 0.9,
+              "expanded": 0.7,
+              "hyde": 0.6
+            }
+          },
+          "reasons": [
+            "scenario_intent"
+          ]
+        },
+        "branches": [
+          {
+            "branch": "raw",
+            "query": "山区村庄发现滑坡和落石迹象后，应如何组织群众提前避险？",
+            "weight": 1.0,
+            "reason": "original_query_always_preserved"
+          },
+          {
+            "branch": "expanded",
+            "query": "山区村庄发现滑坡和落石迹象后,应如何组织群众提前避险? 地质灾害 滑坡 泥石流 避险转移 如何 措施 流程 要求 避险 转移 安置 预警 应急预案 响应流程 责任主体",
+            "weight": 0.7,
+            "reason": "scenario_rule_expansion"
+          }
+        ],
+        "matched_branches": [
+          "raw",
+          "expanded"
+        ],
+        "retrieval_latency_ms": 3232.8754365444183,
+        "composer_mode": "template",
+        "verification": {
+          "passed": true,
+          "reasons": [],
+          "citation_verification": {
+            "passed": true,
+            "reasons": [],
+            "used_citations": [
+              "S1"
+            ],
+            "missing_citations": [],
+            "unused_citations": [],
+            "has_key_fact_without_citation": false,
+            "warnings": [],
+            "diagnostics": []
+          },
+          "guardrail": {
+            "passed": true,
+            "reasons": [],
+            "fallback_answer": null,
+            "metrics": {
+              "evidence_count": 1,
+              "max_score": 0.998035,
+              "confidence_value": 0.998035,
+              "confidence_type": "rerank",
+              "confidence_state": "retrieval_confident",
+              "min_score": 0.3,
+              "min_evidence_count": 1
+            }
+          }
+        },
+        "extra": {
+          "service_options": {
+            "top_k": 5,
+            "dense_top_k": 30,
+            "sparse_top_k": 30,
+            "branch_candidate_top_k": 10,
+            "max_branches": null,
+            "token_budget": 1200,
+            "enable_reranker": null,
+            "enable_mmr": null,
+            "rerank_top_k": 30,
+            "mmr_pre_candidates": 20,
+            "mmr_top_k": null,
+            "fallback_answer": "当前知识库没有足够依据回答该问题。",
+            "min_evidence_count": 1,
+            "min_evidence_score": 0.3,
+            "composer_mode": "template"
+          },
+          "result_count": 5,
+          "raw_retrieval_results": [
+            {
+              "rank": 1,
+              "source_file": "2022 年四川省地质灾害成功避险典型案例.md",
+              "chunk_id": "2022 年四川省地质灾害成功避险典型案例.md::9",
+              "score": 0.998035,
+              "rerank_score": 0.998035,
+              "dense_score": 0.7203259198118696,
+              "fusion_score": 0.027331,
+              "mmr_score": 1.0
+            },
+            {
+              "rank": 2,
+              "source_file": "重大地质灾害事件与成功避险.md",
+              "chunk_id": "重大地质灾害事件与成功避险.md::43",
+              "score": 0.998235,
+              "rerank_score": 0.998235,
+              "dense_score": 0.6995348894440385,
+              "fusion_score": 0.027163,
+              "mmr_score": 0.450167
+            },
+            {
+              "rank": 3,
+              "source_file": "2022 年四川省地质灾害成功避险典型案例.md",
+              "chunk_id": "2022 年四川省地质灾害成功避险典型案例.md::2",
+              "score": 0.995508,
+              "rerank_score": 0.995508,
+              "dense_score": null,
+              "fusion_score": 0.026073,
+              "mmr_score": 0.417424
+            },
+            {
+              "rank": 4,
+              "source_file": "2022 年四川省地质灾害成功避险典型案例.md",
+              "chunk_id": "2022 年四川省地质灾害成功避险典型案例.md::25",
+              "score": 0.997808,
+              "rerank_score": 0.997808,
+              "dense_score": 0.6981958590918025,
+              "fusion_score": 0.025604,
+              "mmr_score": 0.416713
+            },
+            {
+              "rank": 5,
+              "source_file": "重大地质灾害事件与成功避险.md",
+              "chunk_id": "重大地质灾害事件与成功避险.md::7",
+              "score": 0.987192,
+              "rerank_score": 0.987192,
+              "dense_score": null,
+              "fusion_score": 0.016129,
+              "mmr_score": 0.431706
+            }
+          ],
+          "evidence_count": 1,
+          "composer": {
+            "answer": "根据知识库检索结果，可以这样处理：\n\n1. 处置建议：基层政府、有关部门、村组干部及防灾责任人在险情出现时响应迅速、处置果断，及时转移受威胁群众，加强现场管控，避免了人员伤亡。[S1]\n\n来源：\n[S1] 2022 年四川省地质灾害成功避险典型案例.md / 三、乐山市峨眉山市九里镇兴阳村4组滑坡成功避险案例",
+            "requested_mode": "template",
+            "actual_mode": "template",
+            "latency_ms": 0.0,
+            "fallback_reason": null,
+            "decision": "answered",
+            "used_citation_ids": [
+              "S1"
+            ],
+            "decision_source": "template"
+          },
+          "hyde_document": {
+            "query": "山区村庄发现滑坡和落石迹象后，应如何组织群众提前避险？",
+            "content": "",
+            "used": false,
+            "reason": "hyde_disabled",
+            "latency_ms": 0.0,
+            "mode": "disabled"
+          },
+          "domain_gate": {
+            "decision": "in_domain",
+            "decision_source": "rule",
+            "signals": [
+              "domain_term:避险",
+              "domain_term:滑坡"
+            ],
+            "confidence": 0.998035,
+            "reason": "transparent_domain_signal"
+          },
+          "answer_decision": {
+            "decision": "answered",
+            "decision_source": "template",
+            "fallback_reason": null,
+            "used_citation_ids": [
+              "S1"
+            ]
+          }
+        }
+      },
+      "fallback_reason": null,
+      "documents": [
+        "[S1]\n来源：2022 年四川省地质灾害成功避险典型案例.md\n章节：三、乐山市峨眉山市九里镇兴阳村4组滑坡成功避险案例\n内容：地点：乐山市峨眉山市九里镇兴阳村 4 组时间：2022 年 5 月 4 日 10 时 40 分事件：成功避让滑坡地质灾害结果：避免了5 户 17 人可能因灾伤亡\n灾害概况：受降雨影响，5 月 4 日 10 时 40 分，峨眉山市九里镇兴阳村 4 组发生滑坡灾害，规模约20 万方，造成 5户农房受损，约 40 亩茶地和农田损毁，一座小桥受损，直接经济损失约200 万元。\n因预警及时，监测员巡查发现险情，提前避险转移全部受威胁群众 11 户 36 人，避免了 5 户 17人可能因灾伤亡，实现成功避险。\n避险经过：3 月 10日，峨眉山市自然资源局会同九里镇政府组织技术专家及镇村干部开展汛前日常排查时，发现九里镇兴阳村 4 组个别地面出现裂缝，经专家确认将该点列入峨眉山市县级地质灾害预案点，纳入日常监测。\n发现九里镇兴阳村4组个别地面出现裂缝，经专家确认将该点列入峨眉山市县级地质灾害预案点，纳入日常监测。\n4 月 16日，市自然资源局会同九里镇政府对该点进行现场复勘，在确认影响范围后，立即将受威胁群众共11户 36人全部进行了提前避险转移安置，并安排专人进行 24 小时值守，设置警戒线，防止群众擅自返回。\n4 月21 日，市自然资源局会同九里镇政府组织专家召开现场论证会，决定将该隐患点全部住户进行避让搬迁安置。\n4 月 28日完成搬迁协议签订工作，5 月1 日实现全部财产搬离。\n5 月 4 日 8 时，监测员在例行巡查中发现山体出现异常响动并立即报告，市自然资源局和九里镇政府接到报告后，立即采取现场临时交通管制措施。\n中发现山体出现异常响动并立即报告，市自然资源局和九里镇政府接到报告后，立即采取现场临时交通管制措施。\n10时40分，该点位发生滑坡，因提前组织受威胁群众避让搬迁，避免了5 户17 人可能因灾伤亡，实现成功避险。\n经验与启示：一是汛前专群结合排查到位。\n市自然资源局对排查发现的新增隐患点第一时间组织专家和专业技术人员开展现场论证，并提出科学处置意见。\n二是常态巡查监测预警到位。\n常态化开展有人居住地隐患巡查，确保风险隐患早发现、早预警、早处置。\n三是主动避险管控到位。\n基层政府、有关部门、村组干部及防灾责任人在险情出现时响应迅速、处置果断，及时转移受威胁群众，加强现场管控，避免了人员伤亡。"
+      ],
+      "iterations_count": 1
+    },
+    {
+      "scenario": "洪涝突发险情发生后，应由谁负责掌握和报告灾情？",
+      "plan": "# 洪涝突发险情灾情报告责任主体与流程方案（优化版）\n\n\n## 一、总则与编制依据\n\n为及时、准确、全面掌握洪涝突发险情、灾情，为防汛抗洪减灾决策提供支撑，最大限度避免或减少人员伤亡，减轻灾害损失，保障防洪安全，依据《中华人民共和国突发事件应对法》《中华人民共和国防洪法》《中华人民共和国防汛条例》以及国家相关预案和规定，制定本方案[S1]。\n\n本方案适用于各级防汛抗旱指挥部洪涝突发险情灾情的紧急报告管理。洪涝灾情的常规统计工作仍按《自然灾害情况统计调查制度》和《特别重大自然灾害损失统计调查制度》执行[S1]。\n\n\n## 二、责任主体与职责分工\n\n### （一）责任主体\n\n各级防汛抗旱指挥部负责本地区洪涝突发险情灾情的及时掌握与报告工作，并确定专人负责[S1]。\n\n### （二）分级职责\n\n1. **国家层面**：国家防汛抗旱总指挥部负责全国范围内洪涝突发险情灾情信息的汇总、协调与报告管理。\n2. **省、市级层面**：省、市级防汛抗旱指挥部分别负责本行政区域内的洪涝突发险情灾情掌握与报告工作，并负责对下级报告的监督、核查与汇总上报。\n3. **县级层面**：县级防汛抗旱指挥部是洪涝突发险情灾情报告的**首要责任主体**，负责本行政区域内险情灾情的**第一时间掌握、核实与上报**，同时承担先期应急处置的组织工作。\n4. **乡镇/街道及基层单位**：乡镇人民政府、街道办事处及水库（水电站）、堤防管理等工程管理单位负有**即时报告义务**，发现险情后应立即向县级防汛抗旱指挥部报告，不得延误。\n\n### （三）专人负责制\n\n各级防汛抗旱指挥部必须确定专人负责信息收集、核实与上报工作，确保责任落实到人[S1]。同时，应建立**AB角互补机制**，确保任何时段均有专人承担报告职责，防止因人员缺位导致信息迟报、漏报。\n\n\n## 三、报告原则\n\n洪涝突发险情灾情报告遵循“分级负责、及时快捷、真实全面”的原则[S1]，并补充以下要求：\n\n- **分级负责**：各级指挥部按职责权限逐级上报，不得越级或漏报。但遇突发重大险情（如溃坝前兆）且上级无法及时联系时，可越级上报，同时抄报所在层级指挥部。\n- **及时快捷**：险情灾情发生后，应在第一时间启动报告程序，不得延误。\n- **真实全面**：报告内容必须客观准确，不得瞒报、虚报或漏报关键信息。\n- **边处置、边报告**：发现险情后，应在报告的同时立即组织先期应急处置，不得因报告程序延误抢险时机。\n\n\n## 四、分级标准与差异化报告要求\n\n根据险情灾情的严重程度和影响范围，实行分级报告管理。各级别的判定由县级防汛抗旱指挥部初步认定，报上级指挥部审核确认。\n\n### Ⅰ级（特别重大）\n\n- **判定标准**：水库（水电站）出现溃坝、决口险情或堰塞湖严重威胁下游大量人员安全；堤防决口或坍塌导致或可能导致重大人员伤亡；突发灾情导致死亡或失踪30人以上。\n- **报告时限**：发现后**30分钟内**电话报告，**2小时内**书面报告至省级防汛抗旱指挥部，同时可直接报告国家防汛抗旱总指挥部。\n- **续报频次**：每**2小时**续报一次，直至险情排除或应急处置结束。\n\n### Ⅱ级（重大）\n\n- **判定标准**：水库（水电站）、堤防、涵闸（泵站）等工程出现溃坝、决口、坍塌等失事性险情前兆；重要基础设施发生严重威胁安全运行的险情；堰塞湖严重威胁人员安全；突发灾情导致死亡或失踪10人以上30人以下。\n- **报告时限**：发现后**1小时内**电话报告，**2小时内**书面报告至省级防汛抗旱指挥部。\n- **续报频次**：每**4小时**续报一次，直至险情排除或应急处置结束。\n\n### Ⅲ级（较大）\n\n- **判定标准**：水库（水电站）、堤防、涵闸（泵站）等工程出现可能危及工程安全的情况但尚未达到失事性险情前兆；交通、能源、通讯、供水、排水等重要基础设施因洪涝、台风等灾害导致突发险情；突发灾情导致死亡或失踪3人以上10人以下。\n- **报告时限**：发现后**2小时内**电话报告，**4小时内**书面报告至市级防汛抗旱指挥部。\n- **续报频次**：每**6小时**续报一次，直至险情排除或应急处置结束。\n\n### Ⅳ级（一般）\n\n- **判定标准**：突发险情影响范围较小、风险可控；突发灾情导致死亡或失踪3人以下。\n- **报告时限**：发现后**2小时内**电话报告，**6小时内**书面报告至县级防汛抗旱指挥部。\n- **续报频次**：每**12小时**续报一次，直至险情排除或应急处置结束。\n\n> **说明**：上述分级判定标准和时限要求系根据应急报告管理通行实践拟定，具体数值以当地防汛抗旱指挥部发布的实施细则为准。\n\n\n## 五、报告范围\n\n需报告的突发险情灾情包括[S1]：\n\n### （一）突发险情\n\n1. 水库（水电站）、堤防、涵闸（泵站）等工程突然出现可能危及工程安全的情况。\n2. 交通、能源、通讯、供水、排水等重要基础设施因洪涝、台风等灾害导致的突发险情。\n3. 因山体崩塌、滑坡、泥石流突然形成的堰塞湖险情等。\n\n### （二）突发重大险情\n\n上述工程出现溃坝、决口、坍塌等失事性险情前兆，重要基础设施发生严重威胁安全运行的险情，堰塞湖严重威胁人员安全时。\n\n### （三）突发灾情\n\n因江河湖泊洪水泛滥、山洪灾害、台风登陆或影响、堰塞湖形成或溃决、水库垮坝、堤防决口等导致的人员伤亡、人员被困、城镇受淹、基础设施毁坏等情况[S1]。\n\n\n## 六、报告内容要素\n\n各级报告应包含以下必备信息要素，确保信息完整、准确：\n\n| 序号 | 要素类别 | 具体内容 |\n|------|----------",
+      "rag_backend": "v2",
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_file": "洪涝突发险情灾情报告暂行规定.md",
+          "chunk_id": "洪涝突发险情灾情报告暂行规定.md::0",
+          "section_path": [
+            "第一章 总 则"
+          ],
+          "rank": 1,
+          "score": 0.998799,
+          "metadata": {
+            "content_preview": "第一条 为及时、准确、全面掌握突发险情、灾情,为防汛抗洪减灾决策提供支撑，最大限度避免或减少人员伤亡，减轻灾害损失，保障防洪安全，特制定本规定。\n第二条 本规定依据《中华人民共和国突发事件应对法》《中华人民共和国防洪法》《中华人民共和国防汛条例》以及国家相关预案和规定等制定。\n第三条 本规定适用于各级防汛抗旱指挥部洪涝",
+            "chunk_ids": [
+              "洪涝突发险情灾情报告暂行规定.md::0",
+              "洪涝突发险情灾情报告暂行规定.md::1",
+              "洪涝突发险情灾情报告暂行规定.md::2"
+            ],
+            "chunk_indexes": [
+              0,
+              1,
+              2
+            ],
+            "token_count": 774,
+            "fusion_score": 0.027684,
+            "content_hashes": [
+              "96cddb46330624b1408a6473cfa1b12eaa01b2420b121ea6c452b883c838c96f",
+              "d49fa8e3dd08490e849802dd5c9f585f26d31a68010f1367614ad0b3a4fe3089",
+              "65fdf286b7934f42739f2d85b3c4dfe55dac79a8463a0c512e5e8666496031ba"
+            ],
+            "rerank_score": 0.998799,
+            "mmr_score": 1.0,
+            "sort_score": 1.0,
+            "dense_score": 0.6834558654140782,
+            "retrieval_confidence": 0.998799,
+            "confidence_type": "rerank",
+            "confidence_state": "retrieval_confident"
+          },
+          "marker": "[S1]",
+          "section_path_text": "第一章 总 则"
+        }
+      ],
+      "retrieval_trace": {
+        "query_plan": {
+          "original_query": "洪涝突发险情发生后，应由谁负责掌握和报告灾情？",
+          "normalized_query": "洪涝突发险情发生后,应由谁负责掌握和报告灾情?",
+          "query_type": "scenario",
+          "region_hint": null,
+          "hazard_hint": "洪涝",
+          "document_type_hint": "报告",
+          "time_hint": null,
+          "extracted_terms": [
+            "洪涝",
+            "报告"
+          ],
+          "rewrite_confidence": 0.82,
+          "retrieval_policy": {
+            "use_rewrite": true,
+            "use_multi_query": true,
+            "use_hyde": false,
+            "use_reranker": true,
+            "use_mmr": true,
+            "dense_top_k": 35,
+            "sparse_top_k": 30,
+            "rerank_top_k": 30,
+            "max_branches": 3,
+            "branch_weights": {
+              "raw": 1.0,
+              "normalized": 0.9,
+              "expanded": 0.7,
+              "hyde": 0.6
+            }
+          },
+          "reasons": [
+            "default_scenario_like"
+          ]
+        },
+        "branches": [
+          {
+            "branch": "raw",
+            "query": "洪涝突发险情发生后，应由谁负责掌握和报告灾情？",
+            "weight": 1.0,
+            "reason": "original_query_always_preserved"
+          },
+          {
+            "branch": "expanded",
+            "query": "洪涝突发险情发生后,应由谁负责掌握和报告灾情? 洪涝 洪水 防汛 转移避险 应急预案 响应流程 责任主体",
+            "weight": 0.7,
+            "reason": "scenario_rule_expansion"
+          }
+        ],
+        "matched_branches": [
+          "raw",
+          "expanded"
+        ],
+        "retrieval_latency_ms": 799.6984571218491,
+        "composer_mode": "template",
+        "verification": {
+          "passed": true,
+          "reasons": [],
+          "citation_verification": {
+            "passed": true,
+            "reasons": [],
+            "used_citations": [
+              "S1"
+            ],
+            "missing_citations": [],
+            "unused_citations": [],
+            "has_key_fact_without_citation": false,
+            "warnings": [],
+            "diagnostics": []
+          },
+          "guardrail": {
+            "passed": true,
+            "reasons": [],
+            "fallback_answer": null,
+            "metrics": {
+              "evidence_count": 1,
+              "max_score": 0.998799,
+              "confidence_value": 0.998799,
+              "confidence_type": "rerank",
+              "confidence_state": "retrieval_confident",
+              "min_score": 0.3,
+              "min_evidence_count": 1
+            }
+          }
+        },
+        "extra": {
+          "service_options": {
+            "top_k": 5,
+            "dense_top_k": 30,
+            "sparse_top_k": 30,
+            "branch_candidate_top_k": 10,
+            "max_branches": null,
+            "token_budget": 1200,
+            "enable_reranker": null,
+            "enable_mmr": null,
+            "rerank_top_k": 30,
+            "mmr_pre_candidates": 20,
+            "mmr_top_k": null,
+            "fallback_answer": "当前知识库没有足够依据回答该问题。",
+            "min_evidence_count": 1,
+            "min_evidence_score": 0.3,
+            "composer_mode": "template"
+          },
+          "result_count": 5,
+          "raw_retrieval_results": [
+            {
+              "rank": 1,
+              "source_file": "洪涝突发险情灾情报告暂行规定.md",
+              "chunk_id": "洪涝突发险情灾情报告暂行规定.md::1",
+              "score": 0.998782,
+              "rerank_score": 0.998782,
+              "dense_score": 0.680302434187653,
+              "fusion_score": 0.027684,
+              "mmr_score": 1.0
+            },
+            {
+              "rank": 2,
+              "source_file": "洪涝突发险情灾情报告暂行规定.md",
+              "chunk_id": "洪涝突发险情灾情报告暂行规定.md::0",
+              "score": 0.998799,
+              "rerank_score": 0.998799,
+              "dense_score": 0.6834558654140782,
+              "fusion_score": 0.0271,
+              "mmr_score": 1.0
+            },
+            {
+              "rank": 3,
+              "source_file": "衡阳市人民政府办公室关于印发《衡阳市防汛抗旱应急预案》的通知.md",
+              "chunk_id": "衡阳市人民政府办公室关于印发《衡阳市防汛抗旱应急预案》的通知.md::141",
+              "score": 0.995824,
+              "rerank_score": 0.995824,
+              "dense_score": 0.6471999925660697,
+              "fusion_score": 0.026984,
+              "mmr_score": 0.422922
+            },
+            {
+              "rank": 4,
+              "source_file": "洪涝突发险情灾情报告暂行规定.md",
+              "chunk_id": "洪涝突发险情灾情报告暂行规定.md::9",
+              "score": 0.993722,
+              "rerank_score": 0.993722,
+              "dense_score": 0.6836193265159738,
+              "fusion_score": 0.026322,
+              "mmr_score": 0.401908
+            },
+            {
+              "rank": 5,
+              "source_file": "洪涝突发险情灾情报告暂行规定.md",
+              "chunk_id": "洪涝突发险情灾情报告暂行规定.md::10",
+              "score": 0.992911,
+              "rerank_score": 0.992911,
+              "dense_score": 0.6827019880961284,
+              "fusion_score": 0.025921,
+              "mmr_score": 0.387144
+            }
+          ],
+          "evidence_count": 1,
+          "composer": {
+            "answer": "根据知识库检索结果，可以这样处理：\n\n1. 启动条件或责任主体：第五条 各级防汛抗旱指挥部负责本地区洪涝突发险情灾情的及时掌握与报告工作，并确定专人负责。[S1]\n\n来源：\n[S1] 洪涝突发险情灾情报告暂行规定.md / 第一章 总 则",
+            "requested_mode": "template",
+            "actual_mode": "template",
+            "latency_ms": 0.0,
+            "fallback_reason": null,
+            "decision": "answered",
+            "used_citation_ids": [
+              "S1"
+            ],
+            "decision_source": "template"
+          },
+          "hyde_document": {
+            "query": "洪涝突发险情发生后，应由谁负责掌握和报告灾情？",
+            "content": "",
+            "used": false,
+            "reason": "hyde_disabled",
+            "latency_ms": 0.0,
+            "mode": "disabled"
+          },
+          "domain_gate": {
+            "decision": "in_domain",
+            "decision_source": "rule",
+            "signals": [
+              "domain_term:灾情",
+              "domain_term:洪涝"
+            ],
+            "confidence": 0.998799,
+            "reason": "transparent_domain_signal"
+          },
+          "answer_decision": {
+            "decision": "answered",
+            "decision_source": "template",
+            "fallback_reason": null,
+            "used_citation_ids": [
+              "S1"
+            ]
+          }
+        }
+      },
+      "fallback_reason": null,
+      "documents": [
+        "[S1]\n来源：洪涝突发险情灾情报告暂行规定.md\n章节：第一章 总 则\n内容：第一条 为及时、准确、全面掌握突发险情、灾情,为防汛抗洪减灾决策提供支撑，最大限度避免或减少人员伤亡，减轻灾害损失，保障防洪安全，特制定本规定。\n第二条 本规定依据《中华人民共和国突发事件应对法》《中华人民共和国防洪法》《中华人民共和国防汛条例》以及国家相关预案和规定等制定。\n第三条 本规定适用于各级防汛抗旱指挥部洪涝突发险情灾情的紧急报告管理。\n洪涝灾情的常规统计工作仍按《自然灾害情况统计调查制度》和《特别重大自然灾害损失统计调查制度》执行。\n第四条 洪涝突发险情灾情报告遵循分级负责、及时快捷、真实全面的原则。\n第五条 各级防汛抗旱指挥部负责本地区洪涝突发险情灾情的及时掌握与报告工作，并确定专人负责。\n全面的原则。第五条各级防汛抗旱指挥部负责本地区洪涝突发险情灾情的及时掌握与报告工作，并确定专人负责。\n第六条 突发险情主要指水库（水电站）、堤防、涵闸（泵站）等工程突然出现可能危及工程安全的情况，交通、能源、通讯、供水、排水等重要基础设施因洪涝、台风等灾害导致的突发险情，以及因山体崩塌、滑坡、泥石流突然形成的堰塞湖险情等。\n当上述工程出现溃坝、决口、坍塌等失事性险情前兆，重要基础设施发生严重威胁安全运行的险情，堰塞湖严重威胁人员安全时为突发重大险情。\n第七条 突发灾情主要指由于江河湖泊洪水泛滥、山洪灾害、台风登陆或影响、堰塞湖形成或溃决、水库垮坝、堤防决口等导致的人员伤亡、人员被困、城镇受淹、基础设施毁坏等情况。\n影响、堰塞湖形成或溃决、水库垮坝、堤防决口等导致的人员伤亡、人员被困、城镇受淹、基础设施毁坏等情况。\n本规定所称突发重大灾情是指因突发重大险情而导致的上述突发灾情。"
+      ],
+      "iterations_count": 1
+    }
+  ]
+}

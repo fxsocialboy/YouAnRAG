@@ -1,0 +1,152 @@
+{
+  "stage": "7.4",
+  "legacy_labeled_retrieval": {
+    "query_count": 2,
+    "chunk_mrr@10": 0.5,
+    "chunk_ndcg@10": 0.5,
+    "chunk_recall@10": 0.5,
+    "chunk_recall@5": 0.5,
+    "doc_mrr@10": 0.75,
+    "doc_ndcg@10": 0.8155,
+    "doc_recall@10": 1.0,
+    "doc_recall@5": 1.0,
+    "avg_latency_ms": 206.94,
+    "p50_latency_ms": 206.94,
+    "p95_latency_ms": 260.39
+  },
+  "v2_labeled_retrieval": {
+    "query_count": 2,
+    "chunk_mrr@10": 0.0,
+    "chunk_ndcg@10": 0.0,
+    "chunk_recall@10": 0.0,
+    "chunk_recall@5": 0.0,
+    "doc_mrr@10": 1.0,
+    "doc_ndcg@10": 1.0,
+    "doc_recall@10": 1.0,
+    "doc_recall@5": 1.0,
+    "avg_latency_ms": 50210.4,
+    "p50_latency_ms": 50210.4,
+    "p95_latency_ms": 50566.01
+  },
+  "v2_labeled_answer": {
+    "query_count": 2,
+    "composer_mode": "mixed",
+    "answer_success_rate": 1.0,
+    "fallback_rate": 0.0,
+    "all_citations_mapped_ratio": 1.0,
+    "fallback_accuracy": 1.0,
+    "faithfulness": null,
+    "answer_relevancy": null,
+    "citation_correctness": null,
+    "citation_completeness": null,
+    "avg_latency_ms": 50210.87,
+    "p50_latency_ms": 50210.87,
+    "p95_latency_ms": 50566.57
+  },
+  "v2_random_answer": {
+    "query_count": 2,
+    "composer_mode": "mixed",
+    "answer_success_rate": 1.0,
+    "fallback_rate": 0.0,
+    "all_citations_mapped_ratio": 1.0,
+    "fallback_accuracy": 1.0,
+    "faithfulness": null,
+    "answer_relevancy": null,
+    "citation_correctness": null,
+    "citation_completeness": null,
+    "avg_latency_ms": 50210.87,
+    "p50_latency_ms": 50210.87,
+    "p95_latency_ms": 50566.57
+  },
+  "random_by_query_type": {
+    "scenario": {
+      "query_count": 2,
+      "composer_mode": "mixed",
+      "answer_success_rate": 1.0,
+      "fallback_rate": 0.0,
+      "all_citations_mapped_ratio": 1.0,
+      "fallback_accuracy": 1.0,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_correctness": null,
+      "citation_completeness": null,
+      "avg_latency_ms": 50210.87,
+      "p50_latency_ms": 50210.87,
+      "p95_latency_ms": 50566.57
+    }
+  },
+  "random_by_disaster_type": {
+    "flood": {
+      "query_count": 1,
+      "composer_mode": "mixed",
+      "answer_success_rate": 1.0,
+      "fallback_rate": 0.0,
+      "all_citations_mapped_ratio": 1.0,
+      "fallback_accuracy": 1.0,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_correctness": null,
+      "citation_completeness": null,
+      "avg_latency_ms": 49815.65,
+      "p50_latency_ms": 49815.65,
+      "p95_latency_ms": 49815.65
+    },
+    "geological": {
+      "query_count": 1,
+      "composer_mode": "mixed",
+      "answer_success_rate": 1.0,
+      "fallback_rate": 0.0,
+      "all_citations_mapped_ratio": 1.0,
+      "fallback_accuracy": 1.0,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_correctness": null,
+      "citation_completeness": null,
+      "avg_latency_ms": 50606.09,
+      "p50_latency_ms": 50606.09,
+      "p95_latency_ms": 50606.09
+    }
+  },
+  "deterministic": {
+    "labeled_unknown_citation_count": 0,
+    "random_unknown_citation_count": 0,
+    "labeled_deepseek_actual_rate": 0.0,
+    "random_deepseek_actual_rate": 0.0,
+    "random_in_domain_answer_rate": 1.0,
+    "random_ood_fallback_accuracy": 0.0
+  },
+  "low_or_failed_examples": [
+    {
+      "query_id": "final_001",
+      "query": "四川山区群众发现滑坡迹象后如何实现提前避险？",
+      "status": "ok",
+      "fallback": false,
+      "faithfulness": null,
+      "error": null
+    },
+    {
+      "query_id": "final_002",
+      "query": "我国为什么需要专门做山洪灾害防治规划？",
+      "status": "ok",
+      "fallback": false,
+      "faithfulness": null,
+      "error": null
+    },
+    {
+      "query_id": "final_001",
+      "query": "四川山区群众发现滑坡迹象后如何实现提前避险？",
+      "status": "ok",
+      "fallback": false,
+      "faithfulness": null,
+      "error": null
+    },
+    {
+      "query_id": "final_002",
+      "query": "我国为什么需要专门做山洪灾害防治规划？",
+      "status": "ok",
+      "fallback": false,
+      "faithfulness": null,
+      "error": null
+    }
+  ]
+}

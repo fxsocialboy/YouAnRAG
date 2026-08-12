@@ -1,0 +1,487 @@
+{
+  "rag_answer": {
+    "query": "深圳市气象灾害Ⅳ级响应由哪个机构决定启动？",
+    "answer": "根据现有证据，深圳市气象灾害Ⅳ级响应由**市气象灾害指挥部**决定是否启动，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发 [S1]。具体启动情形包括：市气象局（台）在全市范围内发布气象灾害Ⅳ级预警信息，或气象灾害影响程度达到市级Ⅳ级应急响应启动标准；或经会商研判确定有必要启动Ⅳ级响应 [S1]。此外，对于大雾和强季风等特定灾害，当市气象局（台）发布Ⅳ级预警信号时，市气象灾害指挥部启动会商机制并启动Ⅳ级应急响应 [S4][S5]。",
+    "citations": [
+      {
+        "citation_id": "S1",
+        "source_file": "深圳市气象灾害应急预案.md",
+        "chunk_id": "深圳市气象灾害应急预案.md::48",
+        "section_path": [
+          "3.3.3.2 Ⅳ级应急响应（一般）"
+        ],
+        "rank": 1,
+        "score": 1.0,
+        "metadata": {
+          "content_preview": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部办公室主任主持会商。\n由市气象灾害指挥部决定是否启动Ⅳ级应急响应，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发：\n（1）市气象局（台）在全市范围内发布气象灾害Ⅳ级预警信息，或气象灾害影响",
+          "chunk_ids": [
+            "深圳市气象灾害应急预案.md::48"
+          ],
+          "chunk_indexes": [
+            48
+          ],
+          "token_count": 248,
+          "fusion_score": 0.031148,
+          "content_hashes": [
+            "3366dd79f8535e70bd5c0d9cb43fecd8d5074fcf4afd2efc35823c4a6e70676c"
+          ],
+          "rerank_score": 0.999662,
+          "mmr_score": 1.0,
+          "sort_score": 1.0
+        },
+        "marker": "[S1]",
+        "section_path_text": "3.3.3.2 Ⅳ级应急响应（一般）"
+      },
+      {
+        "citation_id": "S2",
+        "source_file": "深圳市气象灾害应急预案.md",
+        "chunk_id": "深圳市气象灾害应急预案.md::50",
+        "section_path": [
+          "3.3.3.4 Ⅱ级应急响应（重大）"
+        ],
+        "rank": 2,
+        "score": 0.999253,
+        "metadata": {
+          "content_preview": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部总指挥或副总指挥主持会商。\n由市气象灾害指挥部总指挥决定是否启动Ⅱ级应急响应，由市气象灾害指挥部签发：\n（1）市气象局（台）发布气象灾害Ⅱ级预警信息；\n（2）经对气象灾害的影响及趋势会商研判，确",
+          "chunk_ids": [
+            "深圳市气象灾害应急预案.md::50"
+          ],
+          "chunk_indexes": [
+            50
+          ],
+          "token_count": 208,
+          "fusion_score": 0.030192,
+          "content_hashes": [
+            "4ef47c85d596eab960a01ade46543344d28be48e7c9458807286452ac9238f2b"
+          ],
+          "rerank_score": 0.999253,
+          "mmr_score": 0.407943,
+          "sort_score": 0.407943
+        },
+        "marker": "[S2]",
+        "section_path_text": "3.3.3.4 Ⅱ级应急响应（重大）"
+      },
+      {
+        "citation_id": "S3",
+        "source_file": "深圳市气象灾害应急预案.md",
+        "chunk_id": "深圳市气象灾害应急预案.md::51",
+        "section_path": [
+          "3.3.3.5 Ⅰ级应急响应（特别重大）"
+        ],
+        "rank": 3,
+        "score": 0.998501,
+        "metadata": {
+          "content_preview": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部总指挥主持会商。\n并报请市人民政府决定是否启动I 级应急响应，由市人民政府向各有关单位发布启动相关应急程序的命令，并报告省人民政府：\n（1）市气象局（台）发布气象灾害 I 级预警信息；\n（2）经",
+          "chunk_ids": [
+            "深圳市气象灾害应急预案.md::51"
+          ],
+          "chunk_indexes": [
+            51
+          ],
+          "token_count": 224,
+          "fusion_score": 0.028817,
+          "content_hashes": [
+            "eea31c39788860cb54257cba9d32906f3dfc6d1454c45b4ff2a57b8d76f53faa"
+          ],
+          "rerank_score": 0.998501,
+          "mmr_score": 0.392108,
+          "sort_score": 0.392108
+        },
+        "marker": "[S3]",
+        "section_path_text": "3.3.3.5 Ⅰ级应急响应（特别重大）"
+      },
+      {
+        "citation_id": "S4",
+        "source_file": "深圳市气象灾害应急预案.md",
+        "chunk_id": "深圳市气象灾害应急预案.md::222",
+        "section_path": [
+          "5.4 大雾灾害应急响应"
+        ],
+        "rank": 4,
+        "score": 0.996911,
+        "metadata": {
+          "content_preview": "受大雾灾害天气影响，市气象局（台）发布关注级预警 信号时，相关区域自动启动关注级响应；\n市气象局（台）发 布Ⅳ级预警信号时，市气象灾害指挥部启动会商机制，及时 对灾害影响及趋势进行综合评估，启动Ⅳ级应急响应。\n启动条件：",
+          "chunk_ids": [
+            "深圳市气象灾害应急预案.md::222"
+          ],
+          "chunk_indexes": [
+            222
+          ],
+          "token_count": 139,
+          "fusion_score": 0.029719,
+          "content_hashes": [
+            "960fdae3b536e61a72127ab517f96228de2090bc9e77f50d6853d1e435e94664"
+          ],
+          "rerank_score": 0.996911,
+          "mmr_score": 0.401344,
+          "sort_score": 0.401344
+        },
+        "marker": "[S4]",
+        "section_path_text": "5.4 大雾灾害应急响应"
+      },
+      {
+        "citation_id": "S5",
+        "source_file": "深圳市气象灾害应急预案.md",
+        "chunk_id": "深圳市气象灾害应急预案.md::94",
+        "section_path": [
+          "1.4.2 强季风灾害应急响应"
+        ],
+        "rank": 5,
+        "score": 0.996512,
+        "metadata": {
+          "content_preview": "市气象局（台）发布强季风关注级预警信号时，相关区域自动启动关注级响应；\n发布Ⅳ级、Ⅲ级预警信号时，市气象灾害指挥部启动会商机制，对灾害影响及趋势进行综合评估，及时启动Ⅳ级、Ⅲ级响应。\n启动条件：",
+          "chunk_ids": [
+            "深圳市气象灾害应急预案.md::94"
+          ],
+          "chunk_indexes": [
+            94
+          ],
+          "token_count": 132,
+          "fusion_score": 0.029261,
+          "content_hashes": [
+            "db6640a3bd02f6588d44a37ef8a16fc74ff2e2eaca4fedb115eaccce5d43e5ba"
+          ],
+          "rerank_score": 0.996512,
+          "mmr_score": 0.395787,
+          "sort_score": 0.395787
+        },
+        "marker": "[S5]",
+        "section_path_text": "1.4.2 强季风灾害应急响应"
+      }
+    ],
+    "evidence": [
+      {
+        "citation_id": "S1",
+        "chunk_id": "深圳市气象灾害应急预案.md::48",
+        "source_file": "深圳市气象灾害应急预案.md",
+        "section_path": [
+          "3.3.3.2 Ⅳ级应急响应（一般）"
+        ],
+        "content": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部办公室主任主持会商。\n由市气象灾害指挥部决定是否启动Ⅳ级应急响应，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发：\n（1）市气象局（台）在全市范围内发布气象灾害Ⅳ级预警信息，或气象灾害影响程度达到市级Ⅳ级应急响应启动标准时；\n（2）经对气象灾害的影响及趋势会商研判，确定有必要启动Ⅳ级响应。",
+        "score": 1.0,
+        "rank": 1,
+        "metadata": {
+          "chunk_ids": [
+            "深圳市气象灾害应急预案.md::48"
+          ],
+          "chunk_indexes": [
+            48
+          ],
+          "token_count": 248,
+          "fusion_score": 0.031148,
+          "content_hashes": [
+            "3366dd79f8535e70bd5c0d9cb43fecd8d5074fcf4afd2efc35823c4a6e70676c"
+          ],
+          "content_preview": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部办公室主任主持会商。\n由市气象灾害指挥部决定是否启动Ⅳ级应急响应，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发：\n（1）市气象局（台）在全市范围内发布气象灾害Ⅳ级预警信息，或气象灾害影响",
+          "rerank_score": 0.999662,
+          "mmr_score": 1.0,
+          "sort_score": 1.0
+        },
+        "marker": "[S1]",
+        "section_path_text": "3.3.3.2 Ⅳ级应急响应（一般）"
+      },
+      {
+        "citation_id": "S2",
+        "chunk_id": "深圳市气象灾害应急预案.md::50",
+        "source_file": "深圳市气象灾害应急预案.md",
+        "section_path": [
+          "3.3.3.4 Ⅱ级应急响应（重大）"
+        ],
+        "content": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部总指挥或副总指挥主持会商。\n由市气象灾害指挥部总指挥决定是否启动Ⅱ级应急响应，由市气象灾害指挥部签发：\n（1）市气象局（台）发布气象灾害Ⅱ级预警信息；\n（2）经对气象灾害的影响及趋势会商研判，确定有必要启动Ⅱ级响应。",
+        "score": 0.999253,
+        "rank": 2,
+        "metadata": {
+          "chunk_ids": [
+            "深圳市气象灾害应急预案.md::50"
+          ],
+          "chunk_indexes": [
+            50
+          ],
+          "token_count": 208,
+          "fusion_score": 0.030192,
+          "content_hashes": [
+            "4ef47c85d596eab960a01ade46543344d28be48e7c9458807286452ac9238f2b"
+          ],
+          "content_preview": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部总指挥或副总指挥主持会商。\n由市气象灾害指挥部总指挥决定是否启动Ⅱ级应急响应，由市气象灾害指挥部签发：\n（1）市气象局（台）发布气象灾害Ⅱ级预警信息；\n（2）经对气象灾害的影响及趋势会商研判，确",
+          "rerank_score": 0.999253,
+          "mmr_score": 0.407943,
+          "sort_score": 0.407943
+        },
+        "marker": "[S2]",
+        "section_path_text": "3.3.3.4 Ⅱ级应急响应（重大）"
+      },
+      {
+        "citation_id": "S3",
+        "chunk_id": "深圳市气象灾害应急预案.md::51",
+        "source_file": "深圳市气象灾害应急预案.md",
+        "section_path": [
+          "3.3.3.5 Ⅰ级应急响应（特别重大）"
+        ],
+        "content": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部总指挥主持会商。\n并报请市人民政府决定是否启动I 级应急响应，由市人民政府向各有关单位发布启动相关应急程序的命令，并报告省人民政府：\n（1）市气象局（台）发布气象灾害 I 级预警信息；\n（2）经对气象灾害的影响及趋势会商研判，确定有必要启动I 级响应。",
+        "score": 0.998501,
+        "rank": 3,
+        "metadata": {
+          "chunk_ids": [
+            "深圳市气象灾害应急预案.md::51"
+          ],
+          "chunk_indexes": [
+            51
+          ],
+          "token_count": 224,
+          "fusion_score": 0.028817,
+          "content_hashes": [
+            "eea31c39788860cb54257cba9d32906f3dfc6d1454c45b4ff2a57b8d76f53faa"
+          ],
+          "content_preview": "气象灾害程度达到或可能达到以下情形之一时，市气象灾害指挥部立即启动会商机制，及时对灾害影响及趋势进行综合评估，市气象灾害指挥部总指挥主持会商。\n并报请市人民政府决定是否启动I 级应急响应，由市人民政府向各有关单位发布启动相关应急程序的命令，并报告省人民政府：\n（1）市气象局（台）发布气象灾害 I 级预警信息；\n（2）经",
+          "rerank_score": 0.998501,
+          "mmr_score": 0.392108,
+          "sort_score": 0.392108
+        },
+        "marker": "[S3]",
+        "section_path_text": "3.3.3.5 Ⅰ级应急响应（特别重大）"
+      },
+      {
+        "citation_id": "S4",
+        "chunk_id": "深圳市气象灾害应急预案.md::222",
+        "source_file": "深圳市气象灾害应急预案.md",
+        "section_path": [
+          "5.4 大雾灾害应急响应"
+        ],
+        "content": "受大雾灾害天气影响，市气象局（台）发布关注级预警 信号时，相关区域自动启动关注级响应；\n市气象局（台）发 布Ⅳ级预警信号时，市气象灾害指挥部启动会商机制，及时 对灾害影响及趋势进行综合评估，启动Ⅳ级应急响应。\n启动条件：",
+        "score": 0.996911,
+        "rank": 4,
+        "metadata": {
+          "chunk_ids": [
+            "深圳市气象灾害应急预案.md::222"
+          ],
+          "chunk_indexes": [
+            222
+          ],
+          "token_count": 139,
+          "fusion_score": 0.029719,
+          "content_hashes": [
+            "960fdae3b536e61a72127ab517f96228de2090bc9e77f50d6853d1e435e94664"
+          ],
+          "content_preview": "受大雾灾害天气影响，市气象局（台）发布关注级预警 信号时，相关区域自动启动关注级响应；\n市气象局（台）发 布Ⅳ级预警信号时，市气象灾害指挥部启动会商机制，及时 对灾害影响及趋势进行综合评估，启动Ⅳ级应急响应。\n启动条件：",
+          "rerank_score": 0.996911,
+          "mmr_score": 0.401344,
+          "sort_score": 0.401344
+        },
+        "marker": "[S4]",
+        "section_path_text": "5.4 大雾灾害应急响应"
+      },
+      {
+        "citation_id": "S5",
+        "chunk_id": "深圳市气象灾害应急预案.md::94",
+        "source_file": "深圳市气象灾害应急预案.md",
+        "section_path": [
+          "1.4.2 强季风灾害应急响应"
+        ],
+        "content": "市气象局（台）发布强季风关注级预警信号时，相关区域自动启动关注级响应；\n发布Ⅳ级、Ⅲ级预警信号时，市气象灾害指挥部启动会商机制，对灾害影响及趋势进行综合评估，及时启动Ⅳ级、Ⅲ级响应。\n启动条件：",
+        "score": 0.996512,
+        "rank": 5,
+        "metadata": {
+          "chunk_ids": [
+            "深圳市气象灾害应急预案.md::94"
+          ],
+          "chunk_indexes": [
+            94
+          ],
+          "token_count": 132,
+          "fusion_score": 0.029261,
+          "content_hashes": [
+            "db6640a3bd02f6588d44a37ef8a16fc74ff2e2eaca4fedb115eaccce5d43e5ba"
+          ],
+          "content_preview": "市气象局（台）发布强季风关注级预警信号时，相关区域自动启动关注级响应；\n发布Ⅳ级、Ⅲ级预警信号时，市气象灾害指挥部启动会商机制，对灾害影响及趋势进行综合评估，及时启动Ⅳ级、Ⅲ级响应。\n启动条件：",
+          "rerank_score": 0.996512,
+          "mmr_score": 0.395787,
+          "sort_score": 0.395787
+        },
+        "marker": "[S5]",
+        "section_path_text": "1.4.2 强季风灾害应急响应"
+      }
+    ],
+    "trace": {
+      "query_plan": {
+        "original_query": "深圳市气象灾害Ⅳ级响应由哪个机构决定启动？",
+        "normalized_query": "深圳市气象灾害IV级响应由哪个机构决定启动?",
+        "query_type": "exact_fact",
+        "region_hint": "深圳",
+        "hazard_hint": "气象灾害",
+        "document_type_hint": null,
+        "time_hint": null,
+        "extracted_terms": [
+          "深圳",
+          "气象灾害",
+          "IV级",
+          "启动"
+        ],
+        "rewrite_confidence": 0.96,
+        "retrieval_policy": {
+          "use_rewrite": false,
+          "use_multi_query": false,
+          "use_hyde": false,
+          "use_reranker": false,
+          "use_mmr": false,
+          "dense_top_k": 30,
+          "sparse_top_k": 40,
+          "rerank_top_k": 20,
+          "max_branches": 2,
+          "branch_weights": {
+            "raw": 1.0,
+            "normalized": 0.9,
+            "expanded": 0.7,
+            "hyde": 0.6
+          }
+        },
+        "reasons": [
+          "exact_fact_constraint"
+        ]
+      },
+      "branches": [
+        {
+          "branch": "raw",
+          "query": "深圳市气象灾害Ⅳ级响应由哪个机构决定启动？",
+          "weight": 1.0,
+          "reason": "original_query_always_preserved"
+        },
+        {
+          "branch": "normalized",
+          "query": "深圳市气象灾害IV级响应由哪个机构决定启动?",
+          "weight": 0.9,
+          "reason": "text_normalization"
+        }
+      ],
+      "matched_branches": [
+        "raw",
+        "normalized"
+      ],
+      "retrieval_latency_ms": 49481.535299972165,
+      "composer_mode": "deepseek",
+      "verification": {
+        "passed": true,
+        "reasons": [],
+        "citation_verification": {
+          "passed": true,
+          "reasons": [],
+          "used_citations": [
+            "S1",
+            "S4",
+            "S5"
+          ],
+          "missing_citations": [],
+          "unused_citations": [
+            "S2",
+            "S3"
+          ],
+          "has_key_fact_without_citation": false
+        },
+        "guardrail": {
+          "passed": true,
+          "reasons": [],
+          "fallback_answer": null,
+          "metrics": {
+            "evidence_count": 5,
+            "max_score": 1.0,
+            "min_score": 0.3,
+            "min_evidence_count": 1
+          }
+        }
+      },
+      "extra": {
+        "service_options": {
+          "top_k": 5,
+          "dense_top_k": 30,
+          "sparse_top_k": 30,
+          "branch_candidate_top_k": 10,
+          "max_branches": null,
+          "token_budget": 1200,
+          "enable_reranker": true,
+          "enable_mmr": true,
+          "rerank_top_k": 30,
+          "mmr_pre_candidates": 20,
+          "mmr_top_k": null,
+          "fallback_answer": "当前知识库没有足够依据回答该问题。",
+          "min_evidence_count": 1,
+          "min_evidence_score": 0.3,
+          "composer_mode": "deepseek"
+        },
+        "result_count": 5,
+        "evidence_count": 5,
+        "composer": {
+          "answer": "根据现有证据，深圳市气象灾害Ⅳ级响应由**市气象灾害指挥部**决定是否启动，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发 [S1]。具体启动情形包括：市气象局（台）在全市范围内发布气象灾害Ⅳ级预警信息，或气象灾害影响程度达到市级Ⅳ级应急响应启动标准；或经会商研判确定有必要启动Ⅳ级响应 [S1]。此外，对于大雾和强季风等特定灾害，当市气象局（台）发布Ⅳ级预警信号时，市气象灾害指挥部启动会商机制并启动Ⅳ级应急响应 [S4][S5]。",
+          "requested_mode": "deepseek",
+          "actual_mode": "deepseek",
+          "latency_ms": 2224.25,
+          "fallback_reason": null
+        },
+        "hyde_document": {
+          "query": "深圳市气象灾害Ⅳ级响应由哪个机构决定启动？",
+          "content": "",
+          "used": false,
+          "reason": "hyde_disabled",
+          "latency_ms": 0.0,
+          "mode": "disabled"
+        }
+      }
+    },
+    "fallback_reason": null,
+    "is_fallback": false
+  },
+  "judge": {
+    "composer_mode": "deepseek",
+    "atomic_facts": [
+      {
+        "fact": "深圳市气象灾害Ⅳ级响应由市气象灾害指挥部决定是否启动",
+        "supported": true,
+        "cited": true,
+        "supporting_citation_ids": [
+          "S1"
+        ],
+        "reason": "S1明确说明由市气象灾害指挥部决定是否启动Ⅳ级应急响应"
+      },
+      {
+        "fact": "市减灾委办公室和市气象灾害指挥部办公室联合签发",
+        "supported": true,
+        "cited": true,
+        "supporting_citation_ids": [
+          "S1"
+        ],
+        "reason": "S1提到授权市减灾委办公室和市气象灾害指挥部办公室联合签发"
+      },
+      {
+        "fact": "启动情形包括市气象局（台）在全市范围内发布气象灾害Ⅳ级预警信息，或气象灾害影响程度达到市级Ⅳ级应急响应启动标准",
+        "supported": true,
+        "cited": true,
+        "supporting_citation_ids": [
+          "S1"
+        ],
+        "reason": "S1中列出该情形"
+      },
+      {
+        "fact": "启动情形包括经会商研判确定有必要启动Ⅳ级响应",
+        "supported": true,
+        "cited": true,
+        "supporting_citation_ids": [
+          "S1"
+        ],
+        "reason": "S1中列出该情形"
+      },
+      {
+        "fact": "对于大雾和强季风等特定灾害，当市气象局（台）发布Ⅳ级预警信号时，市气象灾害指挥部启动会商机制并启动Ⅳ级应急响应",
+        "supported": true,
+        "cited": true,
+        "supporting_citation_ids": [
+          "S4",
+          "S5"
+        ],
+        "reason": "S4和S5分别提到大雾和强季风时发布Ⅳ级预警信号后启动Ⅳ级响应"
+      }
+    ],
+    "faithfulness": 1.0,
+    "answer_relevancy": 1.0,
+    "citation_completeness": 1.0,
+    "citation_correctness": 1.0,
+    "reason": "答案直接回答了用户问题，并提供了具体机构、启动条件和相关证据，完全相关。"
+  }
+}

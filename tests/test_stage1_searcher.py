@@ -59,7 +59,7 @@ def test_stage1_searcher_search_dicts():
 
 
 def test_load_metadata():
-    path = Path(r"G:\tiaozhanbei\newrag\artifacts\stage1\test_tmp_stage1_searcher_metadata.json")
+    path = Path(__file__).resolve().parents[1] / "artifacts" / "stage1" / "test_tmp_stage1_searcher_metadata.json"
     try:
         path.write_text('[{"source_file":"a.md"}]', encoding="utf-8")
         assert load_metadata(path) == [{"source_file": "a.md"}]

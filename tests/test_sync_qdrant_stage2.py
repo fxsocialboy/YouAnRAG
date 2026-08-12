@@ -11,7 +11,7 @@ from rag_v2.config import RagV2Config
 from rag_v2.stores.qdrant_store import QdrantStore, QdrantStoreConfig
 from rag_v2.sync.registry import DocumentRegistry
 
-PROJECT_ROOT = Path(r"G:\tiaozhanbei\newrag")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCRIPT_PATH = PROJECT_ROOT / "scripts" / "sync_qdrant_stage2.py"
 
 spec = importlib.util.spec_from_file_location("sync_qdrant_stage2", SCRIPT_PATH)

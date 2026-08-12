@@ -5,7 +5,7 @@ from scripts.build_chunks_stage1 import build_stage1_chunks
 
 
 def test_build_stage1_chunks_writes_expected_artifacts():
-    base = Path(r"G:\tiaozhanbei\newrag\artifacts\stage1\test_build_chunks")
+    base = Path(__file__).resolve().parents[1] / "artifacts" / "stage1" / "test_build_chunks"
     md_dir = base / "mds"
     out_dir = base / "out"
     md_dir.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "evaluate_stage7.py",
+      "passed": true,
+      "detail": "G:\\tiaozhanbei\\newrag\\evaluate_stage7.py"
+    },
+    {
+      "name": "scripts/run_stage74_calibration_autodl.sh",
+      "passed": true,
+      "detail": "G:\\tiaozhanbei\\newrag\\scripts\\run_stage74_calibration_autodl.sh"
+    },
+    {
+      "name": "scripts/run_stage7_autodl.sh",
+      "passed": true,
+      "detail": "G:\\tiaozhanbei\\newrag\\scripts\\run_stage7_autodl.sh"
+    },
+    {
+      "name": "scripts/preflight_stage74_autodl.py",
+      "passed": true,
+      "detail": "G:\\tiaozhanbei\\newrag\\scripts\\preflight_stage74_autodl.py"
+    },
+    {
+      "name": "scripts/validate_stage74_calibration.py",
+      "passed": true,
+      "detail": "G:\\tiaozhanbei\\newrag\\scripts\\validate_stage74_calibration.py"
+    },
+    {
+      "name": "scripts/generate_final_report.py",
+      "passed": true,
+      "detail": "G:\\tiaozhanbei\\newrag\\scripts\\generate_final_report.py"
+    },
+    {
+      "name": "scripts/generate_stage7_manual_review.py",
+      "passed": true,
+      "detail": "G:\\tiaozhanbei\\newrag\\scripts\\generate_stage7_manual_review.py"
+    },
+    {
+      "name": "experiments/stage74_fix_regression.jsonl",
+      "passed": true,
+      "detail": "G:\\tiaozhanbei\\newrag\\experiments\\stage74_fix_regression.jsonl"
+    },
+    {
+      "name": "experiments/eval_queries_final_labeled.jsonl",
+      "passed": true,
+      "detail": "G:\\tiaozhanbei\\newrag\\experiments\\eval_queries_final_labeled.jsonl"
+    },
+    {
+      "name": "experiments/eval_queries_final_random.jsonl",
+      "passed": true,
+      "detail": "G:\\tiaozhanbei\\newrag\\experiments\\eval_queries_final_random.jsonl"
+    },
+    {
+      "name": "artifacts/stage7/before_fix/before_fix_manifest.json",
+      "passed": true,
+      "detail": "G:\\tiaozhanbei\\newrag\\artifacts\\stage7\\before_fix\\before_fix_manifest.json"
+    },
+    {
+      "name": "before_fix_integrity",
+      "passed": true,
+      "detail": "{\n  \"passed\": true,\n  \"errors\": [],\n  \"checked_file_count\": 9\n}\n"
+    }
+  ],
+  "release_hashes": {
+    "evaluate_stage7.py": "e145884103156fb4deba5f56606a5ffd84bce2dbd54bca168c545607d496094c",
+    "scripts/run_stage74_calibration_autodl.sh": "df33bc0e6e04871daf7419944fe5c164dc6412733d6af6aba2ba3bf41040be23",
+    "scripts/run_stage7_autodl.sh": "2eb90fdfb8d0ea5213f0abbe0318dd75b6a6aab357d8dd617e87e81782113f1c",
+    "scripts/preflight_stage74_autodl.py": "e0930b6c7208866c3b7890ab65c375bf220bc063f8b4b53d78b1dce79d1bb30d",
+    "scripts/validate_stage74_calibration.py": "acfa26bafca39d97106428b701ccea870e03618222e0a9dd734d9c4b4a8ace79",
+    "scripts/generate_final_report.py": "0983eba594130fffc8cd518d91467800dc2cc8dc8adcd8d3e8c2105a208b3fa5",
+    "scripts/generate_stage7_manual_review.py": "9668d6337c45a5bf91e00a9f90bc4c7b854f125699964e0769302a026545c20d",
+    "experiments/stage74_fix_regression.jsonl": "5826cc7d812262762061c36f8455b13ab29c5de7da48b5155156098b4b359a7a",
+    "experiments/eval_queries_final_labeled.jsonl": "8be0b3727f47c920b2d14636671599607c568e9ce9373ca9b5b397e740964c64",
+    "experiments/eval_queries_final_random.jsonl": "e1b52e7b6c0e557d01fa004d73b40e4e4ed903225b469e2f4f939e39db0a40fc",
+    "artifacts/stage7/before_fix/before_fix_manifest.json": "456cdf7c18aa0b904a44f855156ee29757cdd3e8d6b1ed795c5dbc58145bdd0b"
+  }
+}

@@ -4,7 +4,7 @@ from scripts.generate_phase1_report import generate_phase1_report
 
 
 def test_generate_phase1_report_writes_closing_docs():
-    phase1_report, artifact_readme = generate_phase1_report(Path(r"G:\tiaozhanbei\newrag"))
+    phase1_report, artifact_readme = generate_phase1_report(Path(__file__).resolve().parents[1])
     assert phase1_report.exists()
     assert artifact_readme.exists()
     report_text = phase1_report.read_text(encoding="utf-8")

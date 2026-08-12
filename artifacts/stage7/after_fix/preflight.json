@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "models/bge-large-zh-v1.5/config.json",
+      "passed": true,
+      "detail": "/root/autodl-tmp/YouAnRAG/models/bge-large-zh-v1.5/config.json"
+    },
+    {
+      "name": "models/bge-reranker-base/config.json",
+      "passed": true,
+      "detail": "/root/autodl-tmp/YouAnRAG/models/bge-reranker-base/config.json"
+    },
+    {
+      "name": "artifacts/stage1/faiss_index.index",
+      "passed": true,
+      "detail": "/root/autodl-tmp/YouAnRAG/artifacts/stage1/faiss_index.index"
+    },
+    {
+      "name": "artifacts/stage1/chunk_metadata.json",
+      "passed": true,
+      "detail": "/root/autodl-tmp/YouAnRAG/artifacts/stage1/chunk_metadata.json"
+    },
+    {
+      "name": "artifacts/stage3/bm25_index.json",
+      "passed": true,
+      "detail": "/root/autodl-tmp/YouAnRAG/artifacts/stage3/bm25_index.json"
+    },
+    {
+      "name": "legacy_snapshot/RAG/faiss_index.index",
+      "passed": true,
+      "detail": "/root/autodl-tmp/YouAnRAG/legacy_snapshot/RAG/faiss_index.index"
+    },
+    {
+      "name": "legacy_snapshot/RAG/chunk_metadata.json",
+      "passed": true,
+      "detail": "/root/autodl-tmp/YouAnRAG/legacy_snapshot/RAG/chunk_metadata.json"
+    },
+    {
+      "name": "experiments/eval_queries_final_labeled.jsonl",
+      "passed": true,
+      "detail": "/root/autodl-tmp/YouAnRAG/experiments/eval_queries_final_labeled.jsonl"
+    },
+    {
+      "name": "experiments/eval_queries_final_random.jsonl",
+      "passed": true,
+      "detail": "/root/autodl-tmp/YouAnRAG/experiments/eval_queries_final_random.jsonl"
+    },
+    {
+      "name": "cuda",
+      "passed": true,
+      "detail": "NVIDIA GeForce RTX 4090"
+    },
+    {
+      "name": "experiments/eval_queries_final_labeled.jsonl:sha256",
+      "passed": true,
+      "detail": "8be0b3727f47c920b2d14636671599607c568e9ce9373ca9b5b397e740964c64"
+    },
+    {
+      "name": "experiments/eval_queries_final_random.jsonl:sha256",
+      "passed": true,
+      "detail": "e1b52e7b6c0e557d01fa004d73b40e4e4ed903225b469e2f4f939e39db0a40fc"
+    },
+    {
+      "name": "qdrant_local",
+      "passed": true,
+      "detail": "/root/autodl-tmp/YouAnRAG/artifacts/qdrant_local/meta.json"
+    },
+    {
+      "name": "deepseek_smoke",
+      "passed": true,
+      "detail": "OK"
+    }
+  ]
+}

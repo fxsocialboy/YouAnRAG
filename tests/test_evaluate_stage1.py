@@ -41,7 +41,7 @@ def make_fake_searcher():
 
 
 def test_evaluate_stage1_with_fake_searcher(monkeypatch):
-    base = Path(r"G:\tiaozhanbei\newrag\artifacts\stage1\test_tmp_eval_stage1")
+    base = Path(__file__).resolve().parents[1] / "artifacts" / "stage1" / "test_tmp_eval_stage1"
     base.mkdir(parents=True, exist_ok=True)
     queries = base / "queries.jsonl"
     out = base / "out.json"
@@ -68,7 +68,7 @@ def test_evaluate_stage1_with_fake_searcher(monkeypatch):
 
 
 def test_write_comparison_report():
-    base = Path(r"G:\tiaozhanbei\newrag\artifacts\stage1\test_tmp_eval_stage1")
+    base = Path(__file__).resolve().parents[1] / "artifacts" / "stage1" / "test_tmp_eval_stage1"
     base.mkdir(parents=True, exist_ok=True)
     legacy = base / "legacy.json"
     report = base / "report.md"

@@ -71,7 +71,7 @@ def test_build_quality_report_core_metrics():
 def test_write_jsonl_and_json():
     # Use project-controlled path if pytest tmp_path is unavailable in some
     # Windows sandbox setups.  This test still accepts tmp_path when it works.
-    base = Path(r"G:\tiaozhanbei\newrag\artifacts\stage1\test_tmp_metadata")
+    base = Path(__file__).resolve().parents[1] / "artifacts" / "stage1" / "test_tmp_metadata"
     base.mkdir(parents=True, exist_ok=True)
     jsonl_path = base / "rows.jsonl"
     json_path = base / "data.json"

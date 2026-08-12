@@ -1,0 +1,27 @@
+{
+  "stage": "7.4.1",
+  "query_count": 51,
+  "regression_category_counts": {
+    "domain_boundary": 5,
+    "false_rejection": 16,
+    "ood_leak": 20,
+    "positive_control": 10
+  },
+  "source_dataset_counts": {
+    "domain_boundary": 5,
+    "final_labeled": 4,
+    "final_random": 42
+  },
+  "decision_counts": {
+    "answered": 31,
+    "fallback": 20
+  },
+  "source_hashes": {
+    "experiments\\eval_queries_final_labeled.jsonl": "8be0b3727f47c920b2d14636671599607c568e9ce9373ca9b5b397e740964c64",
+    "experiments\\eval_queries_final_random.jsonl": "e1b52e7b6c0e557d01fa004d73b40e4e4ed903225b469e2f4f939e39db0a40fc",
+    "artifacts/stage7/before_fix/final_labeled_v2_eval.json": "18beda840598c931fa95ea783e711bb6635ebc78742d941d6d53950d4c785702",
+    "artifacts/stage7/before_fix/final_random_v2_eval.json": "b20a83479f870d20e248fafa5dda8eb50caa61ced12d0d58cac09662d88c1a30"
+  },
+  "output": "experiments\\stage74_fix_regression.jsonl",
+  "output_sha256": "5826cc7d812262762061c36f8455b13ab29c5de7da48b5155156098b4b359a7a"
+}

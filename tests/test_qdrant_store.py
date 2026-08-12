@@ -12,7 +12,7 @@ from rag_v2.stores.vector_store import VectorPoint
 
 @pytest.fixture()
 def qdrant_path() -> Path:
-    path = Path(r"G:\tiaozhanbei\newrag\artifacts\stage2_test_qdrant")
+    path = Path(__file__).resolve().parents[1] / "artifacts" / "stage2_test_qdrant"
     if path.exists():
         shutil.rmtree(path)
     path.mkdir(parents=True, exist_ok=True)

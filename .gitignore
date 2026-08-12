@@ -1,13 +1,20 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+*.egg-info/
 .venv/
 venv/
 env/
+.env
+.env.*
+!.env.example
 
 # large model files
 models/
 legacy_snapshot/RAG/bge-large-zh-v1.5/
+*.zip
+*.tar
+*.tar.gz
 
 # temporary test dirs
 artifacts/stage1/test_tmp*/
@@ -23,6 +30,8 @@ artifacts/qdrant_local/
 
 # pytest temp
 artifacts/pytest_tmp/
+.pytest_tmp/
+artifacts/pytest_*/
 
 # archive
 stage1_artifacts.tar.gz

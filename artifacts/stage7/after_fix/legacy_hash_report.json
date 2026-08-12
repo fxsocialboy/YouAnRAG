@@ -1,0 +1,29 @@
+{
+  "passed": false,
+  "items": [
+    {
+      "manifest_path": "G:\\tiaozhanbei\\Youan-AI-main\\youan-multiagent\\multi_agent_server\\app\\RAG\\__init__.py",
+      "status": "outside_legacy_snapshot"
+    },
+    {
+      "manifest_path": "G:\\tiaozhanbei\\Youan-AI-main\\youan-multiagent\\multi_agent_server\\app\\RAG\\read.py",
+      "status": "outside_legacy_snapshot"
+    },
+    {
+      "manifest_path": "G:\\tiaozhanbei\\Youan-AI-main\\youan-multiagent\\multi_agent_server\\app\\RAG\\databse.py",
+      "status": "outside_legacy_snapshot"
+    },
+    {
+      "manifest_path": "G:\\tiaozhanbei\\Youan-AI-main\\youan-multiagent\\multi_agent_server\\app\\RAG\\retreiver.py",
+      "status": "outside_legacy_snapshot"
+    },
+    {
+      "manifest_path": "G:\\tiaozhanbei\\Youan-AI-main\\youan-multiagent\\multi_agent_server\\app\\RAG\\search.py",
+      "status": "outside_legacy_snapshot"
+    },
+    {
+      "manifest_path": "G:\\tiaozhanbei\\Youan-AI-main\\youan-multiagent\\multi_agent_server\\app\\RAG\\test.py",
+      "status": "outside_legacy_snapshot"
+    }
+  ]
+}

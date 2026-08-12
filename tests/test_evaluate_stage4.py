@@ -109,7 +109,7 @@ def test_summarize_rows_adds_deltas():
 
 
 def test_generate_phase4_report_writes_markdown(monkeypatch):
-    base = Path(r"G:\tiaozhanbei\newrag\artifacts\stage4\test_tmp_report")
+    base = Path(__file__).resolve().parents[1] / "artifacts" / "stage4" / "test_tmp_report"
     experiments_dir = base / "experiments"
     artifacts_dir = base / "artifacts"
     stage4_dir = artifacts_dir / "stage4"

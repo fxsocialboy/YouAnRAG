@@ -1,0 +1,58 @@
+{
+  "stage": "7.1",
+  "labeled": {
+    "query_count": 25,
+    "group_counts": {
+      "scenario": 6,
+      "exact_fact": 5,
+      "short_ambiguous": 2,
+      "keyword": 7,
+      "multi_hop": 3,
+      "out_of_domain": 2
+    },
+    "disaster_type_counts": {
+      "geological": 2,
+      "flood": 6,
+      "earthquake": 4,
+      "meteorological": 6,
+      "comprehensive": 5,
+      "out_of_domain": 2
+    },
+    "duplicate_query_ids": [],
+    "duplicate_queries": [],
+    "unknown_chunk_ids": [],
+    "unknown_source_files": [],
+    "valid": true
+  },
+  "random": {
+    "query_count": 120,
+    "group_counts": {
+      "scenario": 40,
+      "keyword": 25,
+      "short_ambiguous": 20,
+      "multi_hop": 15,
+      "out_of_domain": 20
+    },
+    "disaster_type_counts": {
+      "flood": 18,
+      "meteorological": 23,
+      "earthquake": 4,
+      "geological": 21,
+      "comprehensive": 34,
+      "out_of_domain": 20
+    },
+    "duplicate_query_ids": [],
+    "duplicate_queries": [],
+    "unknown_chunk_ids": [],
+    "unknown_source_files": [],
+    "valid": true
+  },
+  "checks": {
+    "labeled_count_is_25": true,
+    "labeled_labels_resolve": true,
+    "random_count_is_120": true,
+    "random_groups_match": true,
+    "random_rows_unique": true
+  },
+  "passed": true
+}

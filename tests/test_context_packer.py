@@ -208,3 +208,19 @@ def test_context_packer_preserves_stage4_scores_when_merging_adjacent_chunks():
     assert chunk.metadata["rerank_score"] == 0.7
     assert chunk.metadata["mmr_score"] == 0.6
     assert chunk.metadata["sort_score"] == 0.6
+
+
+def test_context_packer_preserves_seed_dense_confidence_separately_from_mmr():
+    metadata = [
+        row("doc.md", 0, "A", "first", 10),
+        row("doc.md", 1, "A", "second", 10),
+    ]
+    packer = ContextPacker(metadata)
+    seed = candidate("doc.md", 0, "A", "first", 0.03, rerank_score=None, mmr_score=1.0)
+    seed.dense_score = 0.42
+
+    result = packer.pack([seed], token_budget=50, same_section_extra=0)
+
+    chunk = result.evidence_chunks[0]
+    assert chunk.metadata["mmr_score"] == 1.0
+    assert chunk.metadata["dense_score"] == 0.42

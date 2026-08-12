@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "items": [
+    {
+      "path": "legacy_snapshot\\RAG\\__init__.py",
+      "status": "ok",
+      "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "actual_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "legacy_snapshot\\RAG\\read.py",
+      "status": "ok",
+      "expected_sha256": "f20ee6d0e0de5d82be8a4657b725caf138b335750798803c24a94b112190447c",
+      "actual_sha256": "f20ee6d0e0de5d82be8a4657b725caf138b335750798803c24a94b112190447c"
+    },
+    {
+      "path": "legacy_snapshot\\RAG\\databse.py",
+      "status": "ok",
+      "expected_sha256": "692c68a2dbd8df40b20cda9c6f91839f2b216e7aee1947b6b5d1aca97adda0f6",
+      "actual_sha256": "692c68a2dbd8df40b20cda9c6f91839f2b216e7aee1947b6b5d1aca97adda0f6"
+    },
+    {
+      "path": "legacy_snapshot\\RAG\\retreiver.py",
+      "status": "ok",
+      "expected_sha256": "ead5bec715fe87ebb9beae96f71f4604bbe79bda719c81563939ecdbe522870f",
+      "actual_sha256": "ead5bec715fe87ebb9beae96f71f4604bbe79bda719c81563939ecdbe522870f"
+    },
+    {
+      "path": "legacy_snapshot\\RAG\\search.py",
+      "status": "ok",
+      "expected_sha256": "6f9fd0b2a49b24289bb8e2d92c3cba679f1c1b0505ec60166c25063a5374e49b",
+      "actual_sha256": "6f9fd0b2a49b24289bb8e2d92c3cba679f1c1b0505ec60166c25063a5374e49b"
+    },
+    {
+      "path": "legacy_snapshot\\RAG\\test.py",
+      "status": "ok",
+      "expected_sha256": "adab62e5214627a29cfd7ec5e68502fcb474f48e8a89b4ca95cf1b2b795a430f",
+      "actual_sha256": "adab62e5214627a29cfd7ec5e68502fcb474f48e8a89b4ca95cf1b2b795a430f"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+[1/120] random_001 status=ok latency_ms=14201.52
+[2/120] random_002 status=ok latency_ms=13188.74
+[3/120] random_003 status=ok latency_ms=8306.35
+[4/120] random_004 status=ok latency_ms=5713.48
+[5/120] random_005 status=ok latency_ms=10884.4
+[6/120] random_006 status=ok latency_ms=5174.28
+[7/120] random_007 status=ok latency_ms=5759.42
+[8/120] random_008 status=ok latency_ms=9811.38
+[9/120] random_009 status=ok latency_ms=10979.91
+[10/120] random_010 status=ok latency_ms=8356.69
+[11/120] random_011 status=ok latency_ms=7349.21
+[12/120] random_012 status=ok latency_ms=5055.94
+[13/120] random_013 status=ok latency_ms=10234.47
+[14/120] random_014 status=ok latency_ms=10224.78
+[15/120] random_015 status=ok latency_ms=6658.72
+[16/120] random_016 status=ok latency_ms=9788.25
+[17/120] random_017 status=ok latency_ms=10798.59
+[18/120] random_018 status=ok latency_ms=11484.24
+[19/120] random_019 status=ok latency_ms=6947.79
+[20/120] random_020 status=ok latency_ms=8555.09
+[21/120] random_021 status=ok latency_ms=13203.41
+[22/120] random_022 status=ok latency_ms=3630.07
+[23/120] random_023 status=ok latency_ms=6381.04
+[24/120] random_024 status=ok latency_ms=8361.87
+[25/120] random_025 status=ok latency_ms=9557.7
+[26/120] random_026 status=ok latency_ms=8713.57
+[27/120] random_027 status=ok latency_ms=6543.46
+[28/120] random_028 status=ok latency_ms=9358.82
+[29/120] random_029 status=ok latency_ms=9727.95
+[30/120] random_030 status=ok latency_ms=6108.88
+[31/120] random_031 status=ok latency_ms=9922.01
+[32/120] random_032 status=ok latency_ms=9827.86
+[33/120] random_033 status=ok latency_ms=13598.3
+[34/120] random_034 status=ok latency_ms=10589.31
+[35/120] random_035 status=ok latency_ms=12047.11
+[36/120] random_036 status=ok latency_ms=13481.34
+[37/120] random_037 status=ok latency_ms=11626.0
+[38/120] random_038 status=ok latency_ms=9439.11
+[39/120] random_039 status=ok latency_ms=12630.76
+[40/120] random_040 status=ok latency_ms=4999.59
+[41/120] random_041 status=ok latency_ms=6258.62
+[42/120] random_042 status=ok latency_ms=3475.06
+[43/120] random_043 status=ok latency_ms=3781.6
+[44/120] random_044 status=ok latency_ms=3233.15
+[45/120] random_045 status=ok latency_ms=3875.05
+[46/120] random_046 status=ok latency_ms=2624.65
+[47/120] random_047 status=ok latency_ms=4074.7
+[48/120] random_048 status=ok latency_ms=4191.44
+[49/120] random_049 status=ok latency_ms=6086.36
+[50/120] random_050 status=ok latency_ms=4459.89
+[51/120] random_051 status=ok latency_ms=3893.2
+[52/120] random_052 status=ok latency_ms=7522.46
+[53/120] random_053 status=ok latency_ms=5619.87
+[54/120] random_054 status=ok latency_ms=7814.36
+[55/120] random_055 status=ok latency_ms=2329.57
+[56/120] random_056 status=ok latency_ms=3225.91
+[57/120] random_057 status=ok latency_ms=5131.24
+[58/120] random_058 status=ok latency_ms=5067.63
+[59/120] random_059 status=ok latency_ms=16187.67
+[60/120] random_060 status=ok latency_ms=2661.44
+[61/120] random_061 status=ok latency_ms=2076.29
+[62/120] random_062 status=ok latency_ms=2065.02
+[63/120] random_063 status=ok latency_ms=1400.82
+[64/120] random_064 status=ok latency_ms=4471.62
+[65/120] random_065 status=ok latency_ms=3778.38
+[66/120] random_066 status=ok latency_ms=8659.31
+[67/120] random_067 status=ok latency_ms=8797.31
+[68/120] random_068 status=ok latency_ms=8191.69
+[69/120] random_069 status=ok latency_ms=5899.45
+[70/120] random_070 status=ok latency_ms=9616.69
+[71/120] random_071 status=ok latency_ms=3906.44
+[72/120] random_072 status=ok latency_ms=6596.69
+[73/120] random_073 status=ok latency_ms=11430.96
+[74/120] random_074 status=ok latency_ms=13041.42
+[75/120] random_075 status=ok latency_ms=13983.48
+[76/120] random_076 status=ok latency_ms=12124.45
+[77/120] random_077 status=ok latency_ms=7981.42
+[78/120] random_078 status=ok latency_ms=9857.5
+[79/120] random_079 status=ok latency_ms=10377.47
+[80/120] random_080 status=ok latency_ms=10756.51
+[81/120] random_081 status=ok latency_ms=9041.5
+[82/120] random_082 status=ok latency_ms=10810.93
+[83/120] random_083 status=ok latency_ms=11656.31
+[84/120] random_084 status=ok latency_ms=9607.51
+[85/120] random_085 status=ok latency_ms=11986.33
+[86/120] random_086 status=ok latency_ms=4053.81
+[87/120] random_087 status=ok latency_ms=5661.23
+[88/120] random_088 status=ok latency_ms=7507.35
+[89/120] random_089 status=ok latency_ms=13874.92
+[90/120] random_090 status=ok latency_ms=8830.71
+[91/120] random_091 status=ok latency_ms=8345.39
+[92/120] random_092 status=ok latency_ms=5663.54
+[93/120] random_093 status=ok latency_ms=4554.52
+[94/120] random_094 status=ok latency_ms=10709.69
+[95/120] random_095 status=ok latency_ms=8737.88
+[96/120] random_096 status=ok latency_ms=7459.64
+[97/120] random_097 status=ok latency_ms=11642.27
+[98/120] random_098 status=ok latency_ms=12562.16
+[99/120] random_099 status=ok latency_ms=11370.3
+[100/120] random_100 status=ok latency_ms=14510.4
+[101/120] random_101 status=ok latency_ms=7054.14
+[102/120] random_102 status=ok latency_ms=4039.37
+[103/120] random_103 status=ok latency_ms=6410.13
+[104/120] random_104 status=ok latency_ms=6553.1
+[105/120] random_105 status=ok latency_ms=6770.64
+[106/120] random_106 status=ok latency_ms=6293.47
+[107/120] random_107 status=ok latency_ms=7333.8
+[108/120] random_108 status=ok latency_ms=5979.1
+[109/120] random_109 status=ok latency_ms=6030.18
+[110/120] random_110 status=ok latency_ms=15691.89
+[111/120] random_111 status=ok latency_ms=9013.08
+[112/120] random_112 status=ok latency_ms=15842.14
+[113/120] random_113 status=ok latency_ms=6927.14
+[114/120] random_114 status=ok latency_ms=6530.29
+[115/120] random_115 status=ok latency_ms=7335.01
+[116/120] random_116 status=ok latency_ms=6665.83
+[117/120] random_117 status=ok latency_ms=6725.3
+[118/120] random_118 status=ok latency_ms=6378.58
+[119/120] random_119 status=ok latency_ms=7064.33
+[120/120] random_120 status=ok latency_ms=6617.55
+{
+  "query_count": 120,
+  "row_count": 120,
+  "ok_count": 120,
+  "partial_count": 0,
+  "error_count": 0,
+  "run_success_rate": 1.0,
+  "retrieval": {
+    "query_count": 120,
+    "chunk_mrr@10": 0.0,
+    "chunk_ndcg@10": 0.0,
+    "chunk_recall@10": 0.0,
+    "chunk_recall@5": 0.0,
+    "doc_mrr@10": 0.0,
+    "doc_ndcg@10": 0.0,
+    "doc_recall@10": 0.0,
+    "doc_recall@5": 0.0,
+    "avg_latency_ms": 1958.18,
+    "p50_latency_ms": 2305.23,
+    "p95_latency_ms": 3254.99
+  },
+  "answer": {
+    "query_count": 120,
+    "composer_mode": "mixed",
+    "answer_success_rate": 1.0,
+    "fallback_rate": 0.2333,
+    "all_citations_mapped_ratio": 1.0,
+    "fallback_accuracy": 0.05,
+    "faithfulness": 0.887,
+    "answer_relevancy": 0.6957,
+    "citation_correctness": 0.9984,
+    "citation_completeness": 0.7677,
+    "avg_latency_ms": 8046.58,
+    "p50_latency_ms": 7514.91,
+    "p95_latency_ms": 13880.35
+  },
+  "unknown_citation_count": 0,
+  "actual_deepseek_count": 120
+}
+wrote artifacts/stage7/final_random_v2_eval.json

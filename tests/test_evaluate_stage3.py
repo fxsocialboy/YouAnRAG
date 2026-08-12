@@ -167,7 +167,7 @@ def test_evaluate_queries_hybrid_improves_keyword_case():
 
 
 def test_generate_phase3_report_writes_markdown(monkeypatch):
-    base = Path(r"G:\tiaozhanbei\newrag\artifacts\stage3\test_tmp_report")
+    base = Path(__file__).resolve().parents[1] / "artifacts" / "stage3" / "test_tmp_report"
     experiments_dir = base / "experiments"
     artifacts_dir = base / "artifacts"
     stage3_dir = artifacts_dir / "stage3"

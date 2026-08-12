@@ -129,13 +129,21 @@ class ContextPacker:
     ) -> list[dict[str, Any]]:
         expanded: dict[str, dict[str, Any]] = {}
         for candidate in candidates:
-            self._add_row(expanded, candidate.chunk_id, candidate.fusion_score, candidate.rerank_score, candidate.mmr_score)
+            self._add_row(
+                expanded,
+                candidate.chunk_id,
+                candidate.fusion_score,
+                candidate.rerank_score,
+                candidate.mmr_score,
+                candidate.dense_score,
+            )
             self._add_row(
                 expanded,
                 self._neighbor_chunk_id(candidate.source_file, candidate.chunk_index - 1, candidate.section_path_text),
                 candidate.fusion_score * 0.97,
                 _decay_optional_score(candidate.rerank_score, 0.97),
                 _decay_optional_score(candidate.mmr_score, 0.97),
+                _decay_optional_score(candidate.dense_score, 0.97),
             )
             self._add_row(
                 expanded,
@@ -143,6 +151,7 @@ class ContextPacker:
                 candidate.fusion_score * 0.97,
                 _decay_optional_score(candidate.rerank_score, 0.97),
                 _decay_optional_score(candidate.mmr_score, 0.97),
+                _decay_optional_score(candidate.dense_score, 0.97),
             )
 
             if same_section_extra > 0:
@@ -154,6 +163,7 @@ class ContextPacker:
                         candidate.fusion_score * 0.94,
                         _decay_optional_score(candidate.rerank_score, 0.94),
                         _decay_optional_score(candidate.mmr_score, 0.94),
+                        _decay_optional_score(candidate.dense_score, 0.94),
                     )
         return list(expanded.values())
 
@@ -164,6 +174,7 @@ class ContextPacker:
         fusion_score: float,
         rerank_score: float | None = None,
         mmr_score: float | None = None,
+        dense_score: float | None = None,
     ) -> None:
         if not chunk_id:
             return
@@ -177,9 +188,11 @@ class ContextPacker:
             existing["sort_score"] = max(float(existing["sort_score"]), float(sort_score))
             existing["rerank_score"] = _max_optional_score(existing.get("rerank_score"), rerank_score)
             existing["mmr_score"] = _max_optional_score(existing.get("mmr_score"), mmr_score)
+            existing["dense_score"] = _max_optional_score(existing.get("dense_score"), dense_score)
             existing["metadata"]["rerank_score"] = existing["rerank_score"]
             existing["metadata"]["mmr_score"] = existing["mmr_score"]
             existing["metadata"]["sort_score"] = existing["sort_score"]
+            existing["metadata"]["dense_score"] = existing["dense_score"]
             return
         expanded[chunk_id] = {
             "chunk_id": chunk_id,
@@ -192,6 +205,7 @@ class ContextPacker:
             "fusion_score": float(fusion_score),
             "rerank_score": rerank_score,
             "mmr_score": mmr_score,
+            "dense_score": dense_score,
             "sort_score": sort_score,
             "metadata": {
                 "content_hashes": [str(row.get("content_hash", ""))],
@@ -199,6 +213,7 @@ class ContextPacker:
                 "rerank_score": rerank_score,
                 "mmr_score": mmr_score,
                 "sort_score": sort_score,
+                "dense_score": dense_score,
             },
         }
 
@@ -245,10 +260,12 @@ class ContextPacker:
             prev["sort_score"] = max(float(prev["sort_score"]), float(row["sort_score"]))
             prev["rerank_score"] = _max_optional_score(prev.get("rerank_score"), row.get("rerank_score"))
             prev["mmr_score"] = _max_optional_score(prev.get("mmr_score"), row.get("mmr_score"))
+            prev["dense_score"] = _max_optional_score(prev.get("dense_score"), row.get("dense_score"))
             prev["metadata"]["content_hashes"].extend(row["metadata"].get("content_hashes", []))
             prev["metadata"]["rerank_score"] = prev["rerank_score"]
             prev["metadata"]["mmr_score"] = prev["mmr_score"]
             prev["metadata"]["sort_score"] = prev["sort_score"]
+            prev["metadata"]["dense_score"] = prev["dense_score"]
         return merged
 
 

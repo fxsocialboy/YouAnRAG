@@ -1,0 +1,65 @@
+[1/25] final_001 status=ok latency_ms=14435.9
+[2/25] final_002 status=ok latency_ms=10060.42
+[3/25] final_003 status=ok latency_ms=7561.47
+[4/25] final_004 status=ok latency_ms=9727.2
+[5/25] final_005 status=ok latency_ms=7135.19
+[6/25] final_006 status=ok latency_ms=4321.2
+[7/25] final_007 status=ok latency_ms=3813.02
+[8/25] final_008 status=ok latency_ms=2713.64
+[9/25] final_009 status=ok latency_ms=9522.79
+[10/25] final_010 status=ok latency_ms=7328.29
+[11/25] final_011 status=ok latency_ms=7582.79
+[12/25] final_012 status=ok latency_ms=8996.56
+[13/25] final_013 status=ok latency_ms=6426.8
+[14/25] final_014 status=ok latency_ms=2748.01
+[15/25] final_015 status=ok latency_ms=5537.8
+[16/25] final_016 status=ok latency_ms=8977.94
+[17/25] final_017 status=ok latency_ms=6355.63
+[18/25] final_018 status=ok latency_ms=11083.42
+[19/25] final_019 status=ok latency_ms=1788.41
+[20/25] final_020 status=ok latency_ms=4980.75
+[21/25] final_021 status=ok latency_ms=6149.8
+[22/25] final_022 status=ok latency_ms=11979.57
+[23/25] final_023 status=ok latency_ms=7618.03
+[24/25] final_024 status=ok latency_ms=6114.92
+[25/25] final_025 status=ok latency_ms=5702.57
+{
+  "query_count": 25,
+  "row_count": 25,
+  "ok_count": 25,
+  "partial_count": 0,
+  "error_count": 0,
+  "run_success_rate": 1.0,
+  "retrieval": {
+    "query_count": 25,
+    "chunk_mrr@10": 0.3732,
+    "chunk_ndcg@10": 0.4336,
+    "chunk_recall@10": 0.6304,
+    "chunk_recall@5": 0.6304,
+    "doc_mrr@10": 0.8768,
+    "doc_ndcg@10": 0.8802,
+    "doc_recall@10": 0.9348,
+    "doc_recall@5": 0.9348,
+    "avg_latency_ms": 1927.25,
+    "p50_latency_ms": 2203.36,
+    "p95_latency_ms": 2746.73
+  },
+  "answer": {
+    "query_count": 25,
+    "composer_mode": "mixed",
+    "answer_success_rate": 1.0,
+    "fallback_rate": 0.16,
+    "all_citations_mapped_ratio": 1.0,
+    "fallback_accuracy": 0.76,
+    "faithfulness": 0.9762,
+    "answer_relevancy": 0.8571,
+    "citation_correctness": 1.0,
+    "citation_completeness": 0.9048,
+    "avg_latency_ms": 7146.48,
+    "p50_latency_ms": 7135.19,
+    "p95_latency_ms": 11800.34
+  },
+  "unknown_citation_count": 0,
+  "actual_deepseek_count": 25
+}
+wrote artifacts/stage7/final_labeled_v2_eval.json

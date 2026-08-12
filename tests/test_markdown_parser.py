@@ -113,7 +113,7 @@ def test_table_lines_are_grouped_as_table():
 
 
 def test_parse_markdown_file_reads_utf8_file():
-    tmp_dir = Path(r"G:\tiaozhanbei\newrag\artifacts\stage1\test_tmp")
+    tmp_dir = Path(__file__).resolve().parents[1] / "artifacts" / "stage1" / "test_tmp"
     tmp_dir.mkdir(parents=True, exist_ok=True)
     p = tmp_dir / "测试预案.md"
     try:

@@ -1,0 +1,891 @@
+{
+  "stage": "7.4",
+  "dataset": "labeled",
+  "backend": "v2",
+  "query_path": "G:\\tiaozhanbei\\newrag\\experiments\\eval_queries_final_labeled.jsonl",
+  "query_count": 2,
+  "config": {
+    "top_k": 10,
+    "dense_top_k": 40,
+    "sparse_top_k": 40,
+    "rerank_top_k": 30,
+    "token_budget": 1600,
+    "batch_size": 64,
+    "device": "cpu",
+    "reranker_device": "cpu",
+    "embedding_model_path": "G:\\tiaozhanbei\\Youan-AI-main\\youan-multiagent\\multi_agent_server\\app\\RAG\\bge-large-zh-v1.5",
+    "reranker_model_path": "models\\bge-reranker-base",
+    "composer_mode": "template",
+    "hyde_mode": "disabled",
+    "min_evidence_score": 0.3,
+    "judge_enabled": false
+  },
+  "environment": {
+    "python": "3.14.4",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "git_commit": "72fab126c54653b633eed3669ecca390f75cc379",
+    "torch": "2.12.0+cpu",
+    "cuda_available": false,
+    "cuda_device": null
+  },
+  "results": [
+    {
+      "query_id": "final_001",
+      "query": "四川山区群众发现滑坡迹象后如何实现提前避险？",
+      "query_type": "scenario",
+      "disaster_type": "geological",
+      "relevant_source_files": [
+        "2022 年四川省地质灾害成功避险典型案例.md"
+      ],
+      "relevant_chunk_ids": [
+        "2022 年四川省地质灾害成功避险典型案例.md::1"
+      ],
+      "reference_facts": [
+        "镇村干部通过巡查发现落石和垮塌迹象",
+        "发现险情后及时报告并加强监测巡查",
+        "垮塌迹象明显时立即组织受威胁群众撤离"
+      ],
+      "expected_fallback": false,
+      "metadata": {
+        "dataset": "labeled_quality",
+        "frozen_at": "2026-08-11"
+      },
+      "status": "ok",
+      "backend": "v2",
+      "composer_mode": "template",
+      "requested_composer_mode": "template",
+      "is_fallback": false,
+      "fallback_reason": null,
+      "answer": "根据知识库检索结果，可以这样处理：\n\n1. 处置建议：基层政府、有关部门、村组干部及防灾责任人在险情出现时响应迅速、处置果断，及时转移受威胁群众，加强现场管控，避免了人员伤亡。[S1]\n\n来源：\n[S1] 2022 年四川省地质灾害成功避险典型案例.md / 三、乐山市峨眉山市九里镇兴阳村4组滑坡成功避险案例",
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_file": "2022 年四川省地质灾害成功避险典型案例.md",
+          "chunk_id": "2022 年四川省地质灾害成功避险典型案例.md::7",
+          "section_path": [
+            "三、乐山市峨眉山市九里镇兴阳村4组滑坡成功避险案例"
+          ],
+          "rank": 1,
+          "score": 1.0,
+          "metadata": {
+            "content_preview": "地点：乐山市峨眉山市九里镇兴阳村 4 组时间：2022 年 5 月 4 日 10 时 40 分事件：成功避让滑坡地质灾害结果：避免了5 户 17 人可能因灾伤亡\n灾害概况：受降雨影响，5 月 4 日 10 时 40 分，峨眉山市九里镇兴阳村 4 组发生滑坡灾害，规模约20 万方，造成 5户农房受损，约 40 亩茶地和农",
+            "chunk_ids": [
+              "2022 年四川省地质灾害成功避险典型案例.md::7",
+              "2022 年四川省地质灾害成功避险典型案例.md::8",
+              "2022 年四川省地质灾害成功避险典型案例.md::9"
+            ],
+            "chunk_indexes": [
+              7,
+              8,
+              9
+            ],
+            "token_count": 1028,
+            "fusion_score": 0.027869,
+            "content_hashes": [
+              "845912db19d90a4e2cf7120e3502c26bf48bb80fac4bdf43a109fc2e68a7f094",
+              "bb6ef6ab707f065715d7dbc0094839144874f41dfa19db17d4c6242ac9f1239c",
+              "97a05463ebf1fd9133f0e51f56c2653079dd3e9ad8213e1c6d777ae797147c65"
+            ],
+            "rerank_score": 0.99928,
+            "mmr_score": 1.0,
+            "sort_score": 1.0
+          },
+          "marker": "[S1]",
+          "section_path_text": "三、乐山市峨眉山市九里镇兴阳村4组滑坡成功避险案例"
+        }
+      ],
+      "evidence": [
+        {
+          "citation_id": "S1",
+          "chunk_id": "2022 年四川省地质灾害成功避险典型案例.md::7",
+          "source_file": "2022 年四川省地质灾害成功避险典型案例.md",
+          "section_path": [
+            "三、乐山市峨眉山市九里镇兴阳村4组滑坡成功避险案例"
+          ],
+          "content": "地点：乐山市峨眉山市九里镇兴阳村 4 组时间：2022 年 5 月 4 日 10 时 40 分事件：成功避让滑坡地质灾害结果：避免了5 户 17 人可能因灾伤亡\n灾害概况：受降雨影响，5 月 4 日 10 时 40 分，峨眉山市九里镇兴阳村 4 组发生滑坡灾害，规模约20 万方，造成 5户农房受损，约 40 亩茶地和农田损毁，一座小桥受损，直接经济损失约200 万元。\n因预警及时，监测员巡查发现险情，提前避险转移全部受威胁群众 11 户 36 人，避免了 5 户 17人可能因灾伤亡，实现成功避险。\n避险经过：3 月 10日，峨眉山市自然资源局会同九里镇政府组织技术专家及镇村干部开展汛前日常排查时，发现九里镇兴阳村 4 组个别地面出现裂缝，经专家确认将该点列入峨眉山市县级地质灾害预案点，纳入日常监测。\n发现九里镇兴阳村4组个别地面出现裂缝，经专家确认将该点列入峨眉山市县级地质灾害预案点，纳入日常监测。\n4 月 16日，市自然资源局会同九里镇政府对该点进行现场复勘，在确认影响范围后，立即将受威胁群众共11户 36人全部进行了提前避险转移安置，并安排专人进行 24 小时值守，设置警戒线，防止群众擅自返回。\n4 月21 日，市自然资源局会同九里镇政府组织专家召开现场论证会，决定将该隐患点全部住户进行避让搬迁安置。\n4 月 28日完成搬迁协议签订工作，5 月1 日实现全部财产搬离。\n5 月 4 日 8 时，监测员在例行巡查中发现山体出现异常响动并立即报告，市自然资源局和九里镇政府接到报告后，立即采取现场临时交通管制措施。\n中发现山体出现异常响动并立即报告，市自然资源局和九里镇政府接到报告后，立即采取现场临时交通管制措施。\n10时40分，该点位发生滑坡，因提前组织受威胁群众避让搬迁，避免了5 户17 人可能因灾伤亡，实现成功避险。\n经验与启示：一是汛前专群结合排查到位。\n市自然资源局对排查发现的新增隐患点第一时间组织专家和专业技术人员开展现场论证，并提出科学处置意见。\n二是常态巡查监测预警到位。\n常态化开展有人居住地隐患巡查，确保风险隐患早发现、早预警、早处置。\n三是主动避险管控到位。\n基层政府、有关部门、村组干部及防灾责任人在险情出现时响应迅速、处置果断，及时转移受威胁群众，加强现场管控，避免了人员伤亡。",
+          "score": 1.0,
+          "rank": 1,
+          "metadata": {
+            "chunk_ids": [
+              "2022 年四川省地质灾害成功避险典型案例.md::7",
+              "2022 年四川省地质灾害成功避险典型案例.md::8",
+              "2022 年四川省地质灾害成功避险典型案例.md::9"
+            ],
+            "chunk_indexes": [
+              7,
+              8,
+              9
+            ],
+            "token_count": 1028,
+            "fusion_score": 0.027869,
+            "content_hashes": [
+              "845912db19d90a4e2cf7120e3502c26bf48bb80fac4bdf43a109fc2e68a7f094",
+              "bb6ef6ab707f065715d7dbc0094839144874f41dfa19db17d4c6242ac9f1239c",
+              "97a05463ebf1fd9133f0e51f56c2653079dd3e9ad8213e1c6d777ae797147c65"
+            ],
+            "content_preview": "地点：乐山市峨眉山市九里镇兴阳村 4 组时间：2022 年 5 月 4 日 10 时 40 分事件：成功避让滑坡地质灾害结果：避免了5 户 17 人可能因灾伤亡\n灾害概况：受降雨影响，5 月 4 日 10 时 40 分，峨眉山市九里镇兴阳村 4 组发生滑坡灾害，规模约20 万方，造成 5户农房受损，约 40 亩茶地和农",
+            "rerank_score": 0.99928,
+            "mmr_score": 1.0,
+            "sort_score": 1.0
+          },
+          "marker": "[S1]",
+          "section_path_text": "三、乐山市峨眉山市九里镇兴阳村4组滑坡成功避险案例"
+        }
+      ],
+      "trace": {
+        "query_plan": {
+          "original_query": "四川山区群众发现滑坡迹象后如何实现提前避险？",
+          "normalized_query": "四川山区群众发现滑坡迹象后如何实现提前避险?",
+          "query_type": "scenario",
+          "region_hint": "四川",
+          "hazard_hint": "地质灾害",
+          "document_type_hint": null,
+          "time_hint": null,
+          "extracted_terms": [
+            "四川",
+            "地质灾害",
+            "避险"
+          ],
+          "rewrite_confidence": 0.84,
+          "retrieval_policy": {
+            "use_rewrite": true,
+            "use_multi_query": true,
+            "use_hyde": false,
+            "use_reranker": true,
+            "use_mmr": true,
+            "dense_top_k": 35,
+            "sparse_top_k": 30,
+            "rerank_top_k": 30,
+            "max_branches": 3,
+            "branch_weights": {
+              "raw": 1.0,
+              "normalized": 0.9,
+              "expanded": 0.7,
+              "hyde": 0.6
+            }
+          },
+          "reasons": [
+            "scenario_intent"
+          ]
+        },
+        "branches": [
+          {
+            "branch": "raw",
+            "query": "四川山区群众发现滑坡迹象后如何实现提前避险？",
+            "weight": 1.0,
+            "reason": "original_query_always_preserved"
+          },
+          {
+            "branch": "expanded",
+            "query": "四川山区群众发现滑坡迹象后如何实现提前避险? 四川 四川省 地质灾害 滑坡 泥石流 避险转移 如何 措施 流程 要求 避险 转移 安置 预警 应急预案 响应流程 责任主体",
+            "weight": 0.7,
+            "reason": "scenario_rule_expansion"
+          }
+        ],
+        "matched_branches": [
+          "raw",
+          "expanded"
+        ],
+        "retrieval_latency_ms": 50605.52209999878,
+        "composer_mode": "template",
+        "verification": {
+          "passed": true,
+          "reasons": [],
+          "citation_verification": {
+            "passed": true,
+            "reasons": [],
+            "used_citations": [
+              "S1"
+            ],
+            "missing_citations": [],
+            "unused_citations": [],
+            "has_key_fact_without_citation": false
+          },
+          "guardrail": {
+            "passed": true,
+            "reasons": [],
+            "fallback_answer": null,
+            "metrics": {
+              "evidence_count": 1,
+              "max_score": 1.0,
+              "min_score": 0.3,
+              "min_evidence_count": 1
+            }
+          }
+        },
+        "extra": {
+          "service_options": {
+            "top_k": 10,
+            "dense_top_k": 40,
+            "sparse_top_k": 40,
+            "branch_candidate_top_k": 10,
+            "max_branches": null,
+            "token_budget": 1600,
+            "enable_reranker": true,
+            "enable_mmr": true,
+            "rerank_top_k": 30,
+            "mmr_pre_candidates": 20,
+            "mmr_top_k": null,
+            "fallback_answer": "当前知识库没有足够依据回答该问题。",
+            "min_evidence_count": 1,
+            "min_evidence_score": 0.3,
+            "composer_mode": "template"
+          },
+          "result_count": 10,
+          "evidence_count": 1,
+          "composer": {
+            "answer": "根据知识库检索结果，可以这样处理：\n\n1. 处置建议：基层政府、有关部门、村组干部及防灾责任人在险情出现时响应迅速、处置果断，及时转移受威胁群众，加强现场管控，避免了人员伤亡。[S1]\n\n来源：\n[S1] 2022 年四川省地质灾害成功避险典型案例.md / 三、乐山市峨眉山市九里镇兴阳村4组滑坡成功避险案例",
+            "requested_mode": "template",
+            "actual_mode": "template",
+            "latency_ms": 0.0,
+            "fallback_reason": null
+          },
+          "hyde_document": {
+            "query": "四川山区群众发现滑坡迹象后如何实现提前避险？",
+            "content": "",
+            "used": false,
+            "reason": "hyde_disabled",
+            "latency_ms": 0.0,
+            "mode": "disabled"
+          }
+        }
+      },
+      "retrieval_metrics": {
+        "doc_recall@5": 1.0,
+        "chunk_recall@5": 0.0,
+        "doc_recall@10": 1.0,
+        "chunk_recall@10": 0.0,
+        "doc_mrr@10": 1.0,
+        "chunk_mrr@10": 0.0,
+        "doc_ndcg@10": 1.0,
+        "chunk_ndcg@10": 0.0,
+        "latency_ms": 50605.52
+      },
+      "retrieval_results": [
+        {
+          "rank": 1,
+          "source_file": "2022 年四川省地质灾害成功避险典型案例.md",
+          "chunk_id": "2022 年四川省地质灾害成功避险典型案例.md::7",
+          "score": 1.0
+        },
+        {
+          "rank": 1,
+          "source_file": "2022 年四川省地质灾害成功避险典型案例.md",
+          "chunk_id": "2022 年四川省地质灾害成功避险典型案例.md::8",
+          "score": 1.0
+        },
+        {
+          "rank": 1,
+          "source_file": "2022 年四川省地质灾害成功避险典型案例.md",
+          "chunk_id": "2022 年四川省地质灾害成功避险典型案例.md::9",
+          "score": 1.0
+        }
+      ],
+      "used_citation_ids": [
+        "S1"
+      ],
+      "mapped_citation_ids": [
+        "S1"
+      ],
+      "unknown_citation_ids": [],
+      "citation_count": 1,
+      "mapped_count": 1,
+      "all_citations_mapped": true,
+      "citation_mapping_ratio": 1.0,
+      "judge": null,
+      "judge_error": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_correctness": null,
+      "citation_completeness": null,
+      "answer_latency_ms": 50606.09,
+      "judge_latency_ms": 0.0,
+      "latency_ms": 50606.09,
+      "error": null
+    },
+    {
+      "query_id": "final_002",
+      "query": "我国为什么需要专门做山洪灾害防治规划？",
+      "query_type": "scenario",
+      "disaster_type": "flood",
+      "relevant_source_files": [
+        "全国山洪灾害防治规划简要报告.md"
+      ],
+      "relevant_chunk_ids": [
+        "全国山洪灾害防治规划简要报告.md::0"
+      ],
+      "reference_facts": [
+        "我国山地丘陵面积大且暴雨频发",
+        "复杂地貌与人类活动导致山洪频繁",
+        "山洪威胁生命和基础设施并制约山区发展"
+      ],
+      "expected_fallback": false,
+      "metadata": {
+        "dataset": "labeled_quality",
+        "frozen_at": "2026-08-11"
+      },
+      "status": "ok",
+      "backend": "v2",
+      "composer_mode": "template",
+      "requested_composer_mode": "template",
+      "is_fallback": false,
+      "fallback_reason": null,
+      "answer": "根据知识库检索结果，可以这样处理：\n\n1. 处置建议：在研究山洪灾害分布、成因及特点的基础上，以小流域为单元，因地制宜地制定以非工程措施为主，非工程措施与工程措施相结合的综合防治规划。[S1]\n2. 启动条件或责任主体：远期（2020 年）规划目标：全面建成山洪灾害重点防治区非工程措施与工程措施相结合的综合防灾减灾体系，一般山洪灾害防治区初步建立以非工程措施为主的防灾减灾体系，最大限度地减少人员伤亡和财产损失，山洪灾害防治能力与山丘区全面建设小康社会的发展要求相适应。[S2]\n3. 注意事项：（1） 规划方案概况 全国山洪灾害防治规划包括非工程措施规划和工程措施规划，非工程措施规划包括监测通信及预警系统规划、防灾预案及救灾措施、搬迁避让规划和政策法规建设等；[S3]\n4. 补充依据：坚持以人为本，全面、协调、可持续的科学发展观，反映山丘区经济社会发展、改善人民生存条件和环境保护不断提出的新的更高要求，研究和制定全国山洪灾害防治总体规划和对策措施，提高山洪灾害防治水平，促进人与自然和谐共处，最大限度地减少山洪灾害导致的人员伤亡和财产损失，为我国山丘区构建和谐社会提供安全保障。[S4]\n\n来源：\n[S1] 全国山洪灾害防治规划简要报告.md / 5.2 山洪灾害防治总体规划\n[S2] 全国山洪灾害防治规划简要报告.md / 3.5 规划目标\n[S3] 全国山洪灾害防治规划简要报告.md / 8.2.1 规划分析\n[S4] 全国山洪灾害防治规划简要报告.md / 3.1 规划指导思想",
+      "citations": [
+        {
+          "citation_id": "S1",
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::103",
+          "section_path": [
+            "5.2 山洪灾害防治总体规划"
+          ],
+          "rank": 1,
+          "score": 1.0,
+          "metadata": {
+            "content_preview": "在研究山洪灾害分布、成因及特点的基础上，以小流域为单元，因地制宜地制定以非工程措施为主，非工程措施与工程措施相结合的综合防治规划。",
+            "chunk_ids": [
+              "全国山洪灾害防治规划简要报告.md::103"
+            ],
+            "chunk_indexes": [
+              103
+            ],
+            "token_count": 104,
+            "fusion_score": 0.0271,
+            "content_hashes": [
+              "dcf40a964a8cab0ab3a9ef98d91708b21c8e5e778cbe4de40ebda13b923b1499"
+            ],
+            "rerank_score": 0.997123,
+            "mmr_score": 1.0,
+            "sort_score": 1.0
+          },
+          "marker": "[S1]",
+          "section_path_text": "5.2 山洪灾害防治总体规划"
+        },
+        {
+          "citation_id": "S2",
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::51",
+          "section_path": [
+            "3.5 规划目标"
+          ],
+          "rank": 2,
+          "score": 1.0,
+          "metadata": {
+            "content_preview": "通过制定山洪灾害防治规划，因地制宜，提出防治山洪灾害的对策措施，协调人与自然的关系，减少或减缓致灾因素向不利方向演变的趋势，建立和完善防灾减灾体系，提高防御山洪灾害的能力，减少山洪灾害导致的人员伤亡和财产损失，促进和保障我国山丘区人口、资源、环境和经济的协调发展。\n近期（2010 年）规划目标：初步建成山洪灾害重点防治",
+            "chunk_ids": [
+              "全国山洪灾害防治规划简要报告.md::51",
+              "全国山洪灾害防治规划简要报告.md::52"
+            ],
+            "chunk_indexes": [
+              51,
+              52
+            ],
+            "token_count": 468,
+            "fusion_score": 0.016393,
+            "content_hashes": [
+              "ec186f0f777d8d91bf38f0fdda529bca52d27a25f922596b223792584820e0ca",
+              "f3db609c70e0f2699e50b52e5a0155dbf27587ce75bdab063a3a8e7cce4d66b6"
+            ],
+            "rerank_score": 0.998516,
+            "mmr_score": 1.0,
+            "sort_score": 1.0
+          },
+          "marker": "[S2]",
+          "section_path_text": "3.5 规划目标"
+        },
+        {
+          "citation_id": "S3",
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::203",
+          "section_path": [
+            "8.2.1 规划分析"
+          ],
+          "rank": 3,
+          "score": 0.997924,
+          "metadata": {
+            "content_preview": "（1） 规划方案概况\n全国山洪灾害防治规划包括非工程措施规划和工程措施规划，非工程措施规划包括监测通信及预警系统规划、防灾预案及救灾措施、搬迁避让规划和政策法规建设等；\n工程措施规划包括山洪沟治理规划、泥石流沟治理规划、滑坡治理规划、病险水库除险加固规划和水土保持规划。\n（2） 规划协调性分析$\\textcircled",
+            "chunk_ids": [
+              "全国山洪灾害防治规划简要报告.md::203",
+              "全国山洪灾害防治规划简要报告.md::204"
+            ],
+            "chunk_indexes": [
+              203,
+              204
+            ],
+            "token_count": 686,
+            "fusion_score": 0.027067,
+            "content_hashes": [
+              "3dd5a1d48bd439b1658420a0c6747c75853b984c8794811174edb479902beaad",
+              "58de174f7741c34e3913d8d655578e830df24ff11b9f01d96380099397b68441"
+            ],
+            "rerank_score": 0.997924,
+            "mmr_score": 0.40349,
+            "sort_score": 0.40349
+          },
+          "marker": "[S3]",
+          "section_path_text": "8.2.1 规划分析"
+        },
+        {
+          "citation_id": "S4",
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::43",
+          "section_path": [
+            "3.1 规划指导思想"
+          ],
+          "rank": 4,
+          "score": 0.996958,
+          "metadata": {
+            "content_preview": "坚持以人为本，全面、协调、可持续的科学发展观，反映山丘区经济社会发展、改善人民生存条件和环境保护不断提出的新的更高要求，研究和制定全国山洪灾害防治总体规划和对策措施，提高山洪灾害防治水平，促进人与自然和谐共处，最大限度地减少山洪灾害导致的人员伤亡和财产损失，为我国山丘区构建和谐社会提供安全保障。",
+            "chunk_ids": [
+              "全国山洪灾害防治规划简要报告.md::43"
+            ],
+            "chunk_indexes": [
+              43
+            ],
+            "token_count": 183,
+            "fusion_score": 0.015385,
+            "content_hashes": [
+              "4d66182c27f841704196ec596f5f20ab162743faa9854f2c8ec3644293e034a4"
+            ],
+            "rerank_score": 0.996958,
+            "mmr_score": 0.360156,
+            "sort_score": 0.360156
+          },
+          "marker": "[S4]",
+          "section_path_text": "3.1 规划指导思想"
+        },
+        {
+          "citation_id": "S5",
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::207",
+          "section_path": [
+            "8.2.3 影响分析"
+          ],
+          "rank": 5,
+          "score": 0.995503,
+          "metadata": {
+            "content_preview": "（1）对水土流失的影响\n山洪灾害防治规划的实施从长远看有利于加强防治区水土保持设施的功能，减少水土流失。\n局部时段、局部区域的施工活动在新的水土保持设施发挥作用前将对局部区域的水土保持产生不利影响。",
+            "chunk_ids": [
+              "全国山洪灾害防治规划简要报告.md::207"
+            ],
+            "chunk_indexes": [
+              207
+            ],
+            "token_count": 132,
+            "fusion_score": 0.014925,
+            "content_hashes": [
+              "41fbd7953af430bfdd3e3224edab24e63b92cac4ff16701d69f68f503dc53ade"
+            ],
+            "rerank_score": 0.995503,
+            "mmr_score": 0.326795,
+            "sort_score": 0.326795
+          },
+          "marker": "[S5]",
+          "section_path_text": "8.2.3 影响分析"
+        }
+      ],
+      "evidence": [
+        {
+          "citation_id": "S1",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::103",
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "section_path": [
+            "5.2 山洪灾害防治总体规划"
+          ],
+          "content": "在研究山洪灾害分布、成因及特点的基础上，以小流域为单元，因地制宜地制定以非工程措施为主，非工程措施与工程措施相结合的综合防治规划。",
+          "score": 1.0,
+          "rank": 1,
+          "metadata": {
+            "chunk_ids": [
+              "全国山洪灾害防治规划简要报告.md::103"
+            ],
+            "chunk_indexes": [
+              103
+            ],
+            "token_count": 104,
+            "fusion_score": 0.0271,
+            "content_hashes": [
+              "dcf40a964a8cab0ab3a9ef98d91708b21c8e5e778cbe4de40ebda13b923b1499"
+            ],
+            "content_preview": "在研究山洪灾害分布、成因及特点的基础上，以小流域为单元，因地制宜地制定以非工程措施为主，非工程措施与工程措施相结合的综合防治规划。",
+            "rerank_score": 0.997123,
+            "mmr_score": 1.0,
+            "sort_score": 1.0
+          },
+          "marker": "[S1]",
+          "section_path_text": "5.2 山洪灾害防治总体规划"
+        },
+        {
+          "citation_id": "S2",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::51",
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "section_path": [
+            "3.5 规划目标"
+          ],
+          "content": "通过制定山洪灾害防治规划，因地制宜，提出防治山洪灾害的对策措施，协调人与自然的关系，减少或减缓致灾因素向不利方向演变的趋势，建立和完善防灾减灾体系，提高防御山洪灾害的能力，减少山洪灾害导致的人员伤亡和财产损失，促进和保障我国山丘区人口、资源、环境和经济的协调发展。\n近期（2010 年）规划目标：初步建成山洪灾害重点防治区以监测、通信、预报、预警等非工程措施为主与工程措施相结合的防灾减灾体系，基本改变我国山洪灾害日趋严重的局面，减少群死群伤事件发生，财产损失相对减少。\n施相结合的防灾减灾体系，基本改变我国山洪灾害日趋严重的局面，减少群死群伤事件发生，财产损失相对减少。\n远期（2020 年）规划目标：全面建成山洪灾害重点防治区非工程措施与工程措施相结合的综合防灾减灾体系，一般山洪灾害防治区初步建立以非工程措施为主的防灾减灾体系，最大限度地减少人员伤亡和财产损失，山洪灾害防治能力与山丘区全面建设小康社会的发展要求相适应。",
+          "score": 1.0,
+          "rank": 2,
+          "metadata": {
+            "chunk_ids": [
+              "全国山洪灾害防治规划简要报告.md::51",
+              "全国山洪灾害防治规划简要报告.md::52"
+            ],
+            "chunk_indexes": [
+              51,
+              52
+            ],
+            "token_count": 468,
+            "fusion_score": 0.016393,
+            "content_hashes": [
+              "ec186f0f777d8d91bf38f0fdda529bca52d27a25f922596b223792584820e0ca",
+              "f3db609c70e0f2699e50b52e5a0155dbf27587ce75bdab063a3a8e7cce4d66b6"
+            ],
+            "content_preview": "通过制定山洪灾害防治规划，因地制宜，提出防治山洪灾害的对策措施，协调人与自然的关系，减少或减缓致灾因素向不利方向演变的趋势，建立和完善防灾减灾体系，提高防御山洪灾害的能力，减少山洪灾害导致的人员伤亡和财产损失，促进和保障我国山丘区人口、资源、环境和经济的协调发展。\n近期（2010 年）规划目标：初步建成山洪灾害重点防治",
+            "rerank_score": 0.998516,
+            "mmr_score": 1.0,
+            "sort_score": 1.0
+          },
+          "marker": "[S2]",
+          "section_path_text": "3.5 规划目标"
+        },
+        {
+          "citation_id": "S3",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::203",
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "section_path": [
+            "8.2.1 规划分析"
+          ],
+          "content": "（1） 规划方案概况\n全国山洪灾害防治规划包括非工程措施规划和工程措施规划，非工程措施规划包括监测通信及预警系统规划、防灾预案及救灾措施、搬迁避让规划和政策法规建设等；\n工程措施规划包括山洪沟治理规划、泥石流沟治理规划、滑坡治理规划、病险水库除险加固规划和水土保持规划。\n（2） 规划协调性分析$\\textcircled{1}$ 与经济社会可持续发展战略的协调性\n全国山洪灾害防治规划以中华人民共和国水法、防洪法等法律、法规为依据，统筹考虑了国民经济发展、保障人民生命财产安全等各方面要求。\n规划的目标、原则、内容等充分体现了可持续发展战略的指导思想，规划实施符合我国经济社会可持续发展战略的总体目标。\n$\\textcircled{2}$ 与《全国生态环境建设规划》的协调性\n，规划实施符合我国经济社会可持续发展战略的总体目标。$\\textcircled{2}$与《全国生态环境建设规划》的协调性\n全国山洪灾害防治规划贯彻了“全面规划、统筹兼顾、标本兼治、综合治理”的原则，注重与改善生态环境相结合，工程措施、生物措施和水土保持耕作措施相结合，对小流域进行综合治理。\n规划实施后，防治区土地利用结构将进一步优化，植被覆盖率提高，生态环境逐步向良性循环发展，符合《全国生态环境建设规划》的要求。\n$\\textcircled{3}$ 与相关规划的协调性\n全国山洪灾害防治规划把遵循国家有关法律、法规及批准的有关规划作为规划原则，在确定规划目标、对策措施和布局时，充分考虑了与经济社会发展规划、相关行业规划等的衔接，规划方案总体上与相关规划协调一致。",
+          "score": 0.997924,
+          "rank": 3,
+          "metadata": {
+            "chunk_ids": [
+              "全国山洪灾害防治规划简要报告.md::203",
+              "全国山洪灾害防治规划简要报告.md::204"
+            ],
+            "chunk_indexes": [
+              203,
+              204
+            ],
+            "token_count": 686,
+            "fusion_score": 0.027067,
+            "content_hashes": [
+              "3dd5a1d48bd439b1658420a0c6747c75853b984c8794811174edb479902beaad",
+              "58de174f7741c34e3913d8d655578e830df24ff11b9f01d96380099397b68441"
+            ],
+            "content_preview": "（1） 规划方案概况\n全国山洪灾害防治规划包括非工程措施规划和工程措施规划，非工程措施规划包括监测通信及预警系统规划、防灾预案及救灾措施、搬迁避让规划和政策法规建设等；\n工程措施规划包括山洪沟治理规划、泥石流沟治理规划、滑坡治理规划、病险水库除险加固规划和水土保持规划。\n（2） 规划协调性分析$\\textcircled",
+            "rerank_score": 0.997924,
+            "mmr_score": 0.40349,
+            "sort_score": 0.40349
+          },
+          "marker": "[S3]",
+          "section_path_text": "8.2.1 规划分析"
+        },
+        {
+          "citation_id": "S4",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::43",
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "section_path": [
+            "3.1 规划指导思想"
+          ],
+          "content": "坚持以人为本，全面、协调、可持续的科学发展观，反映山丘区经济社会发展、改善人民生存条件和环境保护不断提出的新的更高要求，研究和制定全国山洪灾害防治总体规划和对策措施，提高山洪灾害防治水平，促进人与自然和谐共处，最大限度地减少山洪灾害导致的人员伤亡和财产损失，为我国山丘区构建和谐社会提供安全保障。",
+          "score": 0.996958,
+          "rank": 4,
+          "metadata": {
+            "chunk_ids": [
+              "全国山洪灾害防治规划简要报告.md::43"
+            ],
+            "chunk_indexes": [
+              43
+            ],
+            "token_count": 183,
+            "fusion_score": 0.015385,
+            "content_hashes": [
+              "4d66182c27f841704196ec596f5f20ab162743faa9854f2c8ec3644293e034a4"
+            ],
+            "content_preview": "坚持以人为本，全面、协调、可持续的科学发展观，反映山丘区经济社会发展、改善人民生存条件和环境保护不断提出的新的更高要求，研究和制定全国山洪灾害防治总体规划和对策措施，提高山洪灾害防治水平，促进人与自然和谐共处，最大限度地减少山洪灾害导致的人员伤亡和财产损失，为我国山丘区构建和谐社会提供安全保障。",
+            "rerank_score": 0.996958,
+            "mmr_score": 0.360156,
+            "sort_score": 0.360156
+          },
+          "marker": "[S4]",
+          "section_path_text": "3.1 规划指导思想"
+        },
+        {
+          "citation_id": "S5",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::207",
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "section_path": [
+            "8.2.3 影响分析"
+          ],
+          "content": "（1）对水土流失的影响\n山洪灾害防治规划的实施从长远看有利于加强防治区水土保持设施的功能，减少水土流失。\n局部时段、局部区域的施工活动在新的水土保持设施发挥作用前将对局部区域的水土保持产生不利影响。",
+          "score": 0.995503,
+          "rank": 5,
+          "metadata": {
+            "chunk_ids": [
+              "全国山洪灾害防治规划简要报告.md::207"
+            ],
+            "chunk_indexes": [
+              207
+            ],
+            "token_count": 132,
+            "fusion_score": 0.014925,
+            "content_hashes": [
+              "41fbd7953af430bfdd3e3224edab24e63b92cac4ff16701d69f68f503dc53ade"
+            ],
+            "content_preview": "（1）对水土流失的影响\n山洪灾害防治规划的实施从长远看有利于加强防治区水土保持设施的功能，减少水土流失。\n局部时段、局部区域的施工活动在新的水土保持设施发挥作用前将对局部区域的水土保持产生不利影响。",
+            "rerank_score": 0.995503,
+            "mmr_score": 0.326795,
+            "sort_score": 0.326795
+          },
+          "marker": "[S5]",
+          "section_path_text": "8.2.3 影响分析"
+        }
+      ],
+      "trace": {
+        "query_plan": {
+          "original_query": "我国为什么需要专门做山洪灾害防治规划？",
+          "normalized_query": "我国为什么需要专门做山洪灾害防治规划?",
+          "query_type": "scenario",
+          "region_hint": null,
+          "hazard_hint": "山洪",
+          "document_type_hint": "规划",
+          "time_hint": null,
+          "extracted_terms": [
+            "山洪",
+            "规划"
+          ],
+          "rewrite_confidence": 0.82,
+          "retrieval_policy": {
+            "use_rewrite": true,
+            "use_multi_query": true,
+            "use_hyde": false,
+            "use_reranker": true,
+            "use_mmr": true,
+            "dense_top_k": 35,
+            "sparse_top_k": 30,
+            "rerank_top_k": 30,
+            "max_branches": 3,
+            "branch_weights": {
+              "raw": 1.0,
+              "normalized": 0.9,
+              "expanded": 0.7,
+              "hyde": 0.6
+            }
+          },
+          "reasons": [
+            "default_scenario_like"
+          ]
+        },
+        "branches": [
+          {
+            "branch": "raw",
+            "query": "我国为什么需要专门做山洪灾害防治规划？",
+            "weight": 1.0,
+            "reason": "original_query_always_preserved"
+          },
+          {
+            "branch": "expanded",
+            "query": "我国为什么需要专门做山洪灾害防治规划? 山洪 洪涝 转移避险 预警 应急预案 响应流程 责任主体",
+            "weight": 0.7,
+            "reason": "scenario_rule_expansion"
+          }
+        ],
+        "matched_branches": [
+          "raw",
+          "expanded"
+        ],
+        "retrieval_latency_ms": 49815.28020004043,
+        "composer_mode": "template",
+        "verification": {
+          "passed": true,
+          "reasons": [],
+          "citation_verification": {
+            "passed": true,
+            "reasons": [],
+            "used_citations": [
+              "S1",
+              "S2",
+              "S3",
+              "S4"
+            ],
+            "missing_citations": [],
+            "unused_citations": [
+              "S5"
+            ],
+            "has_key_fact_without_citation": false
+          },
+          "guardrail": {
+            "passed": true,
+            "reasons": [],
+            "fallback_answer": null,
+            "metrics": {
+              "evidence_count": 5,
+              "max_score": 1.0,
+              "min_score": 0.3,
+              "min_evidence_count": 1
+            }
+          }
+        },
+        "extra": {
+          "service_options": {
+            "top_k": 10,
+            "dense_top_k": 40,
+            "sparse_top_k": 40,
+            "branch_candidate_top_k": 10,
+            "max_branches": null,
+            "token_budget": 1600,
+            "enable_reranker": true,
+            "enable_mmr": true,
+            "rerank_top_k": 30,
+            "mmr_pre_candidates": 20,
+            "mmr_top_k": null,
+            "fallback_answer": "当前知识库没有足够依据回答该问题。",
+            "min_evidence_count": 1,
+            "min_evidence_score": 0.3,
+            "composer_mode": "template"
+          },
+          "result_count": 10,
+          "evidence_count": 5,
+          "composer": {
+            "answer": "根据知识库检索结果，可以这样处理：\n\n1. 处置建议：在研究山洪灾害分布、成因及特点的基础上，以小流域为单元，因地制宜地制定以非工程措施为主，非工程措施与工程措施相结合的综合防治规划。[S1]\n2. 启动条件或责任主体：远期（2020 年）规划目标：全面建成山洪灾害重点防治区非工程措施与工程措施相结合的综合防灾减灾体系，一般山洪灾害防治区初步建立以非工程措施为主的防灾减灾体系，最大限度地减少人员伤亡和财产损失，山洪灾害防治能力与山丘区全面建设小康社会的发展要求相适应。[S2]\n3. 注意事项：（1） 规划方案概况 全国山洪灾害防治规划包括非工程措施规划和工程措施规划，非工程措施规划包括监测通信及预警系统规划、防灾预案及救灾措施、搬迁避让规划和政策法规建设等；[S3]\n4. 补充依据：坚持以人为本，全面、协调、可持续的科学发展观，反映山丘区经济社会发展、改善人民生存条件和环境保护不断提出的新的更高要求，研究和制定全国山洪灾害防治总体规划和对策措施，提高山洪灾害防治水平，促进人与自然和谐共处，最大限度地减少山洪灾害导致的人员伤亡和财产损失，为我国山丘区构建和谐社会提供安全保障。[S4]\n\n来源：\n[S1] 全国山洪灾害防治规划简要报告.md / 5.2 山洪灾害防治总体规划\n[S2] 全国山洪灾害防治规划简要报告.md / 3.5 规划目标\n[S3] 全国山洪灾害防治规划简要报告.md / 8.2.1 规划分析\n[S4] 全国山洪灾害防治规划简要报告.md / 3.1 规划指导思想",
+            "requested_mode": "template",
+            "actual_mode": "template",
+            "latency_ms": 0.0,
+            "fallback_reason": null
+          },
+          "hyde_document": {
+            "query": "我国为什么需要专门做山洪灾害防治规划？",
+            "content": "",
+            "used": false,
+            "reason": "hyde_disabled",
+            "latency_ms": 0.0,
+            "mode": "disabled"
+          }
+        }
+      },
+      "retrieval_metrics": {
+        "doc_recall@5": 1.0,
+        "chunk_recall@5": 0.0,
+        "doc_recall@10": 1.0,
+        "chunk_recall@10": 0.0,
+        "doc_mrr@10": 1.0,
+        "chunk_mrr@10": 0.0,
+        "doc_ndcg@10": 1.0,
+        "chunk_ndcg@10": 0.0,
+        "latency_ms": 49815.28
+      },
+      "retrieval_results": [
+        {
+          "rank": 1,
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::103",
+          "score": 1.0
+        },
+        {
+          "rank": 2,
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::51",
+          "score": 1.0
+        },
+        {
+          "rank": 2,
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::52",
+          "score": 1.0
+        },
+        {
+          "rank": 3,
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::203",
+          "score": 0.997924
+        },
+        {
+          "rank": 3,
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::204",
+          "score": 0.997924
+        },
+        {
+          "rank": 4,
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::43",
+          "score": 0.996958
+        },
+        {
+          "rank": 5,
+          "source_file": "全国山洪灾害防治规划简要报告.md",
+          "chunk_id": "全国山洪灾害防治规划简要报告.md::207",
+          "score": 0.995503
+        }
+      ],
+      "used_citation_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "mapped_citation_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "unknown_citation_ids": [],
+      "citation_count": 4,
+      "mapped_count": 4,
+      "all_citations_mapped": true,
+      "citation_mapping_ratio": 1.0,
+      "judge": null,
+      "judge_error": null,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_correctness": null,
+      "citation_completeness": null,
+      "answer_latency_ms": 49815.65,
+      "judge_latency_ms": 0.0,
+      "latency_ms": 49815.65,
+      "error": null
+    }
+  ],
+  "summary": {
+    "query_count": 2,
+    "row_count": 2,
+    "ok_count": 2,
+    "partial_count": 0,
+    "error_count": 0,
+    "run_success_rate": 1.0,
+    "retrieval": {
+      "query_count": 2,
+      "chunk_mrr@10": 0.0,
+      "chunk_ndcg@10": 0.0,
+      "chunk_recall@10": 0.0,
+      "chunk_recall@5": 0.0,
+      "doc_mrr@10": 1.0,
+      "doc_ndcg@10": 1.0,
+      "doc_recall@10": 1.0,
+      "doc_recall@5": 1.0,
+      "avg_latency_ms": 50210.4,
+      "p50_latency_ms": 50210.4,
+      "p95_latency_ms": 50566.01
+    },
+    "answer": {
+      "query_count": 2,
+      "composer_mode": "mixed",
+      "answer_success_rate": 1.0,
+      "fallback_rate": 0.0,
+      "all_citations_mapped_ratio": 1.0,
+      "fallback_accuracy": 1.0,
+      "faithfulness": null,
+      "answer_relevancy": null,
+      "citation_correctness": null,
+      "citation_completeness": null,
+      "avg_latency_ms": 50210.87,
+      "p50_latency_ms": 50210.87,
+      "p95_latency_ms": 50566.57
+    },
+    "unknown_citation_count": 0,
+    "actual_deepseek_count": 0
+  },
+  "finished_at_epoch": 1786463233.8354914
+}

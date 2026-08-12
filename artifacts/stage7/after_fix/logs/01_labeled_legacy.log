@@ -1,0 +1,48 @@
+[1/25] final_001 skip(ok)
+[2/25] final_002 skip(ok)
+[3/25] final_003 skip(ok)
+[4/25] final_004 skip(ok)
+[5/25] final_005 skip(ok)
+[6/25] final_006 skip(ok)
+[7/25] final_007 skip(ok)
+[8/25] final_008 skip(ok)
+[9/25] final_009 skip(ok)
+[10/25] final_010 skip(ok)
+[11/25] final_011 skip(ok)
+[12/25] final_012 skip(ok)
+[13/25] final_013 skip(ok)
+[14/25] final_014 skip(ok)
+[15/25] final_015 skip(ok)
+[16/25] final_016 skip(ok)
+[17/25] final_017 skip(ok)
+[18/25] final_018 skip(ok)
+[19/25] final_019 skip(ok)
+[20/25] final_020 skip(ok)
+[21/25] final_021 skip(ok)
+[22/25] final_022 skip(ok)
+[23/25] final_023 skip(ok)
+[24/25] final_024 skip(ok)
+[25/25] final_025 skip(ok)
+{
+  "query_count": 25,
+  "row_count": 25,
+  "ok_count": 25,
+  "partial_count": 0,
+  "error_count": 0,
+  "run_success_rate": 1.0,
+  "retrieval": {
+    "query_count": 25,
+    "chunk_mrr@10": 0.3686,
+    "chunk_ndcg@10": 0.4092,
+    "chunk_recall@10": 0.587,
+    "chunk_recall@5": 0.5,
+    "doc_mrr@10": 0.8696,
+    "doc_ndcg@10": 0.8641,
+    "doc_recall@10": 0.8913,
+    "doc_recall@5": 0.8913,
+    "avg_latency_ms": 36.77,
+    "p50_latency_ms": 8.15,
+    "p95_latency_ms": 14.24
+  }
+}
+wrote artifacts/stage7/after_fix/final_labeled_legacy_eval.json

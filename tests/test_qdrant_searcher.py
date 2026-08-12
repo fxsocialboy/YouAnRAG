@@ -8,7 +8,7 @@ import numpy as np
 from rag_v2.retrieval.qdrant_searcher import QdrantSearcher
 from rag_v2.stores.vector_store import VectorSearchHit
 
-PROJECT_ROOT = Path(r"G:\tiaozhanbei\newrag")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 EVAL_PATH = PROJECT_ROOT / "evaluate_stage2.py"
 
 spec = importlib.util.spec_from_file_location("evaluate_stage2", EVAL_PATH)

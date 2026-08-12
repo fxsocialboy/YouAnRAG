@@ -42,7 +42,7 @@ def test_faiss_store_save_and_load():
     # pytest's default tmp path in some sessions.
     from pathlib import Path
 
-    base = Path(r"G:\tiaozhanbei\newrag\artifacts\stage1\test_tmp_faiss")
+    base = Path(__file__).resolve().parents[1] / "artifacts" / "stage1" / "test_tmp_faiss"
     base.mkdir(parents=True, exist_ok=True)
     index_path = base / "test.index"
     try:

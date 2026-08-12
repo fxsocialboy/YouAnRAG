@@ -1,0 +1,48 @@
+[1/25] final_001 status=ok latency_ms=733.0
+[2/25] final_002 status=ok latency_ms=9.52
+[3/25] final_003 status=ok latency_ms=8.79
+[4/25] final_004 status=ok latency_ms=8.46
+[5/25] final_005 status=ok latency_ms=8.23
+[6/25] final_006 status=ok latency_ms=8.09
+[7/25] final_007 status=ok latency_ms=8.34
+[8/25] final_008 status=ok latency_ms=8.76
+[9/25] final_009 status=ok latency_ms=8.19
+[10/25] final_010 status=ok latency_ms=8.27
+[11/25] final_011 status=ok latency_ms=8.07
+[12/25] final_012 status=ok latency_ms=8.07
+[13/25] final_013 status=ok latency_ms=8.12
+[14/25] final_014 status=ok latency_ms=8.34
+[15/25] final_015 status=ok latency_ms=8.03
+[16/25] final_016 status=ok latency_ms=7.91
+[17/25] final_017 status=ok latency_ms=8.09
+[18/25] final_018 status=ok latency_ms=7.91
+[19/25] final_019 status=ok latency_ms=8.04
+[20/25] final_020 status=ok latency_ms=8.1
+[21/25] final_021 status=ok latency_ms=8.11
+[22/25] final_022 status=ok latency_ms=8.46
+[23/25] final_023 status=ok latency_ms=8.12
+[24/25] final_024 status=ok latency_ms=8.09
+[25/25] final_025 status=ok latency_ms=8.06
+{
+  "query_count": 25,
+  "row_count": 25,
+  "ok_count": 25,
+  "partial_count": 0,
+  "error_count": 0,
+  "run_success_rate": 1.0,
+  "retrieval": {
+    "query_count": 25,
+    "chunk_mrr@10": 0.3686,
+    "chunk_ndcg@10": 0.4092,
+    "chunk_recall@10": 0.587,
+    "chunk_recall@5": 0.5,
+    "doc_mrr@10": 0.8696,
+    "doc_ndcg@10": 0.8641,
+    "doc_recall@10": 0.8913,
+    "doc_recall@5": 0.8913,
+    "avg_latency_ms": 37.25,
+    "p50_latency_ms": 8.12,
+    "p95_latency_ms": 9.37
+  }
+}
+wrote artifacts/stage7/final_labeled_legacy_eval.json

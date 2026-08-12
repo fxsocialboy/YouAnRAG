@@ -7,6 +7,7 @@ current working directory, so scripts and tests can be executed from anywhere.
 from __future__ import annotations
 
 from dataclasses import dataclass
+import os
 from pathlib import Path
 
 
@@ -59,6 +60,13 @@ class RagV2Config:
     mmr_lambda: float = 0.7
     mmr_pre_candidates: int = 20
     mmr_top_k: int = 10
+    enable_hyde: bool = False
+    hyde_mode: str = "rule"
+    deepseek_api_key: str | None = None
+    deepseek_model: str = "deepseek-chat"
+    deepseek_timeout: int = 8
+    deepseek_max_retries: int = 1
+    hyde_max_branches: int = 1
     chunk_params: Stage1ChunkParams = Stage1ChunkParams()
     use_query_instruction: bool = True
     query_instruction: str = "为这个句子生成表示以用于检索相关文章："
@@ -87,6 +95,7 @@ class RagV2Config:
             qdrant_path=artifacts_dir / "qdrant_local",
             registry_db_path=stage2_artifacts_dir / "document_registry.sqlite3",
             experiments_dir=project_root / "experiments",
+            deepseek_api_key=os.environ.get("DEEPSEEK_API_KEY"),
         )
 
     def validate(self, require_model: bool = False) -> None:

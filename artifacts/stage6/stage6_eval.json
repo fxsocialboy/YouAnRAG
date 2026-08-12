@@ -1,0 +1,132 @@
+{
+  "stage": "6.6",
+  "evaluation_scope": "deterministic_agent_contract",
+  "uses_gpu": false,
+  "uses_external_llm": false,
+  "summary": {
+    "query_count": 10,
+    "answer_success_count": 8,
+    "expected_fallback_count": 2,
+    "fallback_count": 2,
+    "citation_valid_count": 10,
+    "trace_complete_count": 10,
+    "guardrail_trigger_count": 2,
+    "all_citations_mapped": true,
+    "invalid_citation_detected": true,
+    "legacy_adapter_ok": true,
+    "passed_case_count": 10,
+    "passed": true
+  },
+  "cases": [
+    {
+      "query": "台风黄色预警下学校应该怎么做",
+      "expected_fallback": false,
+      "is_fallback": false,
+      "fallback_reason": null,
+      "citation_count": 1,
+      "evidence_count": 1,
+      "citation_valid": true,
+      "trace_complete": true,
+      "passed": true
+    },
+    {
+      "query": "地震后高层建筑居民如何疏散",
+      "expected_fallback": false,
+      "is_fallback": false,
+      "fallback_reason": null,
+      "citation_count": 1,
+      "evidence_count": 1,
+      "citation_valid": true,
+      "trace_complete": true,
+      "passed": true
+    },
+    {
+      "query": "IV级气象灾害应急响应由谁启动",
+      "expected_fallback": false,
+      "is_fallback": false,
+      "fallback_reason": null,
+      "citation_count": 1,
+      "evidence_count": 1,
+      "citation_valid": true,
+      "trace_complete": true,
+      "passed": true
+    },
+    {
+      "query": "暴雨预警期间地下空间要采取什么措施",
+      "expected_fallback": false,
+      "is_fallback": false,
+      "fallback_reason": null,
+      "citation_count": 1,
+      "evidence_count": 1,
+      "citation_valid": true,
+      "trace_complete": true,
+      "passed": true
+    },
+    {
+      "query": "山洪来临时群众应该往哪里转移",
+      "expected_fallback": false,
+      "is_fallback": false,
+      "fallback_reason": null,
+      "citation_count": 1,
+      "evidence_count": 1,
+      "citation_valid": true,
+      "trace_complete": true,
+      "passed": true
+    },
+    {
+      "query": "学校发现火灾后如何组织学生撤离",
+      "expected_fallback": false,
+      "is_fallback": false,
+      "fallback_reason": null,
+      "citation_count": 1,
+      "evidence_count": 1,
+      "citation_valid": true,
+      "trace_complete": true,
+      "passed": true
+    },
+    {
+      "query": "极端高温时户外作业如何安排",
+      "expected_fallback": false,
+      "is_fallback": false,
+      "fallback_reason": null,
+      "citation_count": 1,
+      "evidence_count": 1,
+      "citation_valid": true,
+      "trace_complete": true,
+      "passed": true
+    },
+    {
+      "query": "应急物资储备需要记录哪些信息",
+      "expected_fallback": false,
+      "is_fallback": false,
+      "fallback_reason": null,
+      "citation_count": 1,
+      "evidence_count": 1,
+      "citation_valid": true,
+      "trace_complete": true,
+      "passed": true
+    },
+    {
+      "query": "知识库完全没有覆盖的量子通信问题",
+      "expected_fallback": true,
+      "is_fallback": true,
+      "fallback_reason": "insufficient_evidence",
+      "citation_count": 0,
+      "evidence_count": 0,
+      "citation_valid": true,
+      "trace_complete": true,
+      "passed": true
+    },
+    {
+      "query": "一个只有微弱相关证据的问题",
+      "expected_fallback": true,
+      "is_fallback": true,
+      "fallback_reason": "low_retrieval_score",
+      "citation_count": 1,
+      "evidence_count": 1,
+      "citation_valid": true,
+      "trace_complete": true,
+      "passed": true
+    }
+  ]
+}

@@ -7,7 +7,7 @@ from rag_v2.config import RagV2Config, Stage1ChunkParams, get_config
 
 def test_default_config_resolves_from_file_location_not_cwd():
     cfg = RagV2Config.default()
-    assert cfg.project_root == Path(r"G:\tiaozhanbei\newrag")
+    assert cfg.project_root == Path(__file__).resolve().parents[1]
     assert cfg.legacy_rag_dir == cfg.project_root / "legacy_snapshot" / "RAG"
     assert cfg.source_markdown_dir == cfg.legacy_rag_dir / "final_mds"
     assert cfg.stage1_artifacts_dir == cfg.project_root / "artifacts" / "stage1"
@@ -29,6 +29,12 @@ def test_default_config_resolves_from_file_location_not_cwd():
     assert cfg.mmr_lambda == 0.7
     assert cfg.mmr_pre_candidates == 20
     assert cfg.mmr_top_k == 10
+    assert cfg.enable_hyde is False
+    assert cfg.hyde_mode == "rule"
+    assert cfg.deepseek_model == "deepseek-chat"
+    assert cfg.deepseek_timeout == 8
+    assert cfg.deepseek_max_retries == 1
+    assert cfg.hyde_max_branches == 1
 
 
 def test_default_config_existing_required_paths():

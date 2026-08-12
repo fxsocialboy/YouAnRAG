@@ -6,7 +6,7 @@ from pathlib import Path
 
 from rag_v2.retrieval.bm25_index import BM25Index, tokenize_text
 
-PROJECT_ROOT = Path(r"G:\tiaozhanbei\newrag")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCRIPT_PATH = PROJECT_ROOT / "scripts" / "build_bm25_stage3.py"
 
 spec = importlib.util.spec_from_file_location("build_bm25_stage3", SCRIPT_PATH)

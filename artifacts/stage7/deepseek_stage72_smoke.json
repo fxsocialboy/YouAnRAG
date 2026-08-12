@@ -1,0 +1,121 @@
+{
+  "stage": "7.2",
+  "summary": {
+    "case_count": 3,
+    "deepseek_success_count": 3,
+    "avg_faithfulness": 1.0,
+    "avg_answer_relevancy": 1.0,
+    "avg_citation_correctness": 1.0,
+    "avg_citation_completeness": 1.0
+  },
+  "cases": [
+    {
+      "query": "Ⅳ级气象灾害应急响应命令由谁签发？",
+      "answer": "根据现有证据，Ⅳ级气象灾害应急响应命令由副局长签发 [S1]。",
+      "composer": {
+        "answer": "根据现有证据，Ⅳ级气象灾害应急响应命令由副局长签发 [S1]。",
+        "requested_mode": "deepseek",
+        "actual_mode": "deepseek",
+        "latency_ms": 1294.53,
+        "fallback_reason": null
+      },
+      "judge": {
+        "composer_mode": "deepseek",
+        "atomic_facts": [
+          {
+            "fact": "Ⅳ级气象灾害应急响应命令由副局长签发",
+            "supported": true,
+            "cited": true,
+            "supporting_citation_ids": [
+              "S1"
+            ],
+            "reason": "证据S1明确说明Ⅳ级应急响应命令由副局长签发"
+          }
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "reason": "答案直接回答了用户问题，且与证据一致"
+      }
+    },
+    {
+      "query": "深圳市气象灾害Ⅳ级响应由哪个机构决定启动？",
+      "answer": "根据现有证据，深圳市气象灾害Ⅳ级响应由市气象灾害指挥部决定是否启动，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发 [S1]。",
+      "composer": {
+        "answer": "根据现有证据，深圳市气象灾害Ⅳ级响应由市气象灾害指挥部决定是否启动，并授权市减灾委办公室和市气象灾害指挥部办公室联合签发 [S1]。",
+        "requested_mode": "deepseek",
+        "actual_mode": "deepseek",
+        "latency_ms": 866.33,
+        "fallback_reason": null
+      },
+      "judge": {
+        "composer_mode": "deepseek",
+        "atomic_facts": [
+          {
+            "fact": "深圳市气象灾害Ⅳ级响应由市气象灾害指挥部决定是否启动",
+            "supported": true,
+            "cited": true,
+            "supporting_citation_ids": [
+              "S1"
+            ],
+            "reason": "证据明确说明由市气象灾害指挥部决定是否启动Ⅳ级应急响应"
+          },
+          {
+            "fact": "授权市减灾委办公室和市气象灾害指挥部办公室联合签发",
+            "supported": true,
+            "cited": true,
+            "supporting_citation_ids": [
+              "S1"
+            ],
+            "reason": "证据明确说明授权市减灾委办公室和市气象灾害指挥部办公室联合签发"
+          }
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "reason": "答案直接回答了用户问题，且所有事实均被证据支持"
+      }
+    },
+    {
+      "query": "洪涝突发险情灾情由谁负责掌握和报告？",
+      "answer": "根据现有证据，洪涝突发险情灾情由各级防汛抗旱指挥部负责掌握和报告，并确定专人负责 [S1]。",
+      "composer": {
+        "answer": "根据现有证据，洪涝突发险情灾情由各级防汛抗旱指挥部负责掌握和报告，并确定专人负责 [S1]。",
+        "requested_mode": "deepseek",
+        "actual_mode": "deepseek",
+        "latency_ms": 1008.5,
+        "fallback_reason": null
+      },
+      "judge": {
+        "composer_mode": "deepseek",
+        "atomic_facts": [
+          {
+            "fact": "洪涝突发险情灾情由各级防汛抗旱指挥部负责掌握和报告",
+            "supported": true,
+            "cited": true,
+            "supporting_citation_ids": [
+              "S1"
+            ],
+            "reason": "证据明确说明各级防汛抗旱指挥部负责及时掌握与报告工作"
+          },
+          {
+            "fact": "并确定专人负责",
+            "supported": true,
+            "cited": true,
+            "supporting_citation_ids": [
+              "S1"
+            ],
+            "reason": "证据中明确提到确定专人负责"
+          }
+        ],
+        "faithfulness": 1.0,
+        "answer_relevancy": 1.0,
+        "citation_completeness": 1.0,
+        "citation_correctness": 1.0,
+        "reason": "答案直接回应了用户问题，准确概括了证据内容"
+      }
+    }
+  ]
+}

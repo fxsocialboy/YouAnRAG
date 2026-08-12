@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "stage": "7.4.1",
+  "baseline": "before_fix",
+  "source_archive": {
+    "name": "stage7_results.tar.gz",
+    "sha256": "e52b2460a9696ad603558b18a5e2ac9074ffb186e45de6bd573b8062ac90c843"
+  },
+  "results": {
+    "final_labeled_legacy_eval.json": {
+      "query_count": 25,
+      "ok_count": 25,
+      "partial_count": 0,
+      "config": {
+        "top_k": 10,
+        "dense_top_k": 40,
+        "sparse_top_k": 40,
+        "rerank_top_k": 30,
+        "token_budget": 1600,
+        "batch_size": 64,
+        "device": "cuda",
+        "reranker_device": "cuda",
+        "embedding_model_path": "models/bge-large-zh-v1.5",
+        "reranker_model_path": "/root/autodl-tmp/YouAnRAG/models/bge-reranker-base",
+        "composer_mode": "deepseek",
+        "hyde_mode": "deepseek",
+        "min_evidence_score": 0.3,
+        "judge_enabled": true
+      },
+      "environment": {
+        "python": "3.10.8",
+        "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+        "git_commit": null,
+        "torch": "2.1.2+cu121",
+        "cuda_available": true,
+        "cuda_device": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    "final_labeled_v2_eval.json": {
+      "query_count": 25,
+      "ok_count": 25,
+      "partial_count": 0,
+      "config": {
+        "top_k": 10,
+        "dense_top_k": 40,
+        "sparse_top_k": 40,
+        "rerank_top_k": 30,
+        "token_budget": 1600,
+        "batch_size": 64,
+        "device": "cuda",
+        "reranker_device": "cuda",
+        "embedding_model_path": "models/bge-large-zh-v1.5",
+        "reranker_model_path": "models/bge-reranker-base",
+        "composer_mode": "deepseek",
+        "hyde_mode": "deepseek",
+        "min_evidence_score": 0.3,
+        "judge_enabled": true
+      },
+      "environment": {
+        "python": "3.10.8",
+        "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+        "git_commit": null,
+        "torch": "2.1.2+cu121",
+        "cuda_available": true,
+        "cuda_device": "NVIDIA GeForce RTX 4090"
+      }
+    },
+    "final_random_v2_eval.json": {
+      "query_count": 120,
+      "ok_count": 120,
+      "partial_count": 0,
+      "config": {
+        "top_k": 10,
+        "dense_top_k": 40,
+        "sparse_top_k": 40,
+        "rerank_top_k": 30,
+        "token_budget": 1600,
+        "batch_size": 64,
+        "device": "cuda",
+        "reranker_device": "cuda",
+        "embedding_model_path": "models/bge-large-zh-v1.5",
+        "reranker_model_path": "models/bge-reranker-base",
+        "composer_mode": "deepseek",
+        "hyde_mode": "deepseek",
+        "min_evidence_score": 0.3,
+        "judge_enabled": true
+      },
+      "environment": {
+        "python": "3.10.8",
+        "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+        "git_commit": null,
+        "torch": "2.1.2+cu121",
+        "cuda_available": true,
+        "cuda_device": "NVIDIA GeForce RTX 4090"
+      }
+    }
+  },
+  "archived_files": {
+    "final_labeled_legacy_eval.json": {
+      "sha256": "f492730c1916a1f103ada6ae27882aeb9a8b5e743f4b9484bd38afaa848753c8",
+      "size_bytes": 262347
+    },
+    "final_labeled_v2_eval.json": {
+      "sha256": "18beda840598c931fa95ea783e711bb6635ebc78742d941d6d53950d4c785702",
+      "size_bytes": 675176
+    },
+    "final_random_v2_eval.json": {
+      "sha256": "b20a83479f870d20e248fafa5dda8eb50caa61ced12d0d58cac09662d88c1a30",
+      "size_bytes": 3120956
+    },
+    "final_metrics.json": {
+      "sha256": "e6f124f5be6a01d64f5e14c3bb2af3966232981ffdf56476293df52fbd744366",
+      "size_bytes": 8156
+    },
+    "final_report.md": {
+      "sha256": "ec5065303fe5a09ab866ff371f0be8576644ae64b6929a8af88c761772a6acd0",
+      "size_bytes": 4113
+    },
+    "stage7_manual_review.md": {
+      "sha256": "f4d2abf6dd1a74d977337b2829ae9ee81a9fc8cfe1391e8315fdebc634b8c5f2",
+      "size_bytes": 47688
+    },
+    "logs/01_labeled_legacy.log": {
+      "sha256": "02824f4b1f01f92718f7377f63556fcc6db571a3b89224c2e8332f558ed0523e",
+      "size_bytes": 1628
+    },
+    "logs/02_labeled_v2.log": {
+      "sha256": "9c5a652d2791088b4968741cacdf5b212ec5225d49dfd91999e9fec13e5d7480",
+      "size_bytes": 2195
+    },
+    "logs/03_random_v2.log": {
+      "sha256": "2c8219515fd5f568b2989878a6b8b7cc28e995b822a14a90678a6eea256d408e",
+      "size_bytes": 6926
+    }
+  },
+  "frozen_datasets": {
+    "experiments/eval_queries_final_labeled.jsonl": {
+      "sha256": "8be0b3727f47c920b2d14636671599607c568e9ce9373ca9b5b397e740964c64",
+      "size_bytes": 13708
+    },
+    "experiments/eval_queries_final_random.jsonl": {
+      "sha256": "e1b52e7b6c0e557d01fa004d73b40e4e4ed903225b469e2f4f939e39db0a40fc",
+      "size_bytes": 39545
+    }
+  },
+  "code_snapshot": {
+    "evaluate_stage7.py": {
+      "sha256": "d8ba1146524662d98df1e69336b89c62d77f4ed2649efa1f13258937547e535f",
+      "size_bytes": 19374
+    },
+    "src/rag_v2/config.py": {
+      "sha256": "0a125fa5d93d0d94fc6e6063d613934f343d7653e7811f1f24896eb1df8f6177",
+      "size_bytes": 4882
+    },
+    "src/rag_v2/evaluation/models.py": {
+      "sha256": "e139fd2bca64005b9e082e5d3d639d3fa151117e15388caa1da06afa42b5166a",
+      "size_bytes": 11835
+    },
+    "src/rag_v2/agent/service.py": {
+      "sha256": "fbd871016904fdc780af7f6f723489f800c5a41a549466bd9411293aba1821db",
+      "size_bytes": 15017
+    },
+    "src/rag_v2/agent/guardrail.py": {
+      "sha256": "b0d70c914a5be8c8e55ad8e88fc9576e0f6805a68119f454f7710b75f64b208e",
+      "size_bytes": 2519
+    },
+    "src/rag_v2/agent/verifier.py": {
+      "sha256": "1ed78ff4fc6deb59f28c8f5846ebff4b7d35dba710b3baa1db193135d9ac8bb4",
+      "size_bytes": 3435
+    },
+    "src/rag_v2/agent/llm_composer.py": {
+      "sha256": "c10059ee0d7b6808d0c65b1f1e8b854496905449b71dbe01ab491304265d170a",
+      "size_bytes": 3551
+    },
+    "src/rag_v2/retrieval/multi_query_pipeline.py": {
+      "sha256": "4dde551a861ea5434d03f8957985c75ab69311999b076b8bfc9e014263113168",
+      "size_bytes": 11778
+    },
+    "src/rag_v2/retrieval/rerank_pipeline.py": {
+      "sha256": "b6855d287d2794aeeea70dc5282a2e1cce2c94cd95ca7efd9d3908b6076bbe36",
+      "size_bytes": 5124
+    }
+  },
+  "git": {
+    "commit": "72fab126c54653b633eed3669ecca390f75cc379",
+    "branch": "main",
+    "working_tree_clean": false
+  },
+  "model_configs": {
+    "bge-large-zh-v1.5": {
+      "config_path": null,
+      "config_sha256": null
+    },
+    "bge-reranker-base": {
+      "config_path": "models\\bge-reranker-base\\config.json",
+      "config_sha256": "289adf7ada1eb6b4afa7589a48a032d45a076cf2e46dcdb3b4cabc33be14f708"
+    }
+  }
+}

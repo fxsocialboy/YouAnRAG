@@ -10,7 +10,7 @@ import numpy as np
 
 from rag_v2.stores.qdrant_store import QdrantStore, QdrantStoreConfig
 
-PROJECT_ROOT = Path(r"G:\tiaozhanbei\newrag")
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCRIPT_PATH = PROJECT_ROOT / "scripts" / "import_stage1_to_qdrant.py"
 
 spec = importlib.util.spec_from_file_location("import_stage1_to_qdrant", SCRIPT_PATH)

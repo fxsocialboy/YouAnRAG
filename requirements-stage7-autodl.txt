@@ -1,0 +1,8 @@
+# AutoDL image already contains torch 2.1.2+cu121.  Do not reinstall torch.
+numpy==1.26.4
+faiss-cpu==1.8.0.post1
+transformers==4.41.2
+sentence-transformers==2.7.0
+qdrant-client==1.18.0
+langgraph==1.1.9
+pytest==8.3.5
